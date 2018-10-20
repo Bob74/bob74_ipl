@@ -56,7 +56,7 @@ WeedFarm.Security.Clear()
 ```
 
 ## Plants from 1 to 9
-*Replace Plant1 with Plant2, Plant3, etc to set another plant. Plants goes from 1 to 9*  
+**This documentation uses Plant1 as example.** *Replace `Plant1` with `Plant2`, `Plant3`, etc to set another plant. Plants goes from `Plant1` to `Plant9`*  
 Basically, you can set up plants using two ways. Either you set up a plant in one go, or you set up each parameters individually (Stage + Light + Hose).  
 
 Setting up a plant in one go:  
