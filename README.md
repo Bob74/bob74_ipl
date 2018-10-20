@@ -2,22 +2,28 @@
 # DLC Bikers: Weed farm 
 
 Getting the main object to interact with the interior:  
-`WeedFarm = exports['bob74_ipl']:GetWeedFarmObject()`  
-
+```Lua
+WeedFarm = exports['bob74_ipl']:GetWeedFarmObject()
+```
 ---
 
 ## Interior Ipls
 Loading Ipls related files in game:  
-`WeedFarm.Ipl.Interior.Load()`  
-
+```Lua
+WeedFarm.Ipl.Interior.Load()
+```
 ---
 
 Removing Ipls from game:  
-`WeedFarm.Ipl.Interior.Remove()`  
+```Lua
+WeedFarm.Ipl.Interior.Remove()
+```
 
 ## Style
 Setting the interior's style:  
-`WeedFarm.Style.Set(style, refresh)`  
+```Lua
+WeedFarm.Style.Set(style, refresh)
+```
 
 |Parameter | Description |Valid values |
 |-----|------|------|
@@ -27,11 +33,15 @@ Setting the interior's style:
 ---
 
 Removing the interior's style:  
-`WeedFarm.Style.Clear()`  
+```Lua
+WeedFarm.Style.Clear()
+```
 
 ## Security
 Setting the security:  
-`WeedFarm.Security.Set(security, refresh)`  
+```Lua
+WeedFarm.Security.Set(security, refresh)
+```
 
 |Parameter | Description |Valid values |
 |-----|------|------|
@@ -41,14 +51,18 @@ Setting the security:
 ---
 
 Removing the security:  
-`WeedFarm.Security.Clear()`  
+```Lua
+WeedFarm.Security.Clear()
+```
 
 ## Plants from 1 to 9
 *Replace Plant1 with Plant2, Plant3, etc to set another plant. Plants goes from 1 to 9*  
 Basically, you can set up plants using two ways. Either you set up a plant in one go, or you set up each parameters individually (Stage + Light + Hose).  
 
 Setting up a plant in one go:  
-`WeedFarm.Plant1.Set(stage, light, refresh)`  
+```Lua
+WeedFarm.Plant1.Set(stage, light, refresh)
+```
 
 |Parameter | Description |Valid values |
 |-----|------|------|
@@ -67,7 +81,9 @@ Setting the stage of growth:
 
 ### Light
 Setting the light tier:  
-`WeedFarm.Plant1.Light.Set(light, refresh)`  
+```Lua
+WeedFarm.Plant1.Light.Set(light, refresh)
+```
 
 |Parameter | Description |Valid values |
 |-----|------|------|
@@ -76,7 +92,9 @@ Setting the light tier:
 
 ### Hose
 Enable or disable the watering hose:  
-`WeedFarm.Plant1.Hose.Enable(state, refresh)`  
+```Lua
+WeedFarm.Plant1.Hose.Enable(state, refresh)
+```
 
 |Parameter | Description |Valid values |
 |-----|------|------|
@@ -87,11 +105,13 @@ Enable or disable the watering hose:
 
 ## Details
 Enable or disable some interior related details:  
-`WeedFarm.Details.Enable(details, state, refresh)`  
-
-You can enable/disable multiple details at once using tables (ex: {detail1, detail2}):  
+```Lua
+WeedFarm.Details.Enable(details, state, refresh)
 ```
-Enabling weed on the tables, ceiling and the chairs at once:
+
+You can enable/disable multiple details at once using tables (`{detail1, detail2, etc.}`):  
+ie: Enabling weed on the tables, ceiling and the chairs at once:
+```Lua
 WeedFarm.Details.Enable({WeedFarm.Details.production, WeedFarm.Details.drying, WeedFarm.Details.chairs}, true, false)
 ```
 
