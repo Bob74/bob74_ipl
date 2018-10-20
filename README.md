@@ -148,10 +148,10 @@ Citizen.CreateThread(function()
 
 
     -- Setting up the plants
-        -- Setting up a plant way 1
+        -- Setting up a plant using the 1st method (in one go)
         WeedFarm.Plant1.Set(WeedFarm.Plant1.Stage.small, WeedFarm.Plant1.Light.basic, false)
 
-        -- Setting up a plant way 2
+        -- Setting up another plant using the 2nd method (settings each parameters individually)
         WeedFarm.Plant2.Stage.Set(WeedFarm.Plant1.Stage.full, false)
         WeedFarm.Plant2.Light.Set(WeedFarm.Plant1.Light.basic, false)
         WeedFarm.Plant2.Hose.Enable(true, false)
