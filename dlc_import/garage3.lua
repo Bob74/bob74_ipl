@@ -116,7 +116,7 @@ ImportCEOGarage3 = {
         ImportCEOGarage3.Numbering.Set(ImportCEOGarage3.Part.Garage1, ImportCEOGarage3.Numbering.Level1.style1, false)
         ImportCEOGarage3.Lighting.Set(ImportCEOGarage3.Part.Garage1, ImportCEOGarage3.Lighting.style1, false)
         
-        ImportCEOGarage3.Part.Load(ImportCEOGarage3.Part.ModShop)
-        ImportCEOGarage3.ModShop.Floor.Set(ImportCEOGarage3.ModShop.Floor.default, false)
+        -- No mod shop since it overlapses CEO office
+        ImportCEOGarage3.Part.Remove(ImportCEOGarage3.Part.ModShop)
     end
 }

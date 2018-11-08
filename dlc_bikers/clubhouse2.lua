@@ -40,8 +40,8 @@ BikerClubhouse2 = {
     LowerWalls = {
         default = "lower_walls_default",
         SetColor = function(color, refresh)
-            SetInteriorPropColor(BikerClubhouse2.interiorId, BikerClubhouse2.LowerWalls.default, color)
             SetIplPropState(BikerClubhouse2.interiorId, BikerClubhouse2.LowerWalls.default, true, refresh)
+            SetInteriorPropColor(BikerClubhouse2.interiorId, BikerClubhouse2.LowerWalls.default, color)
         end,
     },
     Furnitures = {
