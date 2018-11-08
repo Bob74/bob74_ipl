@@ -3,7 +3,7 @@
 -- ---------------------------------------------------------
 --
 -- Author: Bob_74
--- Version: 2.0
+-- Version: 2.0.3
 -- 
 -- Resources:
 -- **********
@@ -18,7 +18,7 @@ client_script "client.lua"
 
 
 -- GTA V
-client_script "gtav/base.lua"           -- Base IPLs to fix holes
+client_script "gtav/base.lua"   -- Base IPLs to fix holes
 client_script "gtav/ammunations.lua"
 client_script "gtav/floyd.lua"
 client_script "gtav/franklin.lua"
@@ -69,6 +69,7 @@ client_script "dlc_finance/office1.lua"
 client_script "dlc_finance/office2.lua"
 client_script "dlc_finance/office3.lua"
 client_script "dlc_finance/office4.lua"
+client_script "dlc_finance/organization.lua"
 
 -- DLC Bikers
 client_script "dlc_bikers/cocaine.lua"
@@ -78,6 +79,7 @@ client_script "dlc_bikers/meth.lua"
 client_script "dlc_bikers/weed.lua"
 client_script "dlc_bikers/clubhouse1.lua"
 client_script "dlc_bikers/clubhouse2.lua"
+client_script "dlc_bikers/gang.lua"
 
 -- DLC Import/Export
 client_script "dlc_import/garage1.lua"
