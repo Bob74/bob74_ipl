@@ -1,4 +1,3 @@
-
 local NeedToLoadBlackboard = false
 local IsBlackboardLoaded = false
 
