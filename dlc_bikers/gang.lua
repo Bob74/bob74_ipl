@@ -98,8 +98,7 @@ BikerGang = {
                     BikerGang.Clubhouse.Members.Clear(BikerGang.Clubhouse.Members.VicePresident)
                 end
             },
-            ActiveMember1 = {
-                -- Road captain
+            RoadCaptain = {
                 needToLoad = false,
                 loaded = false,
                 renderId = -1,
@@ -109,20 +108,19 @@ BikerGang = {
                 prop = "bkr_prop_rt_memorial_active_01",
                 stage = 0,
                 Init = function()
-                    DrawEmptyRect(BikerGang.Clubhouse.Members.ActiveMember1.target, BikerGang.Clubhouse.Members.ActiveMember1.prop)
+                    DrawEmptyRect(BikerGang.Clubhouse.Members.RoadCaptain.target, BikerGang.Clubhouse.Members.RoadCaptain.prop)
                 end,
                 Enable = function(state)
-                    BikerGang.Clubhouse.Members.ActiveMember1.needToLoad = state
+                    BikerGang.Clubhouse.Members.RoadCaptain.needToLoad = state
                 end,
                 Set = function(ped)
-                    BikerGang.Clubhouse.Members.Set(BikerGang.Clubhouse.Members.ActiveMember1, ped)
+                    BikerGang.Clubhouse.Members.Set(BikerGang.Clubhouse.Members.RoadCaptain, ped)
                 end,
                 Clear = function()
-                    BikerGang.Clubhouse.Members.Clear(BikerGang.Clubhouse.Members.ActiveMember1)
+                    BikerGang.Clubhouse.Members.Clear(BikerGang.Clubhouse.Members.RoadCaptain)
                 end
             },
-            ActiveMember2 = {
-                -- Enforcer
+            Enforcer = {
                 needToLoad = false,
                 loaded = false,
                 renderId = -1,
@@ -132,20 +130,19 @@ BikerGang = {
                 prop = "bkr_prop_rt_memorial_active_02",
                 stage = 0,
                 Init = function()
-                    DrawEmptyRect(BikerGang.Clubhouse.Members.ActiveMember2.target, BikerGang.Clubhouse.Members.ActiveMember2.prop)
+                    DrawEmptyRect(BikerGang.Clubhouse.Members.Enforcer.target, BikerGang.Clubhouse.Members.Enforcer.prop)
                 end,
                 Enable = function(state)
-                    BikerGang.Clubhouse.Members.ActiveMember2.needToLoad = state
+                    BikerGang.Clubhouse.Members.Enforcer.needToLoad = state
                 end,
                 Set = function(ped)
-                    BikerGang.Clubhouse.Members.Set(BikerGang.Clubhouse.Members.ActiveMember2, ped)
+                    BikerGang.Clubhouse.Members.Set(BikerGang.Clubhouse.Members.Enforcer, ped)
                 end,
                 Clear = function()
-                    BikerGang.Clubhouse.Members.Clear(BikerGang.Clubhouse.Members.ActiveMember2)
+                    BikerGang.Clubhouse.Members.Clear(BikerGang.Clubhouse.Members.Enforcer)
                 end
             },
-            ActiveMember3 = {
-                -- Sergeant at arms
+            SergeantAtArms = {
                 needToLoad = false,
                 loaded = false,
                 renderId = -1,
@@ -155,16 +152,16 @@ BikerGang = {
                 prop = "bkr_prop_rt_memorial_active_03",
                 stage = 0,
                 Init = function()
-                    DrawEmptyRect(BikerGang.Clubhouse.Members.ActiveMember3.target, BikerGang.Clubhouse.Members.ActiveMember3.prop)
+                    DrawEmptyRect(BikerGang.Clubhouse.Members.SergeantAtArms.target, BikerGang.Clubhouse.Members.SergeantAtArms.prop)
                 end,
                 Enable = function(state)
-                    BikerGang.Clubhouse.Members.ActiveMember3.needToLoad = state
+                    BikerGang.Clubhouse.Members.SergeantAtArms.needToLoad = state
                 end,
                 Set = function(ped)
-                    BikerGang.Clubhouse.Members.Set(BikerGang.Clubhouse.Members.ActiveMember3, ped)
+                    BikerGang.Clubhouse.Members.Set(BikerGang.Clubhouse.Members.SergeantAtArms, ped)
                 end,
                 Clear = function()
-                    BikerGang.Clubhouse.Members.Clear(BikerGang.Clubhouse.Members.ActiveMember3)
+                    BikerGang.Clubhouse.Members.Clear(BikerGang.Clubhouse.Members.SergeantAtArms)
                 end
             },
             Set = function(member, ped)
@@ -404,9 +401,9 @@ Citizen.CreateThread(function()
     -- Removing the black texture
     BikerGang.Clubhouse.Members.President.Init()
     BikerGang.Clubhouse.Members.VicePresident.Init()
-    BikerGang.Clubhouse.Members.ActiveMember1.Init()
-    BikerGang.Clubhouse.Members.ActiveMember2.Init()
-    BikerGang.Clubhouse.Members.ActiveMember3.Init()
+    BikerGang.Clubhouse.Members.RoadCaptain.Init()
+    BikerGang.Clubhouse.Members.Enforcer.Init()
+    BikerGang.Clubhouse.Members.SergeantAtArms.Init()
     
     BikerGang.Clubhouse.ClubName.Init()
     BikerGang.Clubhouse.Emblem.Init()
@@ -419,9 +416,9 @@ Citizen.CreateThread(function()
             BikerGang.Clubhouse.MissionsWall.needToLoad or
             BikerGang.Clubhouse.Members.President.needToLoad or
             BikerGang.Clubhouse.Members.VicePresident.needToLoad or
-            BikerGang.Clubhouse.Members.ActiveMember1.needToLoad or
-            BikerGang.Clubhouse.Members.ActiveMember2.needToLoad or
-            BikerGang.Clubhouse.Members.ActiveMember3.needToLoad) then
+            BikerGang.Clubhouse.Members.RoadCaptain.needToLoad or
+            BikerGang.Clubhouse.Members.Enforcer.needToLoad or
+            BikerGang.Clubhouse.Members.SergeantAtArms.needToLoad) then
 
             interiorId = GetInteriorAtCoords(GetEntityCoords(GetPlayerPed(-1)))
 
