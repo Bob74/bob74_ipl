@@ -1,3 +1,4 @@
+
 local NeedToLoadBlackboard = false
 local IsBlackboardLoaded = false
 
@@ -165,14 +166,10 @@ BikerGang = {
             },
             Set = function(member, ped)
                 member.Clear()
-                Citizen.Trace("ped = " .. ped)
-
                 member.pedheadshot = GetPedheadshot(ped)
 
                 if (member.pedheadshot ~= -1) then
                     member.textureDict = GetPedheadshotTxdString(member.pedheadshot)
-                    
-                    Citizen.Trace("textureDict = " .. member.textureDict)
 
                     local IsTextureDictLoaded = LoadStreamedTextureDict(member.textureDict)
                     if (not IsTextureDictLoaded) then
@@ -571,71 +568,3 @@ function DrawMember(member)
         end
     end
 end
-
-
---[[
-    Original mission function:
-    --------------------------
-    BeginScaleformMovieMethod(bikerPlanMovieID, "SET_MISSION")
-    PushScaleformMovieMethodParameterInt(index)             -- Mission index 0 to 2 (-1 = no mission)
-    BeginTextCommandScaleformString(title)                  -- Mission x: Title
-    EndTextCommandScaleformString()
-    BeginTextCommandScaleformString(desc)                   -- Mission x: Description
-    EndTextCommandScaleformString()
-    PushScaleformMovieMethodParameterButtonName(textDict)	-- Mission x: Texture
-    PushScaleformMovieMethodParameterFloat(x)               -- Mission 0: world coordinates X
-    PushScaleformMovieMethodParameterFloat(y)               -- Mission 0: world coordinates Y
-    EndScaleformMovieMethod()
-
-
-    Pictures = {
-        byThePound = "CHM_IMG0", -- Pickup car parked
-        prisonerOfWar = "CHM_IMG8", -- Police with man down
-        gunsForHire = "CHM_IMG4", -- Limo
-        weaponOfChoice = "CHM_IMG10", -- Prisoner being beaten
-        gunrunning = "CHM_IMG3", -- Shipment
-        nineTenthsOfTheLaw = "CHM_IMG6", -- Wheeling
-        jailbreak = "CHM_IMG5", -- Prison bus
-        cracked = "CHM_IMG1", -- Safe
-        fragileGoods = "CHM_IMG2", -- Lost Van
-        torched = "CHM_IMG9", -- Explosive crate
-        outrider = "CHM_IMG7" -- Sport ride 
-    },
-    Descriptions = {
-        byThePound = "DEAL_DEALND",
-        prisonerOfWar = "CELL_BIKER_RESD",
-        gunsForHire = "GFH_MENU_DESC",
-        weaponOfChoice = "CELL_BIKER_CKD",
-        gunrunning = "GB_BIGUNLOAD_D",
-        nineTenthsOfTheLaw = "SB_MENU_DESC",
-        jailbreak = "FP_MENU_DESC",
-        cracked = "SC_MENU_DESC",
-        fragileGoods = "DV_MENU_DESC",
-        torched = "BA_MENU_DESC",
-        outrider = "SHU_MENU_DESC"
-    },
-    Titles = {
-        byThePoundUpper = "BDEAL_DEALN",
-        byThePound = "DEAL_DEALN",
-        prisonerOfWarUpper = "BIGM_RESCN",
-        prisonerOfWar = "CELL_BIKER_RESC",
-        gunsForHire = "LR_INTRO_ST",
-        weaponOfChoice = "CELL_BIKER_CK",
-        gunrunningUpper = "GB_BIGUNLOAD_U",
-        gunrunning = "GB_BIGUNLOAD_T",
-        nineTenthsOfTheLawUpper = "SB_INTRO_TITLE",
-        nineTenthsOfTheLaw = "SB_MENU_TITLE",
-        jailbreakUpper = "FP_INTRO_TITLE",
-        jailbreak = "FP_MENU_TITLE",
-        crackedUpper = "SC_INTRO_TITLE",
-        cracked = "SC_MENU_TITLE",
-        fragileGoodsUpper = "DV_SH_BIG",
-        fragileGoods = "DV_SH_TITLE",
-        torchedUpper = "BA_SH_BIG",
-        torched = "BA_SH_TITLE",
-        outriderUpper = "SHU_SH_BIG",
-        outrider = "SHU_SH_TITLE"
-    },
-    
-
-]]
