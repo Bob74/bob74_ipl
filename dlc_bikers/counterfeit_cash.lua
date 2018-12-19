@@ -16,8 +16,8 @@ BikerCounterfeit = {
     },
     Printer = {
         none = "",
-        basic = "BikerCounterfeit_standard_equip_no_prod", basicProd = "BikerCounterfeit_standard_equip",
-        upgrade = "BikerCounterfeit_upgrade_equip_no_prod", upgradeProd = "BikerCounterfeit_upgrade_equip",
+        basic = "counterfeit_standard_equip_no_prod", basicProd = "counterfeit_standard_equip",
+        upgrade = "counterfeit_upgrade_equip_no_prod", upgradeProd = "counterfeit_upgrade_equip",
         Set = function(printer, refresh)
             BikerCounterfeit.Printer.Clear(false)
             if (printer ~= "") then
@@ -31,7 +31,7 @@ BikerCounterfeit = {
         end
     },
     Security = {
-        basic = "BikerCounterfeit_low_security", upgrade = "BikerCounterfeit_security",
+        basic = "counterfeit_low_security", upgrade = "counterfeit_security",
         Set = function(security, refresh)
             BikerCounterfeit.Security.Clear(false)
             SetIplPropState(BikerCounterfeit.interiorId, security, true, refresh)
@@ -98,20 +98,20 @@ BikerCounterfeit = {
     },
     Details = {
         Cash10 = {
-            A = "BikerCounterfeit_cashpile10a", B = "BikerCounterfeit_cashpile10b",
-            C = "BikerCounterfeit_cashpile10c", D = "BikerCounterfeit_cashpile10d",
+            A = "counterfeit_cashpile10a", B = "counterfeit_cashpile10b",
+            C = "counterfeit_cashpile10c", D = "counterfeit_cashpile10d",
         },
         Cash20 = {
-            A = "BikerCounterfeit_cashpile20a", B = "BikerCounterfeit_cashpile20b",
-            C = "BikerCounterfeit_cashpile20c", D = "BikerCounterfeit_cashpile20d",
+            A = "counterfeit_cashpile20a", B = "counterfeit_cashpile20b",
+            C = "counterfeit_cashpile20c", D = "counterfeit_cashpile20d",
         },
         Cash100 = {
-            A = "BikerCounterfeit_cashpile100a", B = "BikerCounterfeit_cashpile100b",
-            C = "BikerCounterfeit_cashpile100c", D = "BikerCounterfeit_cashpile100d",
+            A = "counterfeit_cashpile100a", B = "counterfeit_cashpile100b",
+            C = "counterfeit_cashpile100c", D = "counterfeit_cashpile100d",
         },
         chairs = "special_chairs",							-- Brown chairs at the end of the room
         cutter = "money_cutter",							-- Money cutting machine
-        furnitures = "BikerCounterfeit_setup",				-- Paper, counting machines, cups
+        furnitures = "counterfeit_setup",				-- Paper, counting machines, cups
 
         Enable = function (details, state, refresh)
             SetIplPropState(BikerCounterfeit.interiorId, details, state, refresh)
