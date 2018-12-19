@@ -105,7 +105,7 @@ Citizen.CreateThread(function()
     ImportCEOGarage2.LoadDefault()             -- Maze Bank Building               /!\ Do not load parts Garage1, Garage2 and Garage3 at the same time (overlaping issues)
     ImportCEOGarage3.LoadDefault()             -- Lom Bank                         /!\ Do not load parts Garage1, Garage2 and Garage3 at the same time (overlaping issues)
     ImportCEOGarage4.LoadDefault()             -- Maze Bank West                   /!\ Do not load parts Garage1, Garage2 and Garage3 at the same time (overlaping issues)
-    ImportVehicleWarehouse.LoadDefault()    -- Vehicle warehouse: 994.5925, -3002.594, -39.64699
+    ImportVehicleWarehouse.LoadDefault()       -- Vehicle warehouse: 994.5925, -3002.594, -39.64699
 
     -- ====================================================================
     -- =------------------------ [DLC: Gunrunning] -----------------------=
