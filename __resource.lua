@@ -3,7 +3,7 @@
 -- ---------------------------------------------------------
 --
 -- Author: Bob_74
--- Version: 2.0.5
+-- Version: 2.0.6
 -- 
 -- Resources:
 -- **********
@@ -97,3 +97,6 @@ client_script "dlc_smuggler/hangar.lua"
 
 -- DLC Doomsday Heist
 client_script "dlc_doomsday/facility.lua"
+
+-- DLC After Hours
+client_script "dlc_afterhours/nightclubs.lua"
