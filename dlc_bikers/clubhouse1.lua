@@ -1,7 +1,7 @@
 
 -- Clubhouse1: 1107.04, -3157.399, -37.51859
 
-exports('GetBikerBikerClubhouse1Object', function()
+exports('GetBikerClubhouse1Object', function()
     return BikerClubhouse1
 end)
 
