@@ -29,6 +29,9 @@ Citizen.CreateThread(function()
 
     Graffitis.Enable(true)
 
+    -- Zancudo Gates (GTAO like): -1600.30100000, 2806.73100000, 18.79683000
+    ZancudoGates.LoadDefault()
+
     -- UFO
     UFO.Hippie.Enable(false)    -- 2490.47729, 3774.84351, 2414.035
     UFO.Chiliad.Enable(false)   -- 501.52880000, 5593.86500000, 796.23250000

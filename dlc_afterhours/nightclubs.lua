@@ -159,6 +159,12 @@ AfterHoursNightclubs = {
                     end
                 end
             },
+            Clear = function()
+                AfterHoursNightclubs.Interior.Lights.Droplets.Clear()
+                AfterHoursNightclubs.Interior.Lights.Neons.Clear()
+                AfterHoursNightclubs.Interior.Lights.Bands.Clear()
+                AfterHoursNightclubs.Interior.Lights.Lasers.Clear()
+            end
         },
         Bar = {
             Enable = function(state, refresh)
@@ -454,13 +460,13 @@ AfterHoursNightclubs = {
         AfterHoursNightclubs.Interior.Name.Set(AfterHoursNightclubs.Interior.Name.galaxy)
         AfterHoursNightclubs.Interior.Style.Set(AfterHoursNightclubs.Interior.Style.edgy)
 
-        AfterHoursNightclubs.Interior.Podium.Set(AfterHoursNightclubs.Interior.Podium.edgy)
+        --AfterHoursNightclubs.Interior.Podium.Set(AfterHoursNightclubs.Interior.Podium.edgy)
         AfterHoursNightclubs.Interior.Speakers.Set(AfterHoursNightclubs.Interior.Speakers.upgrade)
 
         AfterHoursNightclubs.Interior.Security.Set(AfterHoursNightclubs.Interior.Security.on)
         
         AfterHoursNightclubs.Interior.Turntables.Set(AfterHoursNightclubs.Interior.Turntables.style01)
-        AfterHoursNightclubs.Interior.Lights.Bands.Set(AfterHoursNightclubs.Interior.Lights.Bands.cyan)
+        --AfterHoursNightclubs.Interior.Lights.Bands.Set(AfterHoursNightclubs.Interior.Lights.Bands.cyan)
 
         AfterHoursNightclubs.Interior.Bar.Enable(true)
 

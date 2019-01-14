@@ -73,9 +73,6 @@ Citizen.CreateThread(function()
     -- Raton Canyon river: -1652.83, 4445.28, 2.52
     RequestIpl("CanyonRvrShallow")
         
-    -- Zancudo Gates (GTAO like): -1600.30100000, 2806.73100000, 18.79683000
-    --RequestIpl("CS3_07_MPGates")
-        
     -- Pillbox hospital: 307.1680, -590.807, 43.280
     RequestIpl("rc12b_default")
         

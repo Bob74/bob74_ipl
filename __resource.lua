@@ -3,7 +3,7 @@
 -- ---------------------------------------------------------
 --
 -- Author: Bob_74
--- Version: 2.0.6
+-- Version: 2.0.7
 -- 
 -- Resources:
 -- **********
@@ -32,6 +32,7 @@ client_script "gtav/simeon.lua"
 client_script "gtav/stripclub.lua"
 client_script "gtav/trevors_trailer.lua"
 client_script "gtav/ufo.lua"
+client_script "gtav/zancudo_gates.lua"
 
 -- GTA Online
 client_script "gta_online/apartment_hi_1.lua"
