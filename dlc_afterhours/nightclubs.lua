@@ -47,7 +47,7 @@ AfterHoursNightclubs = {
             end
         },
         Podium = {
-            trad = "Int01_ba_style01_podium", edgy = "Int01_ba_style02_podium", glam = "Int01_ba_style03_podium",
+            none = "", trad = "Int01_ba_style01_podium", edgy = "Int01_ba_style02_podium", glam = "Int01_ba_style03_podium",
             Set = function(podium, refresh)
                 AfterHoursNightclubs.Interior.Podium.Clear(false)
                 SetIplPropState(AfterHoursNightclubs.interiorId, podium, true, refresh)
