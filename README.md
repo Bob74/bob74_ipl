@@ -46,6 +46,13 @@ This resource has been completely rewritten from scratch since v2.0. You can cus
 <details><summary>Click to view</summary>
 (DD/MM/YYYY)
 
+15/01/2019 - 2.0.7a
+- Nightclubs: Added the ability to set no podium (using `AfterHoursNightclubs.Interior.Podium.none`)
+
+14/01/2019 - 2.0.7
+- Changed the way Trevor’s trailer is handled and added a Wiki entry.
+- Added a way to open or close Zancudo’s gates with a Wiki entry.
+
 12/01/2019 - 2.0.6
 - Added nightclubs interior and exteriors
 - Removed Zancudo gates by default (file bob74_ipl/gtav/base.lua: RequestIpl("CS3_07_MPGates") is now commented)
