@@ -1,31 +1,30 @@
-
 # Fix Holes In The Map (Updated to After Hours DLC)
 
 The purpose of this script is to fix the holes in the map by loading zones that aren’t loaded by default. I’ve added quite a lot of places to load, based on [Mikeeh’s script](https://forum.fivem.net/t/release-load-unloaded-ipls/5911). If you just want to fix the holes in the map, then use this resource as is.
 
 This resource has been completely rewritten from scratch since v2.0. You can customized almost every storymode and purchasable interiors from your own resources.
 
-## Download: 
+## Download
 - Latest version: https://github.com/Bob74/bob74_ipl/releases/latest
 
 - Source code: https://github.com/Bob74/bob74_ipl
 
-## [Wiki](https://github.com/Bob74/bob74_ipl/wiki):
+## [Wiki](https://github.com/Bob74/bob74_ipl/wiki)
 - The Wiki has been created to help you customize your interiors as you wish. It contains every function you can use for each interior.
 - Each Wiki page has an example at the bottom of the page to show how you can use it in your own resource.
 - Also at the bottom of the Wiki will show you the default values set by `IPL_NAME.LoadDefault()`.
 
-## Install:
+## Install
 1. Download the [latest version](https://github.com/Bob74/bob74_ipl/releases/latest).
 2. Extract `bob74_ipl.zip` and copy the `bob74_ipl` into your `resources` folder.
 3. Add `start bob74_ipl` to your your `server.cfg` file.
 
-## Screenshots:
+## Screenshots
 - [After Hours Album](https://imgur.com/a/Qg96l0D)
 - [Misc. Album](https://imgur.com/a/cs9Ip4d)
 - [IPL Fix Album](https://imgur.com/a/1Sfl4)
 
-## What's Missing:
+## What's Missing
 >Finance & Felony:
 > - Warehouses
 >
@@ -42,10 +41,17 @@ This resource has been completely rewritten from scratch since v2.0. You can cus
 > - Basement
 > - Terrorbyte
 
-## Changelog:
+## Changelog
 
 <details><summary>Click to view</summary>
 (DD/MM/YYYY)
+
+15/01/2019 - 2.0.7a
+- Nightclubs: Added the ability to set no podium (using `AfterHoursNightclubs.Interior.Podium.none`)
+
+14/01/2019 - 2.0.7
+- Changed the way Trevor’s trailer is handled and added a Wiki entry.
+- Added a way to open or close Zancudo’s gates with a Wiki entry.
 
 12/01/2019 - 2.0.6
 - Added nightclubs interior and exteriors
@@ -75,7 +81,7 @@ Added biker gang’s name, missions and members pictures
 - Support for all DLC (up to The Doomsday Heist)
 - Ability to easily customize story mode and online purchasable interiors
 - You can still use it as it is if you want ipl and interiors to be loaded, the plugin sets a default style for each ones
-- Check out the Wiki to find out how: https://github.com/Bob74/bob74_ipl/wiki 220
+- Check out the Wiki to find out how: https://github.com/Bob74/bob74_ipl/wiki
 
 26/06/2017
 - Added optional IPL
