@@ -1,5 +1,6 @@
 
 -- Garage 4: Maze Bank West
+-- Be careful, ImportCEOGarage4.Part.Garage1 and ImportCEOGarage4.Part.Garage3 overlaps with FinanceOffice4
 
 exports('GetImportCEOGarage4Object', function()
 	return ImportCEOGarage4
@@ -111,10 +112,11 @@ ImportCEOGarage4 = {
     },
 
     LoadDefault = function()
-        ImportCEOGarage4.Part.Load(ImportCEOGarage4.Part.Garage1)
-        ImportCEOGarage4.Style.Set(ImportCEOGarage4.Part.Garage1, ImportCEOGarage4.Style.concrete, false)
-        ImportCEOGarage4.Numbering.Set(ImportCEOGarage4.Part.Garage1, ImportCEOGarage4.Numbering.Level1.style1, false)
-        ImportCEOGarage4.Lighting.Set(ImportCEOGarage4.Part.Garage1, ImportCEOGarage4.Lighting.style1, false)
+        ImportCEOGarage4.Part.Load(ImportCEOGarage4.Part.Garage2)
+
+        ImportCEOGarage4.Style.Set(ImportCEOGarage4.Part.Garage2, ImportCEOGarage4.Style.concrete, false)
+        ImportCEOGarage4.Numbering.Set(ImportCEOGarage4.Part.Garage2, ImportCEOGarage4.Numbering.Level1.style1, false)
+        ImportCEOGarage4.Lighting.Set(ImportCEOGarage4.Part.Garage2, ImportCEOGarage4.Lighting.style1, false)
         
         ImportCEOGarage4.Part.Load(ImportCEOGarage4.Part.ModShop)
         ImportCEOGarage4.ModShop.Floor.Set(ImportCEOGarage4.ModShop.Floor.default, false)
