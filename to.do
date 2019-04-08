@@ -4,6 +4,9 @@
 - CEO office & Nightclub vault opening
 
 
+Executives & Other Criminals
+    Yachts
+
 Finance & Felony:
     Warehouses
 
