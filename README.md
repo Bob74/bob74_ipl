@@ -46,6 +46,12 @@ This resource has been completely rewritten from scratch since v2.0. You can cus
 <details><summary>Click to view</summary>
 (DD/MM/YYYY)
 
+22/03/2019 - 2.0.7c
+- CEO Offices: Changed the default loaded garage to ImportCEOGarage4.Part.Garage2 in order to avoid Office glitchs
+
+15/01/2019 - 2.0.7b
+- Nightclubs: Fixed a typo for the fake lights
+
 15/01/2019 - 2.0.7a
 - Nightclubs: Added the ability to set no podium (using `AfterHoursNightclubs.Interior.Podium.none`)
 
