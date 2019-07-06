@@ -1,8 +1,8 @@
 # Fix Holes In The Map (Updated to After Hours DLC)
 
-The purpose of this script is to fix the holes in the map by loading zones that aren’t loaded by default. I’ve added quite a lot of places to load, based on [Mikeeh’s script](https://forum.fivem.net/t/release-load-unloaded-ipls/5911). If you just want to fix the holes in the map, then use this resource as is.
+The purpose of this script is to fix the holes in the map by loading zones that aren’t loaded by default. I’ve added quite a lot of places to load, based on [Mikeeh’s script](https://forum.fivem.net/t/release-load-unloaded-ipls/5911). If you just want to fix the holes in the map, then use this resource as provided.
 
-This resource has been completely rewritten from scratch since v2.0. You can customized almost every storymode and purchasable interiors from your own resources.
+This resource has been completely rewritten from scratch since v2.0. You can customize almost every storymode and online purchasable interiors from your own resources.
 
 ## Download
 - Latest version: https://github.com/Bob74/bob74_ipl/releases/latest
