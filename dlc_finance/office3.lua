@@ -100,5 +100,7 @@ FinanceOffice3 = {
     LoadDefault = function()
         FinanceOffice3.Style.Set(FinanceOffice3.Style.Theme.conservative)
         FinanceOffice3.Chairs.Set(FinanceOffice3.Chairs.on, true)
+
+        AddBlipForBuilding(-1579.756, -565.0661, 108.523, _U('lom_bank'), 475)
     end
 }

@@ -22,8 +22,8 @@ TrevorsTrailer = {
 
     LoadDefault = function()
         TrevorsTrailer.Interior.Set(TrevorsTrailer.Interior.trash)
-        TrevorsTrailer.Details.Enable(TrevorsTrailer.Details.copHelmet, false, false)
-        TrevorsTrailer.Details.Enable(TrevorsTrailer.Details.briefcase, false, false)
+        TrevorsTrailer.Details.Enable(TrevorsTrailer.Details.copHelmet, true, true)
+        TrevorsTrailer.Details.Enable(TrevorsTrailer.Details.briefcase, true, true)
         TrevorsTrailer.Details.Enable(TrevorsTrailer.Details.michaelStuff, false, false)
         RefreshInterior(TrevorsTrailer.interiorId)
     end

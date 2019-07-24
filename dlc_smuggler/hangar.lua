@@ -205,13 +205,15 @@ SmugglerHangar = {
 
         SmugglerHangar.ModArea.Set(SmugglerHangar.ModArea.on, SmugglerHangar.Colors.colorSet1)
 
-        SmugglerHangar.Office.Set(SmugglerHangar.Office.basic)
+        SmugglerHangar.Office.Set(SmugglerHangar.Office.modern)
 
         SmugglerHangar.Bedroom.Style.Set(SmugglerHangar.Bedroom.Style.modern, SmugglerHangar.Colors.colorSet1)
         SmugglerHangar.Bedroom.Blinds.Set(SmugglerHangar.Bedroom.Blinds.opened)
 
-        SmugglerHangar.Details.Enable(SmugglerHangar.Details.bedroomClutter, false)
+        SmugglerHangar.Details.Enable(SmugglerHangar.Details.bedroomClutter, true)
 
         RefreshInterior(SmugglerHangar.interiorId)
+
+        AddBlipForBuilding(-1267.0, -3013.135, -49.5, _U('smug_hangar'), 359)
     end
 }

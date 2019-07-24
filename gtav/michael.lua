@@ -38,14 +38,14 @@ Michael = {
     },
 
     LoadDefault = function()
-        Michael.Garage.Enable(Michael.Garage.scuba, false, true)
+        Michael.Garage.Enable(Michael.Garage.scuba, true, true)
         Michael.Style.Set(Michael.Style.normal)
-        Michael.Bed.Set(Michael.Bed.tidy)
-        Michael.Details.Enable(Michael.Details.moviePoster, false)
-        Michael.Details.Enable(Michael.Details.fameShamePoste, false)
-        Michael.Details.Enable(Michael.Details.spyGlasses, false)
-        Michael.Details.Enable(Michael.Details.planeTicket, false)
-        Michael.Details.Enable(Michael.Details.bugershot, false)
+        Michael.Bed.Set(Michael.Bed.messy)
+        Michael.Details.Enable(Michael.Details.moviePoster, true)
+        Michael.Details.Enable(Michael.Details.fameShamePoste, true)
+        Michael.Details.Enable(Michael.Details.spyGlasses, true)
+        Michael.Details.Enable(Michael.Details.planeTicket, true)
+        Michael.Details.Enable(Michael.Details.bugershot, true)
         RefreshInterior(Michael.interiorId)
     end
 }

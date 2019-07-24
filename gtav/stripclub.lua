@@ -11,6 +11,6 @@ StripClub = {
     },
 
     LoadDefault = function()
-        StripClub.Mess.Enable(false)
+        StripClub.Mess.Enable(true)
     end
 }

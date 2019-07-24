@@ -65,8 +65,10 @@ ExecApartment1 = {
     }, 
     LoadDefault = function()
         ExecApartment1.Style.Set(ExecApartment1.Style.Theme.modern, true)
-        ExecApartment1.Strip.Enable({ExecApartment1.Strip.A, ExecApartment1.Strip.B, ExecApartment1.Strip.C}, false)
-        ExecApartment1.Booze.Enable({ExecApartment1.Booze.A, ExecApartment1.Booze.B, ExecApartment1.Booze.C}, false)
-        ExecApartment1.Smoke.Set(ExecApartment1.Smoke.none)
+        ExecApartment1.Strip.Enable({ExecApartment1.Strip.A, ExecApartment1.Strip.B, ExecApartment1.Strip.C}, true)
+        ExecApartment1.Booze.Enable({ExecApartment1.Booze.A, ExecApartment1.Booze.B, ExecApartment1.Booze.C}, true)
+        ExecApartment1.Smoke.Set(ExecApartment1.Smoke.stage1)
+
+        AddBlipForBuilding(-787.78050000, 334.92320000, 215.83840000, _U('apartment_1'), 411)
     end
 }

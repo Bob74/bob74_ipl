@@ -34,9 +34,10 @@ HLApartment6 = {
     }, 
     LoadDefault = function()
         HLApartment6.Ipl.Interior.Load()
-        HLApartment6.Strip.Enable({HLApartment6.Strip.A, HLApartment6.Strip.B, HLApartment6.Strip.C}, false)
-        HLApartment6.Booze.Enable({HLApartment6.Booze.A, HLApartment6.Booze.B, HLApartment6.Booze.C}, false)
-        HLApartment6.Smoke.Enable({HLApartment6.Smoke.A, HLApartment6.Smoke.B, HLApartment6.Smoke.C}, false)
+        HLApartment6.Strip.Enable({HLApartment6.Strip.A, HLApartment6.Strip.B, HLApartment6.Strip.C}, true)
+        HLApartment6.Booze.Enable({HLApartment6.Booze.A, HLApartment6.Booze.B, HLApartment6.Booze.C}, true)
+        HLApartment6.Smoke.Enable({HLApartment6.Smoke.A, HLApartment6.Smoke.B, HLApartment6.Smoke.C}, true)
         RefreshInterior(HLApartment6.interiorId)
+        AddBlipForBuilding(-609.56690000, 51.28212000, -183.98080, _U('hl_apartment_6'), 411)
     end
 }

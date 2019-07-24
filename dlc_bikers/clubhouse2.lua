@@ -218,14 +218,16 @@ BikerClubhouse2 = {
         BikerClubhouse2.ModBooth.Set(BikerClubhouse2.ModBooth.off)
         BikerClubhouse2.GunLocker.Set(BikerClubhouse2.GunLocker.off)
 
-        BikerClubhouse2.Meth.Set(BikerClubhouse2.Meth.none)
-        BikerClubhouse2.Cash.Set(BikerClubhouse2.Cash.none)
-        BikerClubhouse2.Coke.Set(BikerClubhouse2.Coke.none)
-        BikerClubhouse2.Weed.Set(BikerClubhouse2.Weed.none)
-        BikerClubhouse2.Counterfeit.Set(BikerClubhouse2.Counterfeit.none)
-        BikerClubhouse2.Documents.Set(BikerClubhouse2.Documents.none)
+        BikerClubhouse2.Meth.Set(BikerClubhouse2.Meth.stage1)
+        BikerClubhouse2.Cash.Set(BikerClubhouse2.Cash.stage1)
+        BikerClubhouse2.Coke.Set(BikerClubhouse2.Coke.stage1)
+        BikerClubhouse2.Weed.Set(BikerClubhouse2.Weed.stage3)
+        BikerClubhouse2.Counterfeit.Set(BikerClubhouse2.Counterfeit.stage1)
+        BikerClubhouse2.Documents.Set(BikerClubhouse2.Documents.stage3)
         
         RefreshInterior(BikerClubhouse2.interiorId)
+
+        AddBlipForBuilding(998.4809, -3164.711, -38.90733, _U('clubhouse_2'), 492)
     end
 }
 

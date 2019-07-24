@@ -11,11 +11,12 @@
 -- Props list:			https://wiki.gt-mp.net/index.php/InteriorPropList
 -- Interior ID list : 	https://wiki.gt-mp.net/index.php/InteriorIDList
 --
-resource_manifest_version '05cfa83c-a124-4cfa-a768-c24a5811d8f9'
+resource_manifest_version '44febabe-d386-4d18-afbe-5e627f4af937'
 
+client_script "@es_extended/locale.lua"
+client_script "locales/en.lua"
 client_script "lib/common.lua"
 client_script "client.lua"
-
 
 -- GTA V
 client_script "gtav/base.lua"   -- Base IPLs to fix holes

@@ -23,5 +23,8 @@ HeistCarrier = {
 		"hei_carrier_lod",
 		"hei_carrier_slod"
 	},
-	Enable = function(state) EnableIpl(HeistCarrier.ipl, state) end
+	Enable = function(state)
+		EnableIpl(HeistCarrier.ipl, state)
+		AddBlipForBuilding(3082.3117, -4717.1191, 15.2622, _U('carrier'), 455)
+	end
 }

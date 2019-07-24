@@ -398,5 +398,7 @@ BikerWeedFarm = {
         BikerWeedFarm.Plant9.Set(BikerWeedFarm.Plant9.Stage.full, BikerWeedFarm.Plant9.Light.basic)
 
         RefreshInterior(BikerWeedFarm.interiorId)
+
+        AddBlipForBuilding(1051.491, -3196.536, -39.14842, _U('weed_farm'), 496)
     end
 }

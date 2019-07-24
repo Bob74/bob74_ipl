@@ -21,6 +21,9 @@ HeistYacht = {
 		"hei_yacht_heist_lounge_lod",
 		"hei_yacht_heist_slod"
 	},
-	Enable = function(state) EnableIpl(HeistYacht.ipl, state) end
+	Enable = function(state)
+		EnableIpl(HeistYacht.ipl, state)
+		AddBlipForBuilding(-2043.974,-1031.582, 11.981, _U('heist_yacht'), 455)
+	end
 }
 

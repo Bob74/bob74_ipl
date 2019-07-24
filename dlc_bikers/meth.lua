@@ -51,9 +51,11 @@ BikerMethLab = {
 
     LoadDefault = function()
         BikerMethLab.Ipl.Interior.Load()
-        BikerMethLab.Style.Set(BikerMethLab.Style.empty)
-        BikerMethLab.Security.Set(BikerMethLab.Security.none)
-        BikerMethLab.Details.Enable(BikerMethLab.Details.production, false)
+        BikerMethLab.Style.Set(BikerMethLab.Style.upgrade)
+        BikerMethLab.Security.Set(BikerMethLab.Security.upgrade)
+        BikerMethLab.Details.Enable(BikerMethLab.Details.production, true)
         RefreshInterior(BikerMethLab.interiorId)
+
+        AddBlipForBuilding(1009.5, -3196.6, -38.99682, _U('meth_lab'), 499)
     end
 }

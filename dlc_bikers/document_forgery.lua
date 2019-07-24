@@ -64,13 +64,15 @@ BikerDocumentForgery = {
 
     LoadDefault = function()
         BikerDocumentForgery.Ipl.Interior.Load()
-        BikerDocumentForgery.Style.Set(BikerDocumentForgery.Style.basic)
-        BikerDocumentForgery.Security.Set(BikerDocumentForgery.Security.basic)
-        BikerDocumentForgery.Equipment.Set(BikerDocumentForgery.Equipment.basic)
-        BikerDocumentForgery.Details.Enable(BikerDocumentForgery.Details.production, false)
-        BikerDocumentForgery.Details.Enable(BikerDocumentForgery.Details.setup, false)
-        BikerDocumentForgery.Details.Enable(BikerDocumentForgery.Details.clutter, false)
+        BikerDocumentForgery.Style.Set(BikerDocumentForgery.Style.upgrade)
+        BikerDocumentForgery.Security.Set(BikerDocumentForgery.Security.upgrade)
+        BikerDocumentForgery.Equipment.Set(BikerDocumentForgery.Equipment.upgrade)
+        BikerDocumentForgery.Details.Enable(BikerDocumentForgery.Details.production, true)
+        BikerDocumentForgery.Details.Enable(BikerDocumentForgery.Details.setup, true)
+        BikerDocumentForgery.Details.Enable(BikerDocumentForgery.Details.clutter, true)
         BikerDocumentForgery.Details.Enable(BikerDocumentForgery.Details.Chairs, true)
         RefreshInterior(BikerDocumentForgery.interiorId)
+
+        AddBlipForBuilding(1165, -3196.6, -39.01306, _U('document_forgery'), 498)
     end
 }

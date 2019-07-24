@@ -24,8 +24,8 @@ Floyd = {
     },
 
     LoadDefault = function()
-        Floyd.Style.Set(Floyd.Style.normal)
-        Floyd.MrJam.Set(Floyd.MrJam.normal)
+        Floyd.Style.Set(Floyd.Style.messedUp)
+        Floyd.MrJam.Set(Floyd.MrJam.jammedOnTable)
         RefreshInterior(Floyd.interiorId)
     end
 }

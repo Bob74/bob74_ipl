@@ -34,12 +34,12 @@ Franklin = {
     },
 
     LoadDefault = function()
-        Franklin.Style.Set(Franklin.Style.empty)
+        Franklin.Style.Set(Franklin.Style.settled)
         Franklin.GlassDoor.Set(Franklin.GlassDoor.opened)
-        Franklin.Details.Enable(Franklin.Details.flyer, false)
-        Franklin.Details.Enable(Franklin.Details.tux, false)
-        Franklin.Details.Enable(Franklin.Details.tshirt, false)
-        Franklin.Details.Enable(Franklin.Details.bong, false)
+        Franklin.Details.Enable(Franklin.Details.flyer, true)
+        Franklin.Details.Enable(Franklin.Details.tux, true)
+        Franklin.Details.Enable(Franklin.Details.tshirt, true)
+        Franklin.Details.Enable(Franklin.Details.bong, true)
         RefreshInterior(Franklin.interiorId)
     end
 }

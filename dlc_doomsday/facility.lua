@@ -152,7 +152,7 @@ DoomsdayFacility = {
         DoomsdayFacility.Ipl.Interior.Load()
         
         DoomsdayFacility.Walls.SetColor(DoomsdayFacility.Colors.utility)
-        DoomsdayFacility.Decals.Set(DoomsdayFacility.Decals.style01)
+        DoomsdayFacility.Decals.Set(DoomsdayFacility.Decals.style03)
         DoomsdayFacility.Lounge.Set(DoomsdayFacility.Lounge.premier, DoomsdayFacility.Colors.utility)
         DoomsdayFacility.Sleeping.Set(DoomsdayFacility.Sleeping.premier, DoomsdayFacility.Colors.utility)
         DoomsdayFacility.Security.Set(DoomsdayFacility.Security.on, DoomsdayFacility.Colors.utility)
@@ -170,5 +170,7 @@ DoomsdayFacility = {
         DoomsdayFacility.Details.Enable({DoomsdayFacility.Details.Clutter.A, DoomsdayFacility.Details.Clutter.B}, true)
 
         RefreshInterior(DoomsdayFacility.interiorId)
+
+        AddBlipForBuilding(345.00000000, 4842.00000000, -60.00000000, _U('doomsday_facility'), 438)
     end
 }

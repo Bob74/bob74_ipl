@@ -513,7 +513,7 @@ function DrawEmblem(texturesDict, rotation)
             BikerGang.Clubhouse.Emblem.renderId = CreateNamedRenderTargetForModel(BikerGang.Clubhouse.Emblem.target, BikerGang.Clubhouse.Emblem.prop)
         end
         local IsTextureDictLoaded = LoadStreamedTextureDict(texturesDict)
-        if (not IsTextureDictLoaded) then Citizen.Trace("ERROR: DrawEmblem - Textures dictionnary cannot be loaded.") end
+        if (not IsTextureDictLoaded) then Citizen.Trace("ERROR: DrawEmblem - Textures dictionary cannot be loaded.") end
         BikerGang.Clubhouse.Emblem.stage = 1
     elseif (BikerGang.Clubhouse.Emblem.stage == 1) then
         BikerGang.Clubhouse.Emblem.renderId = CreateNamedRenderTargetForModel(BikerGang.Clubhouse.Emblem.target, BikerGang.Clubhouse.Emblem.prop)

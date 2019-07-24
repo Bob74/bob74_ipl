@@ -35,7 +35,7 @@ Simeon = {
 
     LoadDefault = function()
         Simeon.Ipl.Interior.Load()
-        Simeon.Style.Set(Simeon.Style.normal)
+        Simeon.Style.Set(Simeon.Style.fixed)
         Simeon.Shutter.Set(Simeon.Shutter.opened)
         RefreshInterior(Simeon.interiorId)
     end

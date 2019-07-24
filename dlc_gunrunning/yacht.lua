@@ -21,6 +21,9 @@ GunrunningYacht = {
         "gr_heist_yacht2_lounge_lod",
         "gr_heist_yacht2_slod",
     },
-    Enable = function(state) EnableIpl(GunrunningYacht.ipl, state) end
+    Enable = function(state)
+        EnableIpl(GunrunningYacht.ipl, state)
+        AddBlipForBuilding(-1363.724, 6734.108, 2.44598, _U('yacht'), 455)
+    end
 }
 
