@@ -9,13 +9,15 @@ end)
 
 -- Add a map blip
 function AddBlipForBuilding(x, y, z, title, sprite)
-    local blip = AddBlipForCoord(x, y, z)
-    SetBlipSprite(blip, sprite)
-    SetBlipScale(blip, 1.0)
-    SetBlipAsShortRange(blip, true)
-    BeginTextCommandSetBlipName("STRING")
-    AddTextComponentString(title)
-    EndTextCommandSetBlipName(blip)
+    if Config.Blips then
+        local blip = AddBlipForCoord(x, y, z)
+        SetBlipSprite(blip, sprite)
+        SetBlipScale(blip, 1.0)
+        SetBlipAsShortRange(blip, true)
+        BeginTextCommandSetBlipName("STRING")
+        AddTextComponentString(title)
+        EndTextCommandSetBlipName(blip)
+    end
 end
 
 -- Load or remove IPL(s)
