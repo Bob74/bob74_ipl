@@ -17,6 +17,7 @@ client_script "@es_extended/locale.lua"
 client_script "locales/en.lua"
 client_script "lib/common.lua"
 client_script "client.lua"
+client_script "config.lua"
 
 -- GTA V
 client_script "gtav/base.lua"   -- Base IPLs to fix holes
