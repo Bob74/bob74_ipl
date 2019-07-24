@@ -38,6 +38,5 @@ HLApartment4 = {
         HLApartment4.Booze.Enable({HLApartment4.Booze.A, HLApartment4.Booze.B, HLApartment4.Booze.C}, false)
         HLApartment4.Smoke.Enable({HLApartment4.Smoke.A, HLApartment4.Smoke.B, HLApartment4.Smoke.C}, false)
         RefreshInterior(HLApartment4.interiorId)
-        AddBlipForBuilding(-778.50610000, 331.31600000, 210.39720, _U('hl_apartment_4'), 411)
     end
 }

@@ -132,7 +132,5 @@ BikerCounterfeit = {
         BikerCounterfeit.Details.Enable(BikerCounterfeit.Details.Cash100, true)
 
         RefreshInterior(BikerCounterfeit.interiorId)
-
-        AddBlipForBuilding(1121.897, -3195.338, -40.4025, _U('counterfeit_cash'), 500)
     end
 }

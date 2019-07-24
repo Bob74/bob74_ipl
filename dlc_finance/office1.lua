@@ -102,7 +102,5 @@ FinanceOffice1 = {
         FinanceOffice1.Chairs.Set(FinanceOffice1.Chairs.on, true)
         FinanceOffice1.Booze.Set(FinanceOffice1.Booze.on, true)
         FinanceOffice1.Swag.Enable({FinanceOffice1.Swag.BoozeCigs.A, FinanceOffice1.Swag.Cash.A, FinanceOffice1.Swag.Cash.B, FinanceOffice1.Swag.Cash.C, FinanceOffice1.Swag.Cash.D, FinanceOffice1.Swag.Cash.E, FinanceOffice1.Swag.Jewel.A}, true, true)
-
-        AddBlipForBuilding(-141.1987, -620.913, 168.8205, _U('arcadius_center'), 475)
     end
 }

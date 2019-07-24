@@ -210,8 +210,6 @@ BikerClubhouse1 = {
         BikerClubhouse1.Documents.Set(BikerClubhouse1.Documents.stage3)
 
         RefreshInterior(BikerClubhouse1.interiorId)
-
-        AddBlipForBuilding(1107.04, -3157.399, -37.51859, _U('clubhouse_1'), 492)
     end
 }
 

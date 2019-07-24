@@ -71,8 +71,6 @@ ExecApartment2 = {
         ExecApartment2.Strip.Enable({ ExecApartment2.Strip.A, ExecApartment2.Strip.B, ExecApartment2.Strip.C }, false)
         ExecApartment2.Booze.Enable({ ExecApartment2.Booze.A, ExecApartment2.Booze.B, ExecApartment2.Booze.C }, false)
         ExecApartment2.Smoke.Set(ExecApartment2.Smoke.stage3)
-
-        AddBlipForBuilding(-773.22580000, 322.82520000, 194.88620000, _U('apartment_2'), 411)
     end
 }
 

@@ -72,7 +72,5 @@ BikerDocumentForgery = {
         BikerDocumentForgery.Details.Enable(BikerDocumentForgery.Details.clutter, true)
         BikerDocumentForgery.Details.Enable(BikerDocumentForgery.Details.Chairs, true)
         RefreshInterior(BikerDocumentForgery.interiorId)
-
-        AddBlipForBuilding(1165, -3196.6, -39.01306, _U('document_forgery'), 498)
     end
 }

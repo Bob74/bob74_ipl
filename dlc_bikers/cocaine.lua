@@ -60,8 +60,6 @@ BikerCocaine = {
         BikerCocaine.Style.Set(BikerCocaine.Style.upgrade)
         BikerCocaine.Security.Set(BikerCocaine.Security.upgrade)
         RefreshInterior(BikerCocaine.interiorId)
-
-        AddBlipForBuilding(1093.6, -3196.6, -38.99841, _U('cocaine_lab'), 497)
     end
 }
 

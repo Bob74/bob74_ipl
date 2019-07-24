@@ -100,7 +100,5 @@ FinanceOffice4 = {
     LoadDefault = function()
         FinanceOffice4.Style.Set(FinanceOffice4.Style.Theme.cool)
         FinanceOffice4.Chairs.Set(FinanceOffice4.Chairs.on, true)
-
-        AddBlipForBuilding(-1392.667, -480.4736, 72.04217, _U('maze_bank_west'), 475)
     end
 }
