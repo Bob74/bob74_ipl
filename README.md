@@ -46,6 +46,15 @@ This resource has been completely rewritten from scratch since v2.0. You can cus
 <details><summary>Click to view</summary>
 (DD/MM/YYYY)
 
+20/10/2019 - 2.0.8
+- Nightclubs: Added dry ice emitters
+- Heist & Gunrunning: Added water to the yachts hot tubs (to enable/disable)
+- Offices: Added a way to open and close the safes
+- Facility: Added privacy glass
+- Moved Bahama Mamas and PillBox Hospital in their own files
+- Fixed error `ReleaseNamedRendertarget`
+- Cleared and optimized the code
+
 22/03/2019 - 2.0.7c
 - CEO Offices: Changed the default loaded garage to ImportCEOGarage4.Part.Garage2 in order to avoid Office glitchs
 
