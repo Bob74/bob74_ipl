@@ -116,6 +116,128 @@ DoomsdayFacility = {
             SetIplPropState(DoomsdayFacility.interiorId, {DoomsdayFacility.Cannon.off, DoomsdayFacility.Cannon.on}, false, refresh)
         end
     },
+    PrivacyGlass = {
+        controlModelHash = GetHashKey("xm_prop_x17_tem_control_01"),
+        Bedroom = {
+            Enable = function(state)
+                local handle = GetClosestObjectOfType(367.99, 4827.745, -59.0, 1.0, GetHashKey("xm_prop_x17_l_glass_03"), false, false, false)
+
+                if (state) then
+                    if (handle == 0) then
+                        local model = GetHashKey("xm_prop_x17_l_glass_03")
+                        RequestModel(model)
+                        while not HasModelLoaded(model) do
+                            Wait(0)
+                        end
+                        
+                        local privacyGlass = CreateObject(model, 367.99, 4827.745, -59.0, false, false, false)
+                        SetEntityAsMissionEntity(privacyGlass, true, 0)
+                        SetEntityCollision_2(privacyGlass, false, 0)
+                        SetEntityInvincible(privacyGlass, true)
+                        SetEntityAlpha(privacyGlass, 254, false)
+                    end
+                else
+                    if (handle ~= 0) then
+                        SetEntityAsMissionEntity(handle, false, false)
+                        DeleteEntity(handle)
+                    end
+                end
+            end,
+
+            Control = {
+                position = {x = 372.115, y = 4827.504, z = -58.47},
+                rotation = {x = 0.0, y = 0.0, z = 0.0},
+                Enable = function(state)
+                    local handle = GetClosestObjectOfType(DoomsdayFacility.PrivacyGlass.Bedroom.Control.position.x, DoomsdayFacility.PrivacyGlass.Bedroom.Control.position.y, DoomsdayFacility.PrivacyGlass.Bedroom.Control.position.z, 1.0, DoomsdayFacility.PrivacyGlass.controlModelHash, false, false, false)
+
+                    if (state) then
+                        if (handle == 0) then
+                            RequestModel(DoomsdayFacility.PrivacyGlass.controlModelHash)
+                            while not HasModelLoaded(DoomsdayFacility.PrivacyGlass.controlModelHash) do
+                                Wait(0)
+                            end
+                
+                            local privacyGlass = CreateObjectNoOffset(DoomsdayFacility.PrivacyGlass.controlModelHash, DoomsdayFacility.PrivacyGlass.Bedroom.Control.position.x, DoomsdayFacility.PrivacyGlass.Bedroom.Control.position.y, DoomsdayFacility.PrivacyGlass.Bedroom.Control.position.z, true, true, false)
+                            SetEntityRotation(privacyGlass, DoomsdayFacility.PrivacyGlass.Bedroom.Control.rotation.x, DoomsdayFacility.PrivacyGlass.Bedroom.Control.rotation.y, DoomsdayFacility.PrivacyGlass.Bedroom.Control.rotation.z, 2, true)
+                            FreezeEntityPosition(privacyGlass, true)
+                            SetEntityAsMissionEntity(privacyGlass, false, false)
+                        end
+                    else
+                        if (handle ~= 0) then
+                            SetEntityAsMissionEntity(handle, false, false)
+                            DeleteEntity(handle)
+                        end
+                    end
+                end,
+            }
+        },
+        Lounge = {
+            Glasses = {
+                {modelHash = GetHashKey("xm_prop_x17_l_door_glass_01"), entityHash = GetHashKey("xm_prop_x17_l_door_frame_01"), entityPos = {x = 359.22, y = 4846.043, z = -58.85}},
+                {modelHash = GetHashKey("xm_prop_x17_l_door_glass_01"), entityHash = GetHashKey("xm_prop_x17_l_door_frame_01"), entityPos = {x = 369.066, y = 4846.273, z = -58.85}},
+                {modelHash = GetHashKey("xm_prop_x17_l_glass_01"), entityHash = GetHashKey("xm_prop_x17_l_frame_01"), entityPos = {x = 358.843, y = 4845.103, z = -60.0}},
+                {modelHash = GetHashKey("xm_prop_x17_l_glass_02"), entityHash = GetHashKey("xm_prop_x17_l_frame_02"), entityPos = {x = 366.309, y = 4847.281, z = -60.0}},
+                {modelHash = GetHashKey("xm_prop_x17_l_glass_03"), entityHash = GetHashKey("xm_prop_x17_l_frame_03"), entityPos = {x = 371.194, y = 4841.27, z = -60.0}}
+            },
+            Enable = function(state)
+                for key, glass in pairs(DoomsdayFacility.PrivacyGlass.Lounge.Glasses) do
+                    local handle = GetClosestObjectOfType(glass.entityPos.x, glass.entityPos.y, glass.entityPos.z, 1.0, glass.modelHash, false, false, false)
+
+                    if (state) then
+                        if (handle == 0) then
+                            local entityToAttach = GetClosestObjectOfType(glass.entityPos.x, glass.entityPos.y, glass.entityPos.z, 1.0, glass.entityHash, false, false, false)
+
+                            if entityToAttach ~= 0 then
+                                RequestModel(glass.modelHash)
+                                while not HasModelLoaded(glass.modelHash) do
+                                    Wait(0)
+                                end
+                                
+                                local privacyGlass = CreateObject(glass.modelHash, glass.entityPos.x, glass.entityPos.y, glass.entityPos.z, false, false, false)
+                                SetEntityAsMissionEntity(privacyGlass, true, false)
+                                SetEntityCollision_2(privacyGlass, false, 0)
+                                SetEntityInvincible(privacyGlass, true)
+                                SetEntityAlpha(privacyGlass, 254, false)
+                                AttachEntityToEntity(privacyGlass, entityToAttach, -1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0, 0, 0, 0, 2, 1)
+                            end
+                        end
+                    else
+                        if (handle ~= 0) then
+                            SetEntityAsMissionEntity(handle, false, false)
+                            DeleteEntity(handle)
+                        end
+                    end
+                end
+            end,
+            
+            Control = {
+                position = {x = 367.317, y = 4846.729, z = -58.448},
+                rotation = {x = 0.0, y = 0.0, z = -16.0},
+                Enable = function(state)
+                    local handle = GetClosestObjectOfType(DoomsdayFacility.PrivacyGlass.Lounge.Control.position.x, DoomsdayFacility.PrivacyGlass.Lounge.Control.position.y, DoomsdayFacility.PrivacyGlass.Lounge.Control.position.z, 1.0, DoomsdayFacility.PrivacyGlass.controlModelHash, false, false, false)
+
+                    if (state) then
+                        if (handle == 0) then
+                            RequestModel(DoomsdayFacility.PrivacyGlass.controlModelHash)
+                            while not HasModelLoaded(DoomsdayFacility.PrivacyGlass.controlModelHash) do
+                                Wait(0)
+                            end
+                
+                            local privacyGlass = CreateObjectNoOffset(DoomsdayFacility.PrivacyGlass.controlModelHash, DoomsdayFacility.PrivacyGlass.Lounge.Control.position.x, DoomsdayFacility.PrivacyGlass.Lounge.Control.position.y, DoomsdayFacility.PrivacyGlass.Lounge.Control.position.z, true, true, false)
+                            SetEntityRotation(privacyGlass, DoomsdayFacility.PrivacyGlass.Lounge.Control.rotation.x, DoomsdayFacility.PrivacyGlass.Lounge.Control.rotation.y, DoomsdayFacility.PrivacyGlass.Lounge.Control.rotation.z, 2, true)
+                            FreezeEntityPosition(privacyGlass, true)
+                            SetEntityAsMissionEntity(privacyGlass, false, false)
+                        end
+                    else
+                        if (handle ~= 0) then
+                            SetEntityAsMissionEntity(handle, false, false)
+                            DeleteEntity(handle)
+                        end
+                    end
+                end,
+            }
+        }
+    },
     Details = {
         KhanjaliParts = {A = "Set_Int_02_Parts_Panther1", B = "Set_Int_02_Parts_Panther2", C = "Set_Int_02_Parts_Panther3"},
         RiotParts = {A = "Set_Int_02_Parts_Riot1", B = "Set_Int_02_Parts_Riot2", C = "Set_Int_02_Parts_Riot3"},
@@ -157,6 +279,10 @@ DoomsdayFacility = {
         DoomsdayFacility.Sleeping.Set(DoomsdayFacility.Sleeping.premier, DoomsdayFacility.Colors.utility)
         DoomsdayFacility.Security.Set(DoomsdayFacility.Security.on, DoomsdayFacility.Colors.utility)
         DoomsdayFacility.Cannon.Set(DoomsdayFacility.Cannon.on, DoomsdayFacility.Colors.utility)
+
+        -- Privacy glass remote
+        DoomsdayFacility.PrivacyGlass.Bedroom.Control.Enable(true)
+        DoomsdayFacility.PrivacyGlass.Lounge.Control.Enable(true)
 
         DoomsdayFacility.Details.Enable(DoomsdayFacility.Details.crewEmblem, false)
 

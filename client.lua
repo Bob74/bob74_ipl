@@ -22,15 +22,21 @@ Citizen.CreateThread(function()
     -- Trevor: 1985.48132, 3828.76757, 32.5
     TrevorsTrailer.LoadDefault()
 
+    -- Bahama Mamas: -1388.0013, -618.41967, 30.819599
+    BahamaMamas.Enable(true)
+
+    -- Pillbox hospital: 307.1680, -590.807, 43.280
+    PillboxHospital.Enable(true)
+
+    -- Zancudo Gates (GTAO like): -1600.30100000, 2806.73100000, 18.79683000
+    ZancudoGates.LoadDefault()
+
     -- Other
     Ammunations.LoadDefault()
     LesterFactory.LoadDefault()
     StripClub.LoadDefault()
 
     Graffitis.Enable(true)
-
-    -- Zancudo Gates (GTAO like): -1600.30100000, 2806.73100000, 18.79683000
-    ZancudoGates.LoadDefault()
 
     -- UFO
     UFO.Hippie.Enable(false)    -- 2490.47729, 3774.84351, 2414.035
@@ -72,8 +78,8 @@ Citizen.CreateThread(function()
     -- ====================================================================
     -- =-------------------------- [DLC: Heists] -------------------------=
     -- ====================================================================
-    HeistCarrier.Enable(true)   -- 3082.3117, -4717.1191, 15.2622
-    HeistYacht.Enable(true)     -- -2043.974,-1031.582, 11.981
+    HeistCarrier.Enable(true)       -- 3082.3117, -4717.1191, 15.2622
+    HeistYacht.LoadDefault()        -- -2043.974,-1031.582, 11.981
 
     -- ====================================================================
     -- =--------------- [DLC: Executives & Other Criminals] --------------=
@@ -114,7 +120,7 @@ Citizen.CreateThread(function()
     -- =------------------------ [DLC: Gunrunning] -----------------------=
     -- ====================================================================
     GunrunningBunker.LoadDefault()  -- 892.6384, -3245.8664, -98.2645
-    GunrunningYacht.Enable(true)    -- -1363.724, 6734.108, 2.44598
+    GunrunningYacht.LoadDefault()   -- -1363.724, 6734.108, 2.44598
     
     -- ====================================================================
     -- =---------------------- [DLC: Smuggler's Run] ---------------------=

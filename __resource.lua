@@ -3,7 +3,7 @@
 -- ---------------------------------------------------------
 --
 -- Author: Bob_74
--- Version: 2.0.7b
+-- Version: 2.0.8
 -- 
 -- Resources:
 -- **********
@@ -14,16 +14,20 @@
 resource_manifest_version '05cfa83c-a124-4cfa-a768-c24a5811d8f9'
 
 client_script "lib/common.lua"
+client_script "lib/observers/interiorIdObserver.lua"
+client_script "lib/observers/officeSafeDoorHandler.lua"
 client_script "client.lua"
 
 
 -- GTA V
 client_script "gtav/base.lua"   -- Base IPLs to fix holes
 client_script "gtav/ammunations.lua"
+client_script "gtav/bahama.lua"
 client_script "gtav/floyd.lua"
 client_script "gtav/franklin.lua"
 client_script "gtav/franklin_aunt.lua"
 client_script "gtav/graffitis.lua"
+client_script "gtav/pillbox_hospital.lua"
 client_script "gtav/lester_factory.lua"
 client_script "gtav/michael.lua"
 client_script "gtav/north_yankton.lua"

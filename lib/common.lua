@@ -1,6 +1,61 @@
+-- Global variables
+Global = {
+    currentInteriorId = 0,
+
+    -- The current interior is set to True by 'interiorIdObserver'
+    Online = {
+        isInsideApartmentHi1 = false,
+        isInsideApartmentHi2 = false,
+        isInsideHouseHi1 = false,
+        isInsideHouseHi2 = false,
+        isInsideHouseHi3 = false,
+        isInsideHouseHi4 = false,
+        isInsideHouseHi5 = false,
+        isInsideHouseHi6 = false,
+        isInsideHouseHi7 = false,
+        isInsideHouseHi8 = false,
+        isInsideHouseLow1 = false,
+        isInsideHouseMid1 = false
+    },
+    Biker = {
+        isInsideClubhouse1 = false,
+        isInsideClubhouse2 = false
+    },
+    FinanceOffices = {
+        isInsideOffice1 = false,
+        isInsideOffice2 = false,
+        isInsideOffice3 = false,
+        isInsideOffice4 = false
+    },
+    HighLife = {
+        isInsideApartment1 = false,
+        isInsideApartment2 = false,
+        isInsideApartment3 = false,
+        isInsideApartment4 = false,
+        isInsideApartment5 = false,
+        isInsideApartment6 = false
+        
+    },
+
+
+    -- Set all interiors variables to false
+    -- The loop inside 'interiorIdObserver' will set them to true
+    ResetInteriorVariables = function()
+        for key, variable in pairs(Global.Biker) do variable = false end
+        for key, variable in pairs(Global.FinanceOffices) do variable = false end
+        for key, variable in pairs(Global.HighLife) do variable = false end
+    end
+}
+
+
+
+
+exports('GVariables', function()
+    return Global
+end)
 
 exports('EnableIpl', function(ipl, activate)
-    EnableIpl(ipl, activate)
+    return EnableIpl(ipl, activate)
 end)
 
 exports('GetPedheadshotTexture', function(ped)
@@ -81,27 +136,6 @@ function DrawEmptyRect(name, model)
     end
 
     return true
-end
-
---[[
-    TO REMOVE
-]]--
-function LoadEmptyScaleform(renderTarget, prop, scaleform, sfFunction)
-    local renderId = CreateNamedRenderTargetForModel(renderTarget, prop)
-    local gfxHandle = -1
-
-    SetTextRenderId(renderId)
-    SetTextRenderId(GetDefaultScriptRendertargetRenderId())
-
-    if (scaleform ~= nil) then
-        gfxHandle = RequestScaleformMovie(scaleform)
-    end
-
-    if (sfFunction ~= nil) then
-        BeginScaleformMovieMethod(gfxHandle, sfFunction)
-        PushScaleformMovieMethodParameterInt(-1)
-        EndScaleformMovieMethod()
-    end
 end
 
 function SetupScaleform(movieId, scaleformFunction, parameters)

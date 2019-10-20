@@ -7,24 +7,26 @@ end)
 
 FinanceOffice3 = {
     currentInteriorId = -1,
-
+    currentSafeDoors = {hashL = "", hashR = ""},
+    
     Style = {
         Theme = {
-            warm = {interiorId = 240897, ipl = "ex_sm_13_office_01a"},
-            classical = {interiorId = 241153, ipl = "ex_sm_13_office_01b"},
-            vintage = {interiorId = 241409, ipl = "ex_sm_13_office_01c"},
-            contrast = {interiorId = 241665, ipl = "ex_sm_13_office_02a"},
-            rich = {interiorId = 241921, ipl = "ex_sm_13_office_02b"},
-            cool = {interiorId = 242177, ipl = "ex_sm_13_office_02c"},
-            ice = {interiorId = 242433, ipl = "ex_sm_13_office_03a"},
-            conservative = {interiorId = 242689, ipl = "ex_sm_13_office_03b"},
-            polished = {interiorId = 242945, ipl = "ex_sm_13_office_03c"}
+            warm = {interiorId = 240897, ipl = "ex_sm_13_office_01a", safe = "ex_prop_safedoor_office1a"},
+            classical = {interiorId = 241153, ipl = "ex_sm_13_office_01b", safe = "ex_prop_safedoor_office1b"},
+            vintage = {interiorId = 241409, ipl = "ex_sm_13_office_01c", safe = "ex_prop_safedoor_office1c"},
+            contrast = {interiorId = 241665, ipl = "ex_sm_13_office_02a", safe = "ex_prop_safedoor_office2a"},
+            rich = {interiorId = 241921, ipl = "ex_sm_13_office_02b", safe = "ex_prop_safedoor_office2a"},
+            cool = {interiorId = 242177, ipl = "ex_sm_13_office_02c", safe = "ex_prop_safedoor_office2a"},
+            ice = {interiorId = 242433, ipl = "ex_sm_13_office_03a", safe = "ex_prop_safedoor_office3a"},
+            conservative = {interiorId = 242689, ipl = "ex_sm_13_office_03b", safe = "ex_prop_safedoor_office3a"},
+            polished = {interiorId = 242945, ipl = "ex_sm_13_office_03c", safe = "ex_prop_safedoor_office3c"}
         },
         Set = function(style, refresh)
             if (refresh == nil) then refresh = false end
             if (IsTable(style)) then
                 FinanceOffice3.Style.Clear()
                 FinanceOffice3.currentInteriorId = style.interiorId
+                FinanceOffice3.currentSafeDoors = {hashL = GetHashKey(style.safe .. "_l"), hashR = GetHashKey(style.safe .. "_r")}
                 EnableIpl(style.ipl, true)
                 if (refresh) then RefreshInterior(style.interiorId) end
             end
@@ -38,8 +40,72 @@ FinanceOffice3 = {
                 end
                 SetIplPropState(themeValue.interiorId, "office_chairs", false, false)
                 SetIplPropState(themeValue.interiorId, "office_booze", false, true)
+                FinanceOffice3.currentSafeDoors = {hashL = 0, hashR = 0}
                 EnableIpl(themeValue.ipl, false)
             end
+        end
+    },
+    Safe = {
+        doorHeadingL = 126.0, -- Only need the heading of the Left door to get the Right ones
+        Position = {x = -1554.08, y = -573.7122, z = 108.5272}, -- Approximately between the two doors
+
+        -- These values are checked from "doorHandler.lua" and
+        isLeftDoorOpen = false, isRightDoorOpen = false,
+
+        -- Safe door API
+        Open = function(doorSide)
+            if (doorSide:lower() == "left") then FinanceOffice3.Safe.isLeftDoorOpen = true
+            elseif (doorSide:lower() == "right") then FinanceOffice3.Safe.isRightDoorOpen = true
+            else
+                Citizen.Trace("[bob74_ipl] Warning: " .. doorSide .. " is not a correct value. Valid values are:")
+                Citizen.Trace("left right")
+            end
+        end,
+        Close = function(doorSide)
+            if (doorSide:lower() == "left") then FinanceOffice3.Safe.isLeftDoorOpen = false
+            elseif (doorSide:lower() == "right") then FinanceOffice3.Safe.isRightDoorOpen = false
+            else
+                Citizen.Trace("[bob74_ipl] Warning: " .. doorSide .. " is not a correct value. Valid values are:")
+                Citizen.Trace("left right")
+            end
+        end,
+
+        -- Internal use only
+        SetDoorState = function(doorSide, open)
+            local doorHandle = 0
+            local heading = FinanceOffice3.Safe.doorHeadingL
+
+            if (doorSide:lower() == "left") then
+                doorHandle = FinanceOffice3.Safe.GetDoorHandle(FinanceOffice3.currentSafeDoors.hashL)
+                if (open) then heading = heading - 90.0 end
+            elseif (doorSide:lower() == "right") then
+                doorHandle = FinanceOffice3.Safe.GetDoorHandle(FinanceOffice3.currentSafeDoors.hashR)
+                heading = heading - 180
+                if (open) then heading = heading + 90.0 end
+            end
+
+            if (doorHandle == 0) then
+                Citizen.Trace("[bob74_ipl] Warning: " .. doorSide .. " safe door handle is 0")
+                return
+            end
+
+            SetEntityHeading(doorHandle, heading)
+        end,
+
+        -- /!\ handle changes whenever the interior is refreshed /!\
+        GetDoorHandle = function(doorHash)
+            local timeout = 4
+            local doorHandle = GetClosestObjectOfType(FinanceOffice3.Safe.Position.x, FinanceOffice3.Safe.Position.y, FinanceOffice3.Safe.Position.z, 5.0, doorHash, false, false, false)
+
+            while (doorHandle == 0) do
+                Wait(25)
+                doorHandle = GetClosestObjectOfType(FinanceOffice3.Safe.Position.x, FinanceOffice3.Safe.Position.y, FinanceOffice3.Safe.Position.z, 5.0, doorHash, false, false, false)
+                timeout = timeout - 1
+                if (timeout <= 0) then
+                    break
+                end
+            end
+            return doorHandle
         end
     },
     Swag = {

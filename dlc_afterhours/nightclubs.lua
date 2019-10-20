@@ -195,6 +195,32 @@ AfterHoursNightclubs = {
                 SetInteriorPropColor(AfterHoursNightclubs.interiorId, trophy, color)
             end
         },
+        DryIce = {
+            scale = 5.0,
+            Emitters = {
+                {pos = {x = -1602.932, y = -3019.1, z = -79.99}, rot = {x = 0.0, y = -10.0, z = 66.0}},
+                {pos = {x = -1593.238, y = -3017.05, z = -79.99}, rot = {x = 0.0, y = -10.0, z = 110.0}},
+                {pos = {x = -1597.134, y = -3008.2, z = -79.99}, rot = {x = 0.0, y = -10.0, z = -122.53}},
+                {pos = {x = -1589.966, y = -3008.518, z = -79.99}, rot = {x = 0.0, y = -10.0, z = -166.97}}
+            },
+            Enable = function(state)
+                if (state) then
+                    RequestNamedPtfxAsset("scr_ba_club")
+                    while not HasNamedPtfxAssetLoaded("scr_ba_club") do
+                        Wait(0)
+                    end
+                    for key, emitter in pairs(AfterHoursNightclubs.Interior.DryIce.Emitters) do
+                        UseParticleFxAssetNextCall("scr_ba_club")
+                        StartParticleFxLoopedAtCoord("scr_ba_club_smoke_machine", emitter.pos.x, emitter.pos.y, emitter.pos.z, emitter.rot.x, emitter.rot.y, emitter.rot.z, AfterHoursNightclubs.Interior.DryIce.scale, false, false, false, true)
+                    end
+                else
+                    local radius = 1.0
+                    for key, emitter in pairs(AfterHoursNightclubs.Interior.DryIce.Emitters) do
+                        RemoveParticleFxInRange(emitter.pos.x, emitter.pos.y, emitter.pos.z, radius)
+                    end
+                end
+            end,
+        },
         Details = {
             clutter = "Int01_ba_Clutter",               -- Clutter and graffitis
             worklamps = "Int01_ba_Worklamps",           -- Work lamps + trash
