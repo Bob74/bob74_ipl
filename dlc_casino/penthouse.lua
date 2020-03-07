@@ -33,7 +33,7 @@ DiamondPenthouse = {
             pattern04 = "Set_Pent_Pattern_04", pattern05 = "Set_Pent_Pattern_05", pattern06 = "Set_Pent_Pattern_06",
             pattern07 = "Set_Pent_Pattern_07", pattern08 = "Set_Pent_Pattern_08", pattern09 = "Set_Pent_Pattern_09",
             Set = function(pattern, refresh)
-                DiamondPenthouse.Interior.Pattern.Clear(true)
+                DiamondPenthouse.Interior.Pattern.Clear(false)
                 SetIplPropState(DiamondPenthouse.interiorId, pattern, true, refresh)
             end,
             Clear = function(refresh)
@@ -47,7 +47,7 @@ DiamondPenthouse = {
         SpaBar = {
             open = "Set_Pent_Spa_Bar_Open", closed = "Set_Pent_Spa_Bar_Closed",
             Set = function(state, refresh)
-                DiamondPenthouse.Interior.SpaBar.Clear(true)
+                DiamondPenthouse.Interior.SpaBar.Clear(false)
                 SetIplPropState(DiamondPenthouse.interiorId, state, true, refresh)
             end,
             Clear = function(refresh)
@@ -61,7 +61,7 @@ DiamondPenthouse = {
         MediaBar = {
             open = "Set_Pent_Media_Bar_Open", closed = "Set_Pent_Media_Bar_Closed",
             Set = function(state, refresh)
-                DiamondPenthouse.Interior.MediaBar.Clear(true)
+                DiamondPenthouse.Interior.MediaBar.Clear(false)
                 SetIplPropState(DiamondPenthouse.interiorId, state, true, refresh)
             end,
             Clear = function(refresh)
@@ -75,7 +75,7 @@ DiamondPenthouse = {
         Dealer = {
             open = "Set_Pent_Dealer", closed = "Set_Pent_NoDealer",
             Set = function(state, refresh)
-                DiamondPenthouse.Interior.Dealer.Clear(true)
+                DiamondPenthouse.Interior.Dealer.Clear(false)
                 SetIplPropState(DiamondPenthouse.interiorId, state, true, refresh)
             end,
             Clear = function(refresh)
@@ -89,7 +89,7 @@ DiamondPenthouse = {
         Arcade = {
             none = "", retro = "Set_Pent_Arcade_Retro", modern = "Set_Pent_Arcade_Modern",
             Set = function(arcade, refresh)
-                DiamondPenthouse.Interior.Arcade.Clear(true)
+                DiamondPenthouse.Interior.Arcade.Clear(false)
                 SetIplPropState(DiamondPenthouse.interiorId, arcade, true, refresh)
             end,
             Clear = function(refresh)
@@ -117,7 +117,7 @@ DiamondPenthouse = {
         BarLight = {
             none = "", light0 = "set_pent_bar_light_0", light1 = "set_pent_bar_light_01", light2 = "set_pent_bar_light_02",
             Set = function(light, refresh)
-                DiamondPenthouse.Interior.BarLight.Clear(true)
+                DiamondPenthouse.Interior.BarLight.Clear(false)
                 SetIplPropState(DiamondPenthouse.interiorId, light, true, refresh)
             end,
             Clear = function(refresh)
@@ -131,7 +131,7 @@ DiamondPenthouse = {
         BarParty = {
             none = "", party0 = "set_pent_bar_party_0", party1 = "set_pent_bar_party_1", party2 = "set_pent_bar_party_2", partyafter = "set_pent_bar_party_after",
             Set = function(party, refresh)
-                DiamondPenthouse.Interior.BarParty.Clear(true)
+                DiamondPenthouse.Interior.BarParty.Clear(false)
                 SetIplPropState(DiamondPenthouse.interiorId, party, true, refresh)
             end,
             Clear = function(refresh)
@@ -142,6 +142,108 @@ DiamondPenthouse = {
                 end
             end
         },
+        Blockers = {
+            Guest = {
+                enabled = "Set_Pent_GUEST_BLOCKER", disabled = "",
+                Set = function(blocker, refresh)
+                    DiamondPenthouse.Interior.Blockers.Guest.Clear(false)
+                    SetIplPropState(DiamondPenthouse.interiorId, blocker, true, refresh)
+                end,
+                Clear = function(refresh)
+                    for key, value in pairs(DiamondPenthouse.Interior.Blockers.Guest) do
+                        if (type(value) == "string") then
+                            SetIplPropState(DiamondPenthouse.interiorId, value, false, refresh)
+                        end
+                    end
+                end
+            },
+            Lounge = {
+                enabled = "Set_Pent_LOUNGE_BLOCKER", disabled = "",
+                Set = function(blocker, refresh)
+                    DiamondPenthouse.Interior.Blockers.Lounge.Clear(false)
+                    SetIplPropState(DiamondPenthouse.interiorId, blocker, true, refresh)
+                end,
+                Clear = function(refresh)
+                    for key, value in pairs(DiamondPenthouse.Interior.Blockers.Lounge) do
+                        if (type(value) == "string") then
+                            SetIplPropState(DiamondPenthouse.interiorId, value, false, refresh)
+                        end
+                    end
+                end
+            },
+            Office = {
+                enabled = "Set_Pent_OFFICE_BLOCKER", disabled = "",
+                Set = function(blocker, refresh)
+                    DiamondPenthouse.Interior.Blockers.Office.Clear(false)
+                    SetIplPropState(DiamondPenthouse.interiorId, blocker, true, refresh)
+                end,
+                Clear = function(refresh)
+                    for key, value in pairs(DiamondPenthouse.Interior.Blockers.Office) do
+                        if (type(value) == "string") then
+                            SetIplPropState(DiamondPenthouse.interiorId, value, false, refresh)
+                        end
+                    end
+                end
+            },
+            Cinema = {
+                enabled = "Set_Pent_CINE_BLOCKER", disabled = "",
+                Set = function(blocker, refresh)
+                    DiamondPenthouse.Interior.Blockers.Cinema.Clear(false)
+                    SetIplPropState(DiamondPenthouse.interiorId, blocker, true, refresh)
+                end,
+                Clear = function(refresh)
+                    for key, value in pairs(DiamondPenthouse.Interior.Blockers.Cinema) do
+                        if (type(value) == "string") then
+                            SetIplPropState(DiamondPenthouse.interiorId, value, false, refresh)
+                        end
+                    end
+                end
+            },
+            Spa = {
+                enabled = "Set_Pent_SPA_BLOCKER", disabled = "",
+                Set = function(blocker, refresh)
+                    DiamondPenthouse.Interior.Blockers.Spa.Clear(false)
+                    SetIplPropState(DiamondPenthouse.interiorId, blocker, true, refresh)
+                end,
+                Clear = function(refresh)
+                    for key, value in pairs(DiamondPenthouse.Interior.Blockers.Spa) do
+                        if (type(value) == "string") then
+                            SetIplPropState(DiamondPenthouse.interiorId, value, false, refresh)
+                        end
+                    end
+                end
+            },
+            Bar = {
+                enabled = "Set_Pent_BAR_BLOCKER", disabled = "",
+                Set = function(blocker, refresh)
+                    DiamondPenthouse.Interior.Blockers.Bar.Clear(false)
+                    SetIplPropState(DiamondPenthouse.interiorId, blocker, true, refresh)
+                end,
+                Clear = function(refresh)
+                    for key, value in pairs(DiamondPenthouse.Interior.Blockers.Bar) do
+                        if (type(value) == "string") then
+                            SetIplPropState(DiamondPenthouse.interiorId, value, false, refresh)
+                        end
+                    end
+                end
+            },
+            EnableAllBlockers = function()
+                DiamondPenthouse.Interior.Blockers.Bar.Set(DiamondPenthouse.Interior.Blockers.Bar.enabled)
+                DiamondPenthouse.Interior.Blockers.Guest.Set(DiamondPenthouse.Interior.Blockers.Guest.enabled)
+                DiamondPenthouse.Interior.Blockers.Spa.Set(DiamondPenthouse.Interior.Blockers.Spa.enabled)
+                DiamondPenthouse.Interior.Blockers.Cinema.Set(DiamondPenthouse.Interior.Blockers.Cinema.enabled)
+                DiamondPenthouse.Interior.Blockers.Lounge.Set(DiamondPenthouse.Interior.Blockers.Lounge.enabled)
+                DiamondPenthouse.Interior.Blockers.Office.Set(DiamondPenthouse.Interior.Blockers.Office.enabled)
+            end,
+            DisableAllBlockers = function()
+                DiamondPenthouse.Interior.Blockers.Bar.Set(DiamondPenthouse.Interior.Blockers.Bar.disabled)
+                DiamondPenthouse.Interior.Blockers.Guest.Set(DiamondPenthouse.Interior.Blockers.Guest.disabled)
+                DiamondPenthouse.Interior.Blockers.Spa.Set(DiamondPenthouse.Interior.Blockers.Spa.disabled)
+                DiamondPenthouse.Interior.Blockers.Cinema.Set(DiamondPenthouse.Interior.Blockers.Cinema.disabled)
+                DiamondPenthouse.Interior.Blockers.Lounge.Set(DiamondPenthouse.Interior.Blockers.Lounge.disabled)
+                DiamondPenthouse.Interior.Blockers.Office.Set(DiamondPenthouse.Interior.Blockers.Office.disabled)
+            end
+        }
     },
 
     LoadDefault = function()
