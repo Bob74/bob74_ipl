@@ -105,3 +105,7 @@ client_script "dlc_doomsday/facility.lua"
 
 -- DLC After Hours
 client_script "dlc_afterhours/nightclubs.lua"
+
+-- DLC Diamond Casino
+client_script "dlc_casino/casino.lua"
+client_script "dlc_casino/penthouse.lua"
