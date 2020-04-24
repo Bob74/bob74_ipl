@@ -92,4 +92,6 @@ Citizen.CreateThread(function()
     RequestIpl("canyonriver01")
     RequestIpl("canyonriver01_lod")
 
+    -- Ferris wheel
+    RequestIpl("ferris_finale_anim")
 end)

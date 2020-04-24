@@ -12,13 +12,13 @@ Citizen.CreateThread(function()
 
     -- Franklin's aunt: -9.96562, -1438.54, 31.1015
     FranklinAunt.LoadDefault()
-	
-	-- Franklin
+
+    -- Franklin
     Franklin.LoadDefault()
-		
-	--Floyd: -1150.703, -1520.713, 10.633
+
+    -- Floyd: -1150.703, -1520.713, 10.633
     Floyd.LoadDefault()
-	
+
     -- Trevor: 1985.48132, 3828.76757, 32.5
     TrevorsTrailer.LoadDefault()
 
