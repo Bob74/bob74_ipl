@@ -6,8 +6,5 @@ end)
 
 PillboxHospital = {
     ipl = "rc12b_default",
-
-    Enable = function(state)
-        EnableIpl(PillboxHospital.ipl, state)
-    end
+    Enable = function(state) EnableIpl(PillboxHospital.ipl, state) end
 }
