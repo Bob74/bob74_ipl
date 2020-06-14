@@ -5,7 +5,7 @@
 -- Interior ID list : 	https://wiki.gt-mp.net/index.php/InteriorIDList
 
 fx_version 'bodacious'
-games { 'gta5' }
+game 'gta5'
 
 author 'Bob_74'
 description 'Load and customize your map'
