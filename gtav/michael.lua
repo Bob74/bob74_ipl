@@ -1,5 +1,5 @@
 
-exports('GetMichaelbject', function()
+exports('GetMichaelObject', function()
     return Michael
 end)
 
