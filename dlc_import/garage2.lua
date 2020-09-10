@@ -114,9 +114,9 @@ ImportCEOGarage2 = {
         ImportCEOGarage2.Part.Load(ImportCEOGarage2.Part.Garage1)
         ImportCEOGarage2.Style.Set(ImportCEOGarage2.Part.Garage1, ImportCEOGarage2.Style.concrete, false)
         ImportCEOGarage2.Numbering.Set(ImportCEOGarage2.Part.Garage1, ImportCEOGarage2.Numbering.Level1.style1, false)
-        ImportCEOGarage2.Lighting.Set(ImportCEOGarage2.Part.Garage1, ImportCEOGarage2.Lighting.style1, false)
+        ImportCEOGarage2.Lighting.Set(ImportCEOGarage2.Part.Garage1, ImportCEOGarage2.Lighting.style1, true)
         
         ImportCEOGarage2.Part.Load(ImportCEOGarage2.Part.ModShop)
-        ImportCEOGarage2.ModShop.Floor.Set(ImportCEOGarage2.ModShop.Floor.default, false)
+        ImportCEOGarage2.ModShop.Floor.Set(ImportCEOGarage2.ModShop.Floor.default, true)
     end
 }
