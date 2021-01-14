@@ -27,7 +27,7 @@ NorthYankton = {
 		"prologue06b",
 		"prologue06_int",
 		"prologuerd",
-		"prologuerdb ",
+		"prologuerdb",
 		"prologue_DistantLights",
 		"prologue_LODLights",
 		"prologue_m2_door"
