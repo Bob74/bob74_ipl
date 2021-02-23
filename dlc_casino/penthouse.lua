@@ -25,7 +25,7 @@ DiamondPenthouse = {
         Walls = {
             SetColor = function(color, refresh)
                 SetInteriorEntitySetColor(DiamondPenthouse.interiorId, "Set_Pent_Tint_Shell", color)
-                if (refresh) then RefreshInterior(DoomsdayFacility.interiorId) end
+                if (refresh) then RefreshInterior(DiamondPenthouse.interiorId) end
             end
         },
         Pattern = {
