@@ -103,4 +103,8 @@ client_scripts {
 
 	-- DLC After Hours
 	, "dlc_afterhours/nightclubs.lua"
+	
+	-- DLC Diamond Casino
+	, "dlc_casino/casino.lua"
+	, "dlc_casino/penthouse.lua"
 }
