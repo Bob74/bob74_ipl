@@ -1,4 +1,4 @@
-# Fix Holes In The Map (Updated to After Hours DLC)
+# Fix Holes In The Map (Updated to Diamond Casino DLC)
 
 The purpose of this script is to fix the holes in the map by loading zones that aren’t loaded by default. I’ve added quite a lot of places to load, based on [Mikeeh’s script](https://forum.fivem.net/t/release-load-unloaded-ipls/5911). If you just want to fix the holes in the map, then use this resource as provided.
 
@@ -45,6 +45,25 @@ This resource has been completely rewritten from scratch since v2.0. You can cus
 
 <details><summary>Click to view</summary>
 (DD/MM/YYYY)
+
+---
+
+19/07/2021 - 2.0.10
+- Added Diamond Casino IPLs: Casino, Garage, VIP garage, Penthouse
+- Import: Forced refresh of CEO Garages
+- Updated fxmanifest fx_version to cerulean
+- Updated IPL list link in fxmanifest nad removed outdated Props list and Interior ID list
+- Fixed export typo in `michael.lua`
+- Removed unnecessary space in north_yankton IPL
+
+27/05/2020 - 2.0.9a
+- Fixed disabling Pillbox Hospital
+- Fixed `ResetInteriorVariables`
+
+23/04/2020 - 2.0.9
+- Replaced deprecated __resource.lua with fxmanifest.lua
+- Added ferris wheel on the Del Perro Pier
+- Reformatted client.lua
 
 20/10/2019 - 2.0.8
 - Nightclubs: Added dry ice emitters
