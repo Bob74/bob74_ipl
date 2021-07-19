@@ -1,15 +1,13 @@
 -- Resources:
 -- **********
--- IPL list:			https://wiki.gt-mp.net/index.php/Online_Interiors_and_locations
--- Props list:			https://wiki.gt-mp.net/index.php/InteriorPropList
--- Interior ID list : 	https://wiki.gt-mp.net/index.php/InteriorIDList
+-- IPL list: https://wiki.rage.mp/index.php?title=Interiors_and_Locations
 
-fx_version 'bodacious'
+fx_version 'cerulean'
 game 'gta5'
 
 author 'Bob_74'
 description 'Load and customize your map'
-version '2.0.9a'
+version '2.0.10'
 
 client_scripts {
 	"lib/common.lua"
@@ -104,7 +102,7 @@ client_scripts {
 	-- DLC After Hours
 	, "dlc_afterhours/nightclubs.lua"
 	
-	-- DLC Diamond Casino
+	-- DLC Diamond Casino (Requires forced build 2060 or higher)
 	, "dlc_casino/casino.lua"
 	, "dlc_casino/penthouse.lua"
 }
