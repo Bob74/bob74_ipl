@@ -40,9 +40,9 @@ FinanceOrganization = {
         end,
         Enable = function(state)
             FinanceOrganization.Office.needToLoad = state
-			if FinanceOrganization.Office.needToLoad then
-				FinanceOrganizationLoop()
-			end
+            if FinanceOrganization.Office.needToLoad then
+                FinanceOrganizationLoop()
+            end
         end,
         Clear = function()
             if IsNamedRendertargetRegistered(FinanceOrganization.Office.target) then
