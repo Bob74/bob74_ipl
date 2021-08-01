@@ -48,6 +48,12 @@ This resource has been completely rewritten from scratch since v2.0. You can cus
 
 ---
 
+01/08/2021 - 2.0.10a
+- Imporoved performance of script
+- Fixed hole in the FIB fountain
+- Fixed error appearing if casino IPL is loaded, but the game build is not sufficient
+- Fixed a few typos in the README file
+
 19/07/2021 - 2.0.10
 - Added Diamond Casino IPLs: Casino, Garage, VIP garage, Penthouse
 - Import: Forced refresh of CEO Garages
@@ -75,7 +81,7 @@ This resource has been completely rewritten from scratch since v2.0. You can cus
 - Cleaned and optimized the code
 
 22/03/2019 - 2.0.7c
-- CEO Offices: Changed the default loaded garage to ImportCEOGarage4.Part.Garage2 in order to avoid Office glitchs
+- CEO Offices: Changed the default loaded garage to ImportCEOGarage4.Part.Garage2 in order to avoid Office glitches
 
 15/01/2019 - 2.0.7b
 - Nightclubs: Fixed a typo for the fake lights
@@ -95,26 +101,26 @@ This resource has been completely rewritten from scratch since v2.0. You can cus
 - Fixed the name of the BikerClubhouse1 export
 
 19/12/2018 - 2.0.5
-- Fixed a typo which prevent the printers, security stuff and cash piles to spawn in the counterfeit cash factory
+- Fixed a typo that prevents the printers, security stuff, and cash piles to spawn in the counterfeit cash factory
 
 10/11/2018 - 2.0.4
 - Fixed an issue where the clubhouse2 lower walls wouldn’t be colored on the first resource start
 - Fixed gang members names using an old format
-- Disabled the Mod shop from CEO garage 3 (ImportCEOGarage3) because it is overlaping with CEO office 3 (FinanceOffice3)
+- Disabled the Mod shop from CEO garage 3 (ImportCEOGarage3) because it is overlapping with CEO office 3 (FinanceOffice3)
 
 - 08/11/2018 - 2.0.3
-Added biker gang’s name, missions and members pictures
+Added biker gang’s name, missions, and members pictures
 - Added CEO office organization’s name
 
 05/11/2018 - 2.0.1
-- Removed overlaping Zancudo River
+- Removed overlapping Zancudo River
 - Added the trailer near Zancudo River
 
 04/11/2018 - 2.0.0
-- Plugin totaly rewritten
+- Plugin totally rewritten
 - Support for all DLC (up to The Doomsday Heist)
 - Ability to easily customize story mode and online purchasable interiors
-- You can still use it as it is if you want ipl and interiors to be loaded, the plugin sets a default style for each ones
+- You can still use it as it is if you want IPL and interiors to be loaded, the plugin sets a default style for each one
 - Check out the Wiki to find out how: https://github.com/Bob74/bob74_ipl/wiki
 
 26/06/2017
@@ -124,12 +130,12 @@ Added biker gang’s name, missions and members pictures
 - CEO Offices
 - Bikers places (some are still buggy)
 - Import/Export locations
-- Removed the trick to open Lost’s safehouse since last update already opens it
+- Removed the trick to open Lost’s safehouse since the last update already opens it
 
 19/06/2017
 - Fix hole in Zancudo River
 - Fix hole in Cassidy Creek
-- Add optional graffitis on some billboards (enabled by default)
+- Add optional graffiti on some billboards (enabled by default)
 - Opened Lost’s safehouse interior
 
 14/06/2017
