@@ -40,6 +40,9 @@ FinanceOrganization = {
         end,
         Enable = function(state)
             FinanceOrganization.Office.needToLoad = state
+			if FinanceOrganization.Office.needToLoad then
+				FinanceOrganizationLoop()
+			end
         end,
         Clear = function()
             if IsNamedRendertargetRegistered(FinanceOrganization.Office.target) then
@@ -57,29 +60,31 @@ FinanceOrganization = {
 
 Citizen.CreateThread(function()
     FinanceOrganization.Office.Init()
-
-    while true do
-        if FinanceOrganization.Office.needToLoad then
-            -- Need to load
-            if (Global.FinanceOffices.isInsideOffice1 or Global.FinanceOffices.isInsideOffice2 or
-                Global.FinanceOffices.isInsideOffice3 or Global.FinanceOffices.isInsideOffice4) then
-                DrawOrganizationName(FinanceOrganization.Name.name, FinanceOrganization.Name.style, FinanceOrganization.Name.color, FinanceOrganization.Name.font)
-                FinanceOrganization.Office.loaded = true
-                Wait(0) -- We need to call all this every frame
-            else
-                Wait(1000) -- We are not inside an office
-            end
-        elseif FinanceOrganization.Office.loaded then
-            -- Loaded and need to unload
-            FinanceOrganization.Office.Clear()
-            FinanceOrganization.Office.loaded = false
-            Wait(1000) -- We can wait longer when we don't need to display text
-        else
-            -- Not needed to load
-            Wait(1000) -- We can wait longer when we don't need to display text
-        end
-    end
 end)
+
+function FinanceOrganizationLoop()
+	Citizen.CreateThread(function()
+		while FinanceOrganization.Office.needToLoad do
+			if FinanceOrganization.Office.needToLoad then
+				-- Need to load
+				if (Global.FinanceOffices.isInsideOffice1 or Global.FinanceOffices.isInsideOffice2 or
+					Global.FinanceOffices.isInsideOffice3 or Global.FinanceOffices.isInsideOffice4) then
+					DrawOrganizationName(FinanceOrganization.Name.name, FinanceOrganization.Name.style, FinanceOrganization.Name.color, FinanceOrganization.Name.font)
+					FinanceOrganization.Office.loaded = true
+					Wait(0) -- We need to call all this every frame
+				else
+					Wait(1000) -- We are not inside an office
+				end
+			elseif FinanceOrganization.Office.loaded then
+				-- Loaded and need to unload
+				FinanceOrganization.Office.Clear()
+				FinanceOrganization.Office.loaded = false
+				Wait(1000) -- We can wait longer when we don't need to display text
+			end
+		end
+	end)
+end
+
 
 function DrawOrganizationName(name, style, color, font)
     if FinanceOrganization.Office.stage == 0 then
