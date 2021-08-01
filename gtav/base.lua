@@ -30,10 +30,10 @@ Citizen.CreateThread(function()
     -- FIB lobby: 105.4557, -745.4835, 44.7548
     RequestIpl("FIBlobby")
 
-	--Fib Fountain 174.184,-667.902,43.140
-	RemoveIpl('dt1_05_hc_end')
-	RemoveIpl('dt1_05_hc_req')
-	RequestIpl('dt1_05_hc_remove')
+    --- FIB Fountain 174.184, -667.902, 43.140
+    RemoveIpl('dt1_05_hc_end')
+    RemoveIpl('dt1_05_hc_req')
+    RequestIpl('dt1_05_hc_remove')
         
     -- Billboard: iFruit
     RequestIpl("FruitBB")
