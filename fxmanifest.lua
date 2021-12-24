@@ -105,4 +105,7 @@ client_scripts {
 	-- DLC Diamond Casino (Requires forced build 2060 or higher)
 	, "dlc_casino/casino.lua"
 	, "dlc_casino/penthouse.lua"
+	
+	-- DLC Tuners 
+	, "dlc_tuners/tuners.lua"
 }
