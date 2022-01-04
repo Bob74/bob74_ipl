@@ -36,7 +36,7 @@ GunrunningYacht = {
                         Wait(0)
                     end
 
-                    local water = CreateObjectNoOffset(GunrunningYacht.Water.modelHash, -1369.0, 6736.0, 5.40, true, true, false)
+                    local water = CreateObjectNoOffset(GunrunningYacht.Water.modelHash, -1369.0, 6736.0, 5.40, false, false, false)
                     SetEntityAsMissionEntity(water, false, false)
                 end
             else
