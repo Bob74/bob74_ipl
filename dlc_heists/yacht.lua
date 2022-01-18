@@ -36,7 +36,7 @@ HeistYacht = {
                         Wait(0)
                     end
         
-                    local water = CreateObjectNoOffset(HeistYacht.Water.modelHash, -2023.773, -1038.0, 5.40, true, true, false)
+                    local water = CreateObjectNoOffset(HeistYacht.Water.modelHash, -2023.773, -1038.0, 5.40, false, false, false)
                     SetEntityAsMissionEntity(water, false, false)
                 end
             else
