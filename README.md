@@ -48,6 +48,9 @@ This resource has been completely rewritten from scratch since v2.0. You can cus
 
 ---
 
+18/01/2022 - 2.0.10b
+- Change water in yachts to be non-networked.
+
 01/08/2021 - 2.0.10a
 - Improved performance
 - Fixed hole in the FIB fountain
