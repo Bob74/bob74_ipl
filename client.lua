@@ -144,5 +144,13 @@ Citizen.CreateThread(function()
         DiamondCasino.LoadDefault()                -- 1100.000, 220.000, -50.000
         DiamondPenthouse.LoadDefault()             -- 976.636, 70.295, 115.164
     end
-end)
 
+    -- ====================================================================
+    -- =------------------- [DLC: Los Santos Tuners] ---------------------=
+    -- ====================================================================
+    if GetGameBuildNumber() >= 2372 then
+        TunerGarage.LoadDefault()   -- -1350.0, 160.0, -100.0
+        TunerMethLab.LoadDefault()  -- 981.9999, -143.0, -50.0
+        TunerMeetup.LoadDefault()   -- -2000.0, 1113.211, -25.36243
+    end
+end)
