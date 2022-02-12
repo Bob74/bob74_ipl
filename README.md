@@ -48,6 +48,9 @@ This resource has been completely rewritten from scratch since v2.0. You can cus
 
 ---
 
+12/02/2022 - 2.0.12
+- Added Contract IPLs: Garage, Studio, Offices, Music Roof, Billboards
+
 07/02/2022 - 2.0.11
 - Added Tuners IPLs: Garage, Meth Lab, Meetup
 
