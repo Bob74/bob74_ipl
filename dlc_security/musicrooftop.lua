@@ -6,8 +6,7 @@ MpSecurityMusicRoofTop = {
     Ipl = {
         Interior = {
             ipl = {
-                'sf_billboards', -- -592.6896, 273.1052, 116.302444
-            }
+                'sf_musicrooftop',
         },
         Load = function ()
             EnableIpl(MpSecurityMusicRoofTop.Ipl.Interior.ipl, true)

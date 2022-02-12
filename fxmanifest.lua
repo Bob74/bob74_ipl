@@ -7,7 +7,7 @@ game 'gta5'
 
 author 'Bob_74'
 description 'Load and customize your map'
-version '2.0.12'
+version '2.0.13'
 
 client_scripts {
 	"lib/common.lua"
