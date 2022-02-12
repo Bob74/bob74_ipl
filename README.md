@@ -24,23 +24,6 @@ This resource has been completely rewritten from scratch since v2.0. You can cus
 - [Misc. Album](https://imgur.com/a/cs9Ip4d)
 - [IPL Fix Album](https://imgur.com/a/1Sfl4)
 
-## What's Missing
->Finance & Felony:
-> - Warehouses
->
-> Gunrunning:
-> - Mobile Operation Center
->
-> Doomsday Heist:
-> - Facility: emblem, screens
-> - Avenger interior
-> - Silo interior
-> - Base interior
->
-> After Hours:
-> - Basement
-> - Terrorbyte
-
 ## Changelog
 
 <details><summary>Click to view</summary>
