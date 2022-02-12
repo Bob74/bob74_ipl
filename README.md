@@ -47,6 +47,8 @@ This resource has been completely rewritten from scratch since v2.0. You can cus
 (DD/MM/YYYY)
 
 ---
+10/02/2022 - 2.0.12
+- Fix FIB roof
 
 07/02/2022 - 2.0.11
 - Added Tuners IPLs: Garage, Meth Lab, Meetup
