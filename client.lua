@@ -153,4 +153,18 @@ Citizen.CreateThread(function()
         TunerMethLab.LoadDefault()  -- 981.9999, -143.0, -50.0
         TunerMeetup.LoadDefault()   -- -2000.0, 1113.211, -25.36243
     end
+
+    -- ====================================================================
+    -- =------------------- [DLC: Los Santos The Contract] ---------------------=
+    -- ====================================================================
+    if GetGameBuildNumber() >= 2545 then
+        MpSecurityGarage.LoadDefault()   -- -1071.4387, -77.033875, -93.525505
+        MpSecurityMusicRoofTop.LoadDefault()   -- -592.6896, 273.1052, 116.302444
+        MpSecurityStudio.LoadDefault()   -- -1000.7252, -70.559875, -98.10669
+        MpSecurityBillboards.LoadDefault()   -- -592.6896, 273.1052, 116.302444
+        MpSecurityOffice1.LoadDefault()   -- -1021.86084, -427.74564, 68.95764
+        MpSecurityOffice2.LoadDefault()   -- 383.4156, -59.878227, 108.4595
+        MpSecurityOffice3.LoadDefault()   -- -1004.23035, -761.2084, 66.99069
+        MpSecurityOffice4.LoadDefault()   -- -587.87213, -716.84937, 118.10156
+    end
 end)
