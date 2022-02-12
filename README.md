@@ -47,6 +47,9 @@ This resource has been completely rewritten from scratch since v2.0. You can cus
 (DD/MM/YYYY)
 
 ---
+12/02/2022 - 2.0.13
+- Added Contract IPLs: Garage, Studio, Offices, Music Roof, Billboards
+
 10/02/2022 - 2.0.12
 - Fix FIB roof
 
