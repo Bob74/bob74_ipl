@@ -114,6 +114,7 @@ client_scripts {
 	-- DLC The Contract (Requires forced build 2545 or higher)
 	, "dlc_security/studio.lua"
 	, "dlc_security/billboards.lua"
+	, "dlc_security/musicrooftop.lua"
 	, "dlc_security/garage.lua"
 	, "dlc_security/office1.lua"
 	, "dlc_security/office2.lua"
