@@ -42,6 +42,10 @@ DiamondPenthouse = {
                         SetIplPropState(DiamondPenthouse.interiorId, value, false, refresh)
                     end
                 end
+            end,
+            SetColor = function(pattern, color, refresh)
+                SetInteriorEntitySetColor(DiamondPenthouse.interiorId, pattern, color)
+                if (refresh) then RefreshInterior(DiamondPenthouse.interiorId) end
             end
         },
         SpaBar = {
@@ -247,9 +251,15 @@ DiamondPenthouse = {
     },
 
     LoadDefault = function()
+        local styleColor = DiamondPenthouse.Colors.sharp
+        local stylePattern = DiamondPenthouse.Interior.Pattern.pattern01
+        
         DiamondPenthouse.Ipl.Interior.Load()
-
-        DiamondPenthouse.Interior.Walls.SetColor(DiamondPenthouse.Colors.default)
+        
+        DiamondPenthouse.Interior.Walls.SetColor(styleColor)
+        DiamondPenthouse.Interior.Pattern.Set(stylePattern)
+        DiamondPenthouse.Interior.Pattern.SetColor(stylePattern, styleColor)
+        
         DiamondPenthouse.Interior.SpaBar.Set(DiamondPenthouse.Interior.SpaBar.open)
         DiamondPenthouse.Interior.MediaBar.Set(DiamondPenthouse.Interior.MediaBar.open)
         DiamondPenthouse.Interior.Dealer.Set(DiamondPenthouse.Interior.Dealer.open)
