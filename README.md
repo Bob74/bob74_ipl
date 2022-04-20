@@ -30,6 +30,9 @@ This resource has been completely rewritten from scratch since v2.0. You can cus
 (DD/MM/YYYY)
 
 ---
+21/04/2022 - 2.0.14
+- Fix casino penthouse carpet patterns colors
+  
 12/02/2022 - 2.0.13a
 - Fix Music Roof
 
