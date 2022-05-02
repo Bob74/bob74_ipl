@@ -1,5 +1,4 @@
 -- Zancudo Gates (GTAO like): -1600.30100000 2806.73100000 18.79683000
-
 exports('GetZancudoGatesObject', function()
     return ZancudoGates
 end)

@@ -4,18 +4,20 @@ end)
 
 MpSecurityGarage = {
     InteriorId = 286721,
+
     Ipl = {
         Interior = {
             ipl = {
-                'sf_int_placement_sec_interior_2_dlc_garage_sec_milo_',
+                'sf_int_placement_sec_interior_2_dlc_garage_sec_milo_'
             }
         },
-        Load = function ()
+
+        Load = function()
             EnableIpl(MpSecurityGarage.Ipl.Interior.ipl, true)
         end,
         Remove = function()
             EnableIpl(MpSecurityGarage.Ipl.Interior.ipl, false)
-        end,
+        end
     },
     Entities = {
         Entity_Set_Workshop_Wall = false,
@@ -36,8 +38,8 @@ MpSecurityGarage = {
         Entity_Set_Art_3_NoMod = false,
         entity_set_tints = true,
         Entity_Set_Workshop_Lights = true,
-        
-        Set = function (name, state)
+
+        Set = function(name, state)
             for entity, _ in pairs(MpSecurityGarage.Entities) do
                 if entity == name then
                     MpSecurityGarage.Entities[entity] = state
@@ -46,24 +48,26 @@ MpSecurityGarage = {
                 end
             end
         end,
-        Load = function ()
+        Load = function()
             for entity, state in pairs(MpSecurityGarage.Entities) do
                 if type(entity) == 'string' and state then
                     ActivateInteriorEntitySet(MpSecurityGarage.InteriorId, entity)
                 end
             end
         end,
-        Clear = function ()
+        Clear = function()
             for entity, _ in pairs(MpSecurityGarage.Entities) do
                 if type(entity) == 'string' then
                     DeactivateInteriorEntitySet(MpSecurityGarage.InteriorId, entity)
                 end
             end
-        end,
+        end
     },
+
     LoadDefault = function()
         MpSecurityGarage.Ipl.Load()
         MpSecurityGarage.Entities.Load()
+
         RefreshInterior(MpSecurityGarage.interiorId)
     end
 }

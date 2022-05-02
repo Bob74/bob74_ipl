@@ -7,7 +7,9 @@ game 'gta5'
 
 author 'Bob_74'
 description 'Load and customize your map'
-version '2.0.13a'
+version '2.0.15'
+
+lua54 "yes"
 
 client_scripts {
 	"lib/common.lua"
@@ -101,7 +103,7 @@ client_scripts {
 
 	-- DLC After Hours
 	, "dlc_afterhours/nightclubs.lua"
-	
+
 	-- DLC Diamond Casino (Requires forced build 2060 or higher)
 	, "dlc_casino/casino.lua"
 	, "dlc_casino/penthouse.lua"
@@ -110,7 +112,7 @@ client_scripts {
 	, "dlc_tuner/garage.lua"
 	, "dlc_tuner/meetup.lua"
 	, "dlc_tuner/methlab.lua"
-	
+
 	-- DLC The Contract (Requires forced build 2545 or higher)
 	, "dlc_security/studio.lua"
 	, "dlc_security/billboards.lua"

@@ -4,18 +4,20 @@ end)
 
 MpSecurityOffice1 = {
     InteriorId = 287489,
+
     Ipl = {
         Interior = {
             ipl = {
-                'sf_fixeroffice_bh1_05',
+                'sf_fixeroffice_bh1_05'
             }
         },
-        Load = function ()
+
+        Load = function()
             EnableIpl(MpSecurityOffice1.Ipl.Interior.ipl, true)
         end,
         Remove = function()
             EnableIpl(MpSecurityOffice1.Ipl.Interior.ipl, false)
-        end,
+        end
     },
     Entities = {
         Entity_Set_Armoury = false,
@@ -69,8 +71,8 @@ MpSecurityOffice1 = {
         Entity_Set_Art_1 = true,
         Entity_Set_Art_2 = false,
         Entity_Set_Art_3 = false,
-        
-        Set = function (name, state)
+
+        Set = function(name, state)
             for entity, _ in pairs(MpSecurityOffice1.Entities) do
                 if entity == name then
                     MpSecurityOffice1.Entities[entity] = state
@@ -79,24 +81,26 @@ MpSecurityOffice1 = {
                 end
             end
         end,
-        Load = function ()
+        Load = function()
             for entity, state in pairs(MpSecurityOffice1.Entities) do
                 if type(entity) == 'string' and state then
                     ActivateInteriorEntitySet(MpSecurityOffice1.InteriorId, entity)
                 end
             end
         end,
-        Clear = function ()
+        Clear = function()
             for entity, _ in pairs(MpSecurityOffice1.Entities) do
                 if type(entity) == 'string' then
                     DeactivateInteriorEntitySet(MpSecurityOffice1.InteriorId, entity)
                 end
             end
-        end,
+        end
     },
+
     LoadDefault = function()
         MpSecurityOffice1.Ipl.Load()
         MpSecurityOffice1.Entities.Load()
+
         RefreshInterior(MpSecurityOffice1.interiorId)
     end
 }
