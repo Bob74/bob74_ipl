@@ -54,7 +54,7 @@ MpSecurityStudio = {
     LoadDefault = function()
         MpSecurityStudio.Ipl.Load()
         MpSecurityStudio.Entities.Load()
-        
+
         RefreshInterior(MpSecurityStudio.interiorId)
     end
 }

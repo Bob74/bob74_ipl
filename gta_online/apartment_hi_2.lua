@@ -6,7 +6,7 @@ end)
 
 GTAOApartmentHi2 = {
     interiorId = 145665,
-    
+
     Strip = {
         A = "Apart_Hi_Strip_A",
         B = "Apart_Hi_Strip_B",

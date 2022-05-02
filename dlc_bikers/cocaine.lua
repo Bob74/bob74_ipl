@@ -92,7 +92,7 @@ BikerCocaine = {
         BikerCocaine.Ipl.Interior.Load()
         BikerCocaine.Style.Set(BikerCocaine.Style.basic)
         BikerCocaine.Security.Set(BikerCocaine.Security.none)
-        
+
         RefreshInterior(BikerCocaine.interiorId)
     end
 }

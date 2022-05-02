@@ -45,7 +45,7 @@ HLApartment5 = {
             SetIplPropState(HLApartment5.interiorId, details, state, refresh)
         end
     },
-    
+
     LoadDefault = function()
         HLApartment5.Ipl.Interior.Load()
         HLApartment5.Strip.Enable({

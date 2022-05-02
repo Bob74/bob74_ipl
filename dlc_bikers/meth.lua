@@ -81,7 +81,7 @@ BikerMethLab = {
         BikerMethLab.Style.Set(BikerMethLab.Style.empty)
         BikerMethLab.Security.Set(BikerMethLab.Security.none)
         BikerMethLab.Details.Enable(BikerMethLab.Details.production, false)
-        
+
         RefreshInterior(BikerMethLab.interiorId)
     end
 }

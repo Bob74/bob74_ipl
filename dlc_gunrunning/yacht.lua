@@ -50,7 +50,7 @@ GunrunningYacht = {
             end
         end
     },
-    
+
     LoadDefault = function()
         GunrunningYacht.Enable(true)
     end

@@ -11,7 +11,7 @@ GTAOHouseHi5 = {
         A = "Apart_Hi_Strip_A",
         B = "Apart_Hi_Strip_B",
         C = "Apart_Hi_Strip_C",
-        
+
         Enable = function(details, state, refresh)
             SetIplPropState(GTAOHouseHi5.interiorId, details, state, refresh)
         end

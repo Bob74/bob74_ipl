@@ -49,15 +49,15 @@ GunrunningBunker = {
         yellow = "Bunker_Style_C",
 
         -- Set the style (color) of the bunker.
-        -- 	style: Wall color (values: GunrunningBunker.Style.default / GunrunningBunker.Style.blue / GunrunningBunker.Style.yellow)
-        -- 	refresh: Reload the whole interior (values: true / false)
+        --     style: Wall color (values: GunrunningBunker.Style.default / GunrunningBunker.Style.blue / GunrunningBunker.Style.yellow)
+        --     refresh: Reload the whole interior (values: true / false)
         Set = function(style, refresh)
             GunrunningBunker.Style.Clear(false)
 
             SetIplPropState(GunrunningBunker.interiorId, style, true, refresh)
         end,
         -- Removes the style.
-        -- 	refresh: Reload the whole interior (values: true / false)
+        --     refresh: Reload the whole interior (values: true / false)
         Clear = function(refresh)
             SetIplPropState(GunrunningBunker.interiorId, {
                 GunrunningBunker.Style.default,
@@ -71,15 +71,15 @@ GunrunningBunker = {
         upgrade = "upgrade_bunker_set",
 
         -- Set the tier (quality) of the bunker.
-        -- 	tier: Upgrade state (values: GunrunningBunker.Tier.default / GunrunningBunker.Tier.upgrade)
-        -- 	refresh: Reload the whole interior (values: true / false)
+        --     tier: Upgrade state (values: GunrunningBunker.Tier.default / GunrunningBunker.Tier.upgrade)
+        --     refresh: Reload the whole interior (values: true / false)
         Set = function(tier, refresh)
             GunrunningBunker.Tier.Clear(false)
 
             SetIplPropState(GunrunningBunker.interiorId, tier, true, refresh)
         end,
         -- Removes the tier.
-        -- 	refresh: Reload the whole interior (values: true / false)
+        --     refresh: Reload the whole interior (values: true / false)
         Clear = function(refresh)
             SetIplPropState(GunrunningBunker.interiorId, {
                 GunrunningBunker.Tier.default,
@@ -93,8 +93,8 @@ GunrunningBunker = {
         upgrade = "security_upgrade",
 
         -- Set the security stage of the bunker.
-        -- 	security: Upgrade state (values: GunrunningBunker.Security.default / GunrunningBunker.Security.upgrade)
-        -- 	refresh: Reload the whole interior (values: true / false)
+        --     security: Upgrade state (values: GunrunningBunker.Security.default / GunrunningBunker.Security.upgrade)
+        --     refresh: Reload the whole interior (values: true / false)
         Set = function(security, refresh)
             GunrunningBunker.Security.Clear(false)
 
@@ -107,7 +107,7 @@ GunrunningBunker = {
             end
         end,
         -- Removes the security.
-        -- 	refresh: Reload the whole interior (values: true / false)
+        --     refresh: Reload the whole interior (values: true / false)
         Clear = function(refresh)
             SetIplPropState(GunrunningBunker.interiorId, {
                 GunrunningBunker.Security.default,
@@ -125,9 +125,9 @@ GunrunningBunker = {
         schematics = "Gun_schematic_set", -- Gun schematic on the table and whiteboard
 
         -- Enable or disable a detail.
-        -- 	details: Prop to enable or disable (values: GunrunningBunker.Details.office / GunrunningBunker.Details.officeLocked / GunrunningBunker.Details.locker...)
+        --     details: Prop to enable or disable (values: GunrunningBunker.Details.office / GunrunningBunker.Details.officeLocked / GunrunningBunker.Details.locker...)
         --  state: Enable or Disable (values: true / false)
-        -- 	refresh: Reload the whole interior (values: true / false)
+        --     refresh: Reload the whole interior (values: true / false)
         Enable = function(details, state, refresh)
             SetIplPropState(GunrunningBunker.interiorId, details, state, refresh)
         end

@@ -343,7 +343,7 @@ BikerClubhouse1 = {
             "id_stash2",
             "id_stash3"
         },
-        
+
         Set = function(stage, refresh)
             BikerClubhouse1.Documents.Clear(false)
 

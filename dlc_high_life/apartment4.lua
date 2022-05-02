@@ -9,7 +9,7 @@ HLApartment4 = {
     Ipl = {
         Interior = {
             ipl = "mpbusiness_int_placement_interior_v_mp_apt_h_01_milo__3",
-            
+
             Load = function()
                 EnableIpl(HLApartment4.Ipl.Interior.ipl, true)
             end,

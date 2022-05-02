@@ -100,7 +100,7 @@ MpSecurityOffice4 = {
     LoadDefault = function()
         MpSecurityOffice4.Ipl.Load()
         MpSecurityOffice4.Entities.Load()
-        
+
         RefreshInterior(MpSecurityOffice4.interiorId)
     end
 }

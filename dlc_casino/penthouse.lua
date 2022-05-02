@@ -281,7 +281,7 @@ DiamondPenthouse = {
             Bar = {
                 enabled = "Set_Pent_BAR_BLOCKER",
                 disabled = "",
-                
+
                 Set = function(blocker, refresh)
                     DiamondPenthouse.Interior.Blockers.Bar.Clear(false)
 
