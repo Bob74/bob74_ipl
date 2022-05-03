@@ -251,10 +251,10 @@ function GetPedheadshotTexture(ped)
         local IsTextureDictLoaded = LoadStreamedTextureDict(textureDict)
 
         if not IsTextureDictLoaded then
-            Citizen.Trace("ERROR: BikerClubhouseDrawMembers - Textures dictionnary \"" .. tostring(textureDict) .. "\" cannot be loaded.")
+            Citizen.Trace("ERROR: GetPedheadshotTexture - Textures dictionnary \"" .. tostring(textureDict) .. "\" cannot be loaded.")
         end
     else
-        Citizen.Trace("ERROR: BikerClubhouseDrawMembers - PedHeadShot not ready.")
+        Citizen.Trace("ERROR: GetPedheadshotTexture - PedHeadShot not ready.")
     end
 
     return textureDict
