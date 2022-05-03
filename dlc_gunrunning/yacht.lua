@@ -1,6 +1,4 @@
-
 -- Gunrunning Yacht: -1363.724, 6734.108, 2.44598
-
 exports('GetGunrunningYachtObject', function()
     return GunrunningYacht
 end)
@@ -21,35 +19,39 @@ GunrunningYacht = {
         "gr_heist_yacht2_lounge_lod",
         "gr_heist_yacht2_slod",
     },
-    Enable = function(state) EnableIpl(GunrunningYacht.ipl, state) end,
+
+    Enable = function(state)
+        EnableIpl(GunrunningYacht.ipl, state)
+    end,
     Water = {
-        modelHash = GetHashKey("apa_mp_apa_yacht_jacuzzi_ripple1"),
+        modelHash = `apa_mp_apa_yacht_jacuzzi_ripple1`,
 
         Enable = function(state)
             local handle = GetClosestObjectOfType(-1369.0, 6736.0, 5.40, 5.0, GunrunningYacht.Water.modelHash, false, false, false)
 
-            if (state) then
+            if state then
                 -- Enable
-                if (handle == 0) then
+                if handle == 0 then
                     RequestModel(GunrunningYacht.Water.modelHash)
                     while not HasModelLoaded(GunrunningYacht.Water.modelHash) do
-                        Wait(0)
+                        Citizen.Wait(0)
                     end
 
                     local water = CreateObjectNoOffset(GunrunningYacht.Water.modelHash, -1369.0, 6736.0, 5.40, false, false, false)
+
                     SetEntityAsMissionEntity(water, false, false)
                 end
             else
                 -- Disable
-                if (handle ~= 0) then
+                if handle ~= 0 then
                     SetEntityAsMissionEntity(handle, false, false)
                     DeleteEntity(handle)
                 end
             end
         end
     },
+
     LoadDefault = function()
         GunrunningYacht.Enable(true)
     end
 }
-
