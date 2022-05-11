@@ -30,6 +30,11 @@ This resource has been completely rewritten from scratch since v2.0. You can cus
 (DD/MM/YYYY)
 
 ---
+11/05/2022 - 2.0.15a
+- Remove unnecessary Citizen.
+- Reformatted fxmanifest
+- Bumped version in fxmanifest.lua
+
 02/05/2022 - 2.0.15
 - Reformatted code
 - Removed unused .gitignore

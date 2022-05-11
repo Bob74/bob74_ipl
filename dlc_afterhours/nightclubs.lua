@@ -287,7 +287,7 @@ AfterHoursNightclubs = {
                 if state then
                     RequestNamedPtfxAsset("scr_ba_club")
                     while not HasNamedPtfxAssetLoaded("scr_ba_club") do
-                        Citizen.Wait(0)
+                        Wait(0)
                     end
 
                     for key, emitter in pairs(AfterHoursNightclubs.Interior.DryIce.Emitters) do

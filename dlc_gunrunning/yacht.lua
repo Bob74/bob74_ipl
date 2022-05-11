@@ -34,7 +34,7 @@ GunrunningYacht = {
                 if handle == 0 then
                     RequestModel(GunrunningYacht.Water.modelHash)
                     while not HasModelLoaded(GunrunningYacht.Water.modelHash) do
-                        Citizen.Wait(0)
+                        Wait(0)
                     end
 
                     local water = CreateObjectNoOffset(GunrunningYacht.Water.modelHash, -1369.0, 6736.0, 5.40, false, false, false)

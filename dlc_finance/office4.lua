@@ -165,7 +165,7 @@ FinanceOffice4 = {
             local doorHandle = GetClosestObjectOfType(FinanceOffice4.Safe.Position.x, FinanceOffice4.Safe.Position.y, FinanceOffice4.Safe.Position.z, 5.0, doorHash, false, false, false)
 
             while doorHandle == 0 do
-                Citizen.Wait(25)
+                Wait(25)
 
                 doorHandle = GetClosestObjectOfType(FinanceOffice4.Safe.Position.x, FinanceOffice4.Safe.Position.y, FinanceOffice4.Safe.Position.z, 5.0, doorHash, false, false, false)
                 timeout = timeout - 1

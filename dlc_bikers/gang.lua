@@ -433,7 +433,7 @@ BikerGang = {
     }
 }
 
-Citizen.CreateThread(function()
+CreateThread(function()
     -- Removing the black texture
     BikerGang.Clubhouse.Members.President.Init()
     BikerGang.Clubhouse.Members.VicePresident.Init()
@@ -492,14 +492,14 @@ Citizen.CreateThread(function()
                     end
                 end
 
-                Citizen.Wait(0) -- We need to call all this every frame
+                Wait(0) -- We need to call all this every frame
             else
                 -- Not in a clubhouse
-                Citizen.Wait(1000)
+                Wait(1000)
             end
         else
             -- No load needed
-            Citizen.Wait(1000)
+            Wait(1000)
         end
     end
 end)

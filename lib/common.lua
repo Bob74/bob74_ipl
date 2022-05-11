@@ -138,7 +138,7 @@ function DrawEmptyRect(name, model)
     local renderId = CreateNamedRenderTargetForModel(name, model)
 
     while not IsNamedRendertargetRegistered(name) do
-        Citizen.Wait(step)
+        Wait(step)
 
         currentTime = currentTime + step
 
@@ -191,7 +191,7 @@ function LoadStreamedTextureDict(texturesDict)
 
     RequestStreamedTextureDict(texturesDict, 0)
     while not HasStreamedTextureDictLoaded(texturesDict) do
-        Citizen.Wait(step)
+        Wait(step)
 
         currentTime = currentTime + step
 
@@ -210,7 +210,7 @@ function LoadScaleform(scaleform)
     local handle = RequestScaleformMovie(scaleform)
 
     while not HasScaleformMovieLoaded(handle) do
-        Citizen.Wait(step)
+        Wait(step)
 
         currentTime = currentTime + step
 
@@ -229,7 +229,7 @@ function GetPedheadshot(ped)
     local pedheadshot = RegisterPedheadshot(ped)
 
     while not IsPedheadshotReady(pedheadshot) do
-        Citizen.Wait(step)
+        Wait(step)
 
         currentTime = currentTime + step
 
