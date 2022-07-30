@@ -122,4 +122,9 @@ client_scripts {
     , "dlc_security/office2.lua"
     , "dlc_security/office3.lua"
     , "dlc_security/office4.lua"
+
+    -- DLC The Criminal Enterprises (Requires forced build 2699 or higher)
+    , "gta_mpsum2/simeonfix.lua"
+    , "gta_mpsum2/vehicle_warehouse.lua"
+    , "gta_mpsum2/warehouse.lua"
 }
