@@ -38,7 +38,6 @@ CriminalEnterpriseWarehouse = {
         Load = function()
             for entity, state in pairs(CriminalEnterpriseWarehouse.Entities) do
                 if type(entity) == 'string' and state then
-                    print(CriminalEnterpriseWarehouse.InteriorId, entity)
                     ActivateInteriorEntitySet(CriminalEnterpriseWarehouse.InteriorId, entity)
                 end
             end

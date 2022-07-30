@@ -33,7 +33,6 @@ CriminalEnterpriseSmeonFix = {
         Load = function()
             for entity, state in pairs(CriminalEnterpriseSmeonFix.Entities) do
                 if type(entity) == 'string' and state then
-                    print(CriminalEnterpriseSmeonFix.InteriorId, entity)
                     ActivateInteriorEntitySet(CriminalEnterpriseSmeonFix.InteriorId, entity)
                 end
             end
