@@ -30,6 +30,9 @@ This resource has been completely rewritten from scratch since v2.0. You can cus
 (DD/MM/YYYY)
 
 ---
+03/08/2022 - 2.1.0
+- Added "The Criminal Enterprises" support
+
 02/05/2022 - 2.0.15
 - Reformatted code
 - Removed unused .gitignore
