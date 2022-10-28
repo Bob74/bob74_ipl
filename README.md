@@ -30,6 +30,12 @@ This resource has been completely rewritten from scratch since v2.0. You can cus
 (DD/MM/YYYY)
 
 ---
+24/10/2022 - 2.1.1
+- Fix multiple map holes and collisions caused by newer GTA DLCs
+
+11/10/2022 - 2.1.0a
+- Make Doomsday Facility Objects non network
+
 03/08/2022 - 2.1.0
 - Added "The Criminal Enterprises" support
 
