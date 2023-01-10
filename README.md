@@ -30,6 +30,9 @@ This resource has been completely rewritten from scratch since v2.0. You can cus
 (DD/MM/YYYY)
 
 ---
+10/01/2023 - 2.1.2
+- Fix native and update native names (@NeenGame )
+
 24/10/2022 - 2.1.1
 - Fix vespucci beach wall hole
 - Fix Boat House Door in Sandy Shores
