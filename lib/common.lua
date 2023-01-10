@@ -97,12 +97,12 @@ function SetIplPropState(interiorId, props, state, refresh)
             end
         else
             if state then
-                if not IsInteriorPropEnabled(interiorId, props) then
-                    EnableInteriorProp(interiorId, props)
+                if not IsInteriorEntitySetActive(interiorId, props) then
+                    ActivateInteriorEntitySet(interiorId, props)
                 end
             else
-                if IsInteriorPropEnabled(interiorId, props) then
-                    DisableInteriorProp(interiorId, props)
+                if IsInteriorEntitySetActive(interiorId, props) then
+                    DeactivateInteriorEntitySet(interiorId, props)
                 end
             end
         end
@@ -167,15 +167,15 @@ function SetupScaleform(movieId, scaleformFunction, parameters)
             local p = parameters["p" .. tostring(i)]
 
             if p.type == "bool" then
-                PushScaleformMovieMethodParameterBool(p.value)
+                ScaleformMovieMethodAddParamBool(p.value)
             elseif p.type == "int" then
-                PushScaleformMovieMethodParameterInt(p.value)
+                ScaleformMovieMethodAddParamInt(p.value)
             elseif p.type == "float" then
-                PushScaleformMovieMethodParameterFloat(p.value)
+                ScaleformMovieMethodAddParamFloat(p.value)
             elseif p.type == "string" then
-                PushScaleformMovieMethodParameterString(p.value)
+                ScaleformMovieMethodAddParamTextureNameString(p.value)
             elseif p.type == "buttonName" then
-                PushScaleformMovieMethodParameterButtonName(p.value)
+                ScaleformMovieMethodAddParamPlayerNameString(p.value)
             end
         end
     end
@@ -189,7 +189,7 @@ function LoadStreamedTextureDict(texturesDict)
     local timeout = 5 * 1000
     local currentTime = 0
 
-    RequestStreamedTextureDict(texturesDict, 0)
+    RequestStreamedTextureDict(texturesDict, false)
     while not HasStreamedTextureDictLoaded(texturesDict) do
         Citizen.Wait(step)
 

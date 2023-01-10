@@ -41,7 +41,7 @@ BikerClubhouse2 = {
             BikerClubhouse2.Walls.Clear(false)
 
             SetIplPropState(BikerClubhouse2.interiorId, walls, true, refresh)
-            SetInteriorPropColor(BikerClubhouse2.interiorId, walls, color)
+            SetInteriorEntitySetColor(BikerClubhouse2.interiorId, walls, color)
         end,
         Clear = function(refresh)
             SetIplPropState(BikerClubhouse2.interiorId, {
@@ -55,7 +55,7 @@ BikerClubhouse2 = {
 
         SetColor = function(color, refresh)
             SetIplPropState(BikerClubhouse2.interiorId, BikerClubhouse2.LowerWalls.default, true, refresh)
-            SetInteriorPropColor(BikerClubhouse2.interiorId, BikerClubhouse2.LowerWalls.default, color)
+            SetInteriorEntitySetColor(BikerClubhouse2.interiorId, BikerClubhouse2.LowerWalls.default, color)
         end,
     },
     Furnitures = {
@@ -83,7 +83,7 @@ BikerClubhouse2 = {
             BikerClubhouse2.Furnitures.Clear(false)
 
             SetIplPropState(BikerClubhouse2.interiorId, furn, true, refresh)
-            SetInteriorPropColor(BikerClubhouse2.interiorId, furn, color)
+            SetInteriorEntitySetColor(BikerClubhouse2.interiorId, furn, color)
         end,
         Clear = function(refresh)
             SetIplPropState(BikerClubhouse2.interiorId, {

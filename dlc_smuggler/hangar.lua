@@ -34,7 +34,7 @@ SmugglerHangar = {
 
         SetColor = function(color, refresh)
             SetIplPropState(SmugglerHangar.interiorId, SmugglerHangar.Walls.default, true, refresh)
-            SetInteriorPropColor(SmugglerHangar.interiorId, SmugglerHangar.Walls.default, color)
+            SetInteriorEntitySetColor(SmugglerHangar.interiorId, SmugglerHangar.Walls.default, color)
         end,
     },
     Floor = {
@@ -73,7 +73,7 @@ SmugglerHangar = {
                 SmugglerHangar.Floor.Decals.Clear(false)
 
                 SetIplPropState(SmugglerHangar.interiorId, decal, true, refresh)
-                SetInteriorPropColor(SmugglerHangar.interiorId, decal, color)
+                SetInteriorEntitySetColor(SmugglerHangar.interiorId, decal, color)
             end,
             Clear = function(refresh)
                 SetIplPropState(SmugglerHangar.interiorId, {
@@ -99,7 +99,7 @@ SmugglerHangar = {
 
             if crane ~= "" then
                 SetIplPropState(SmugglerHangar.interiorId, crane, true, refresh)
-                SetInteriorPropColor(SmugglerHangar.interiorId, crane, color)
+                SetInteriorEntitySetColor(SmugglerHangar.interiorId, crane, color)
             else
                 if refresh then
                     RefreshInterior(SmugglerHangar.interiorId)
@@ -123,7 +123,7 @@ SmugglerHangar = {
 
             if mod ~= "" then
                 SetIplPropState(SmugglerHangar.interiorId, mod, true, refresh)
-                SetInteriorPropColor(SmugglerHangar.interiorId, mod, color)
+                SetInteriorEntitySetColor(SmugglerHangar.interiorId, mod, color)
             else
                 if refresh then
                     RefreshInterior(SmugglerHangar.interiorId)
@@ -173,7 +173,7 @@ SmugglerHangar = {
 
                 if bed ~= "" then
                     SetIplPropState(SmugglerHangar.interiorId, bed, true, refresh)
-                    SetInteriorPropColor(SmugglerHangar.interiorId, "set_bedroom_tint", color)
+                    SetInteriorEntitySetColor(SmugglerHangar.interiorId, "set_bedroom_tint", color)
                 else
                     if refresh then
                         RefreshInterior(SmugglerHangar.interiorId)
@@ -223,7 +223,7 @@ SmugglerHangar = {
 
                 if light ~= "" then
                     SetIplPropState(SmugglerHangar.interiorId, "set_lighting_tint_props", true, refresh)
-                    SetInteriorPropColor(SmugglerHangar.interiorId, "set_lighting_tint_props", light)
+                    SetInteriorEntitySetColor(SmugglerHangar.interiorId, "set_lighting_tint_props", light)
                 else
                     if refresh then
                         RefreshInterior(SmugglerHangar.interiorId)

@@ -42,7 +42,7 @@ BikerClubhouse1 = {
             BikerClubhouse1.Walls.Clear(false)
 
             SetIplPropState(BikerClubhouse1.interiorId, walls, true, refresh)
-            SetInteriorPropColor(BikerClubhouse1.interiorId, walls, color)
+            SetInteriorEntitySetColor(BikerClubhouse1.interiorId, walls, color)
         end,
         Clear = function(refresh)
             SetIplPropState(BikerClubhouse1.interiorId, {
@@ -63,7 +63,7 @@ BikerClubhouse1 = {
             BikerClubhouse1.Furnitures.Clear(false)
 
             SetIplPropState(BikerClubhouse1.interiorId, furn, true, refresh)
-            SetInteriorPropColor(BikerClubhouse1.interiorId, furn, color)
+            SetInteriorEntitySetColor(BikerClubhouse1.interiorId, furn, color)
         end,
         Clear = function(refresh)
             SetIplPropState(BikerClubhouse1.interiorId, {
