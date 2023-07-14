@@ -7,7 +7,7 @@ game 'gta5'
 
 author 'Bob_74'
 description 'Load and customize your map'
-version '2.1.1'
+version '2.1.2'
 
 lua54 "yes"
 
