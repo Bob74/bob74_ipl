@@ -30,6 +30,9 @@ This resource has been completely rewritten from scratch since v2.0. You can cus
 (DD/MM/YYYY)
 
 ---
+05/12/2023 - 2.1.3
+- Added missing train track near Davis Quartz (https://github.com/Bob74/bob74_ipl/pull/129 @TheIndra55)
+
 10/01/2023 - 2.1.2
 - Fix native and update native names (@NeenGame )
 
