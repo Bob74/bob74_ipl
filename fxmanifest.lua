@@ -1,12 +1,8 @@
--- Resources:
--- **********
--- IPL list: https://wiki.rage.mp/index.php?title=Interiors_and_Locations
-
 fx_version 'cerulean'
 game 'gta5'
 
-author 'Bob_74'
-description 'Load and customize your map'
+author 'ItzCelyrian & Bob74'
+description 'IPL Loader'
 version '2.1.3'
 
 lua54 "yes"
@@ -108,6 +104,11 @@ client_scripts {
     , "dlc_casino/casino.lua"
     , "dlc_casino/penthouse.lua"
 
+    -- DLC Cayo Perico (Requires forced build 2189 or higher)
+    , "dlc_cayoperico/cayoperico.lua"
+    , "dlc_cayoperico/water.lua"
+    , "dlc_cayoperico/mph4_gtxd.meta"
+
     -- DLC Tuners (Requires forced build 2372 or higher)
     , "dlc_tuner/garage.lua"
     , "dlc_tuner/meetup.lua"
@@ -127,4 +128,9 @@ client_scripts {
     , "gta_mpsum2/simeonfix.lua"
     , "gta_mpsum2/vehicle_warehouse.lua"
     , "gta_mpsum2/warehouse.lua"
+
+    -- DLC Chop Shop (Requires forced build 3095 or higher)
+    , "dlc_chopshop/chopshop.lua"
 }
+
+data_file 'GTXD_PARENTING_DATA' 'client/mph4_gtxd.meta'

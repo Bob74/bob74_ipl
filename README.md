@@ -1,28 +1,12 @@
-# Fix holes and customize the map (Updated to The Criminal Enterprises DLC)
-
-The purpose of this script is to fix the holes in the map by loading zones that aren’t loaded by default. I’ve added quite a lot of places to load, based on [Mikeeh’s script](https://forum.fivem.net/t/release-load-unloaded-ipls/5911). If you just want to fix the holes in the map, then use this resource as provided.
-
-This resource has been completely rewritten from scratch since v2.0. You can customize almost every storymode and online purchasable interiors from your own resources.
+# IPL Loader
+This Resource is based on Bob74's IPL-Loader with bonus content such as **Cayo Perico Island Loader** including **Navigation** and support for **Chop Shop Content**.
 
 ## Download
-- Latest version: https://github.com/Bob74/bob74_ipl/releases/latest
-
-- Source code: https://github.com/Bob74/bob74_ipl
-
-## [Wiki](https://github.com/Bob74/bob74_ipl/wiki)
-- The Wiki has been created to help you customize your interiors as you wish. It contains every function you can use for each interior.
-- Each Wiki page has an example at the bottom of the page to show how you can use it in your own resource.
-- Also at the bottom of the Wiki will show you the default values set by `IPL_NAME.LoadDefault()`.
-
+- Latest version: https://github.com/ItzCelyrian/ipl/releases/latest
 ## Install
 1. Download the [latest version](https://github.com/Bob74/bob74_ipl/releases/latest).
-2. Extract `bob74_ipl.zip` and copy the `bob74_ipl` into your `resources` folder.
-3. Add `start bob74_ipl` to your your `server.cfg` file.
-
-## Screenshots
-- [After Hours Album](https://imgur.com/a/Qg96l0D)
-- [Misc. Album](https://imgur.com/a/cs9Ip4d)
-- [IPL Fix Album](https://imgur.com/a/1Sfl4)
+2. Extract `ipl.zip` and copy the `ipl` into your `resources` folder.
+3. Add `ensure ipl` to your your `server.cfg` file.
 
 ## Changelog
 
@@ -30,6 +14,11 @@ This resource has been completely rewritten from scratch since v2.0. You can cus
 (DD/MM/YYYY)
 
 ---
+07/01/2024 - 3.0a
+- Added Cayo Perico Island
+- Added ChopShop Content
+- Fixed Navigation on Cayo Perico
+
 05/12/2023 - 2.1.3
 - Added missing train track near Davis Quartz (https://github.com/Bob74/bob74_ipl/pull/129 @TheIndra55)
 
