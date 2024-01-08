@@ -3,7 +3,7 @@ game 'gta5'
 
 author 'ItzCelyrian & Bob74'
 description 'IPL Loader'
-version '2.1.3'
+version '3.0 Alpha'
 
 lua54 "yes"
 
