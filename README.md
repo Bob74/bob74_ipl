@@ -14,6 +14,9 @@ This Resource is based on Bob74's IPL-Loader with bonus content such as **Cayo P
 (DD/MM/YYYY)
 
 ---
+09/01/2024 - 3.0b
+- Fix typo in manifest for GTXD Metafile
+
 07/01/2024 - 3.0a
 - Added Cayo Perico Island
 - Added ChopShop Content
