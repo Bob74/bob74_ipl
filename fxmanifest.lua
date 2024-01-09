@@ -133,4 +133,4 @@ client_scripts {
     , "dlc_chopshop/chopshop.lua"
 }
 
-data_file 'GTXD_PARENTING_DATA' 'client/mph4_gtxd.meta'
+data_file 'GTXD_PARENTING_DATA' 'dlc_cayoperico/mph4_gtxd.meta'
