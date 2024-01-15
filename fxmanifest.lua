@@ -103,6 +103,9 @@ client_scripts {
     -- DLC Diamond Casino (Requires forced build 2060 or higher)
     , "dlc_casino/casino.lua"
     , "dlc_casino/penthouse.lua"
+    
+    -- DLC Los Santos Summer Special (Requires forced build 2060 or higher)
+    , "dlc_arcade/arcade.lua"
 
     -- DLC Cayo Perico (Requires forced build 2189 or higher)
     , "dlc_cayoperico/cayoperico.lua"
