@@ -132,8 +132,14 @@ client_scripts {
     , "gta_mpsum2/vehicle_warehouse.lua"
     , "gta_mpsum2/warehouse.lua"
 
+    -- DLC San Andreas Mercenaries (Requires forced build 2944 or higher)
+    , "dlc_mercenary/avenger.lua"
+    , "dlc_mercenary/garage.lua"
+    , "dlc_mercenary/zancudo.lua"
+
     -- DLC Chop Shop (Requires forced build 3095 or higher)
     , "dlc_chopshop/chopshop.lua"
 }
 
 data_file 'GTXD_PARENTING_DATA' 'dlc_cayoperico/mph4_gtxd.meta'
+data_file 'DLC_ITYP_REQUEST' 'stream/m23_1_dlc_int_03_m23_1.ytyp'
