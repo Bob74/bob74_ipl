@@ -1,13 +1,9 @@
--- Resources:
--- **********
--- IPL list: https://wiki.rage.mp/index.php?title=Interiors_and_Locations
-
 fx_version 'cerulean'
 game 'gta5'
 
-author 'Bob_74'
-description 'Load and customize your map'
-version '2.1.3'
+author 'ItzCelyrian & Bob74'
+description 'IPL Loader'
+version '3.0 Alpha'
 
 lua54 "yes"
 
@@ -107,6 +103,14 @@ client_scripts {
     -- DLC Diamond Casino (Requires forced build 2060 or higher)
     , "dlc_casino/casino.lua"
     , "dlc_casino/penthouse.lua"
+    
+    -- DLC Los Santos Summer Special (Requires forced build 2060 or higher)
+    , "dlc_arcade/arcade.lua"
+
+    -- DLC Cayo Perico (Requires forced build 2189 or higher)
+    , "dlc_cayoperico/cayoperico.lua"
+    , "dlc_cayoperico/water.lua"
+    , "dlc_cayoperico/mph4_gtxd.meta"
 
     -- DLC Tuners (Requires forced build 2372 or higher)
     , "dlc_tuner/garage.lua"
@@ -127,4 +131,15 @@ client_scripts {
     , "gta_mpsum2/simeonfix.lua"
     , "gta_mpsum2/vehicle_warehouse.lua"
     , "gta_mpsum2/warehouse.lua"
+
+    -- DLC San Andreas Mercenaries (Requires forced build 2944 or higher)
+    , "dlc_mercenary/avenger.lua"
+    , "dlc_mercenary/garage.lua"
+    , "dlc_mercenary/zancudo.lua"
+
+    -- DLC Chop Shop (Requires forced build 3095 or higher)
+    , "dlc_chopshop/chopshop.lua"
 }
+
+data_file 'GTXD_PARENTING_DATA' 'dlc_cayoperico/mph4_gtxd.meta'
+data_file 'DLC_ITYP_REQUEST' 'stream/m23_1_dlc_int_03_m23_1.ytyp'
