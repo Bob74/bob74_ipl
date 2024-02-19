@@ -1,9 +1,13 @@
-Citizen.CreateThread(function()
+-- Code overrides wave strength near Cayo every frame
+
+CreateThread(function()
 	while true do
 		Wait(0)
-		Citizen.InvokeNative(0xC54A08C85AE4D410, 0.5)
+		WaterOverrideSetStrength(0.5)
 	end
 end)
+
+-- Code that allows you to use GPS on Cayo
 
 CreateThread(function()
 	Wait(2500)
@@ -15,16 +19,14 @@ CreateThread(function()
 		if #(pCoords - islandCoords) < 2000.0 then
 			if not islandLoaded then
 				islandLoaded = true
-				Citizen.InvokeNative(0xF74B1FFA4A15FBEA, 1)
+				SetAiGlobalPathNodesType(1)
 			end
 		else
 			if islandLoaded then
 				islandLoaded = false
-				Citizen.InvokeNative(0xF74B1FFA4A15FBEA, 0)
+				SetAiGlobalPathNodesType(0)
 			end
 		end
 		Wait(5000)
 	end
 end)
-
---0xB96B00E976BE977F
