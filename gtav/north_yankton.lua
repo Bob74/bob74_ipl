@@ -54,8 +54,20 @@ NorthYankton = {
         end
     },
 
+    Traffic = {
+        Enable = function(state)
+            SetAllPathsCacheBoundingstruct(state)
+
+            SetRoadsInAngledArea(5526.24, -5137.23, 61.78925, 3679.327, -4973.879, 125.0828, 192, false, state, true);
+            SetRoadsInAngledArea(3691.211, -4941.24, 94.59368, 3511.115, -4869.191, 126.7621, 16, false, state, true);
+            SetRoadsInAngledArea(3510.004, -4865.81, 94.69557, 3204.424, -4833.817, 126.8152, 16, false, state, true);
+            SetRoadsInAngledArea(3186.534, -4832.798, 109.8148, 3202.187, -4833.993, 114.815, 16, false, state, true);
+        end
+    },
+
     Enable = function(state)
         NorthYankton.Grave.Clear()
+        NorthYankton.Traffic.Enable(state)
 
         EnableIpl(NorthYankton.ipl, state)
     end
