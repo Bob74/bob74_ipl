@@ -24,15 +24,39 @@ NorthYankton = {
         "prologue05b",
         "prologue06",
         "prologue06b",
+        "prologue_occl",
         "prologue06_int",
         "prologuerd",
         "prologuerdb",
         "prologue_DistantLights",
         "prologue_LODLights",
-        "prologue_m2_door"
+        "DES_ProTree_start",
+        "prologue_m2_door",
+        "prologue03_grv_cov"
+    },
+
+    Grave = {
+        covered = "prologue03_grv_cov",
+        dug = "prologue03_grv_dug",
+        funeral = "prologue03_grv_fun",
+
+        Set = function(grave)
+            NorthYankton.Grave.Clear()
+
+            EnableIpl(grave, true)
+        end,
+        Clear = function()
+            EnableIpl({
+                NorthYankton.Grave.covered,
+                NorthYankton.Grave.dug,
+                NorthYankton.Grave.funeral
+            }, false)
+        end
     },
 
     Enable = function(state)
+        NorthYankton.Grave.Clear()
+
         EnableIpl(NorthYankton.ipl, state)
     end
 }
