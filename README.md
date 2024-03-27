@@ -30,6 +30,9 @@ This resource has been completely rewritten from scratch since v2.0. You can cus
 (DD/MM/YYYY)
 
 ---
+27/03/2024 - 2.1.4
+- North Yankton improvements (https://github.com/Bob74/bob74_ipl/pull/131 @TheIndra55)
+
 05/12/2023 - 2.1.3
 - Added missing train track near Davis Quartz (https://github.com/Bob74/bob74_ipl/pull/129 @TheIndra55)
 
