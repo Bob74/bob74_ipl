@@ -175,4 +175,12 @@ Citizen.CreateThread(function()
         CriminalEnterpriseVehicleWarehouse.LoadDefault() -- 800.13696, -3001.4297, -65.14074
         CriminalEnterpriseWarehouse.LoadDefault() -- 849.1047, -3000.209, -45.974354
     end
+
+    -- ====================================================================
+    -- =------------------- [DLC: Los Santos Drug Wars] ------------------=
+    -- ====================================================================
+    if GetGameBuildNumber() >= 2802 then
+        DrugWarsGarage.LoadDefault() -- -272.9271, 283.2581, 103.9920
+        DrugWarsWarehouse.LoadDefault() -- 603.0235, -395.7166, 23.7996
+    end
 end)

@@ -127,4 +127,9 @@ client_scripts {
     , "gta_mpsum2/simeonfix.lua"
     , "gta_mpsum2/vehicle_warehouse.lua"
     , "gta_mpsum2/warehouse.lua"
+
+    -- DLC Los Santos Drug Wars (Requires forced build 2802 or higher)
+    , "dlc_drugwars/garage.lua"
+    , "dlc_drugwars/warehouse.lua"
+    , "dlc_drugwars/traincrash.lua"
 }
