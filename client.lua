@@ -183,4 +183,11 @@ Citizen.CreateThread(function()
         DrugWarsGarage.LoadDefault() -- -272.9271, 283.2581, 103.9920
         DrugWarsWarehouse.LoadDefault() -- 603.0235, -395.7166, 23.7996
     end
+
+    -- ====================================================================
+    -- =------------------- [DLC: The Chop Shop] -------------------------=
+    -- ====================================================================
+    if GetGameBuildNumber() >= 3095 then
+        ChopShopCargoShip.LoadDefault() -- -356.4354, -4072.71, 16.8003
+    end
 end)

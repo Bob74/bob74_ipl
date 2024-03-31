@@ -132,4 +132,7 @@ client_scripts {
     , "dlc_drugwars/garage.lua"
     , "dlc_drugwars/warehouse.lua"
     , "dlc_drugwars/traincrash.lua"
+
+    -- DLC The Chop Shop (Requires forced build 3095 or higher)
+    , "dlc_chopshop/cargoship.lua"
 }
