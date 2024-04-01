@@ -180,9 +180,10 @@ Citizen.CreateThread(function()
     -- =------------------- [DLC: Los Santos Drug Wars] ------------------=
     -- ====================================================================
     if GetGameBuildNumber() >= 2802 then
+        DrugWarsFreakshop.LoadDefault() -- 571.6017, -423.0762, -70.0
         DrugWarsGarage.LoadDefault() -- -272.9271, 283.2581, 103.9920
+        DrugWarsLab.LoadDefault() -- 483.3028, -2625.291, -50.0
         DrugWarsWarehouse.LoadDefault() -- 603.0235, -395.7166, 23.7996
-        DrugWarsFreakshop.LoadDefault() -- 571.6017, -423.0762, -70.6470
     end
 
     -- ====================================================================

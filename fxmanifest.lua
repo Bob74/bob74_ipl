@@ -130,10 +130,11 @@ client_scripts {
 
     -- DLC Los Santos Drug Wars (Requires forced build 2802 or higher)
     , "dlc_drugwars/base.lua"
-    , "dlc_drugwars/garage.lua"
-    , "dlc_drugwars/warehouse.lua"
     , "dlc_drugwars/freakshop.lua"
+    , "dlc_drugwars/garage.lua"
+    , "dlc_drugwars/lab.lua"
     , "dlc_drugwars/traincrash.lua"
+    , "dlc_drugwars/warehouse.lua"
 
     -- DLC San Andreas Mercenaries (Requires forced build 2944 or higher)
     , "dlc_mercenaries/base.lua"
