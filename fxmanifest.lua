@@ -129,10 +129,17 @@ client_scripts {
     , "gta_mpsum2/warehouse.lua"
 
     -- DLC Los Santos Drug Wars (Requires forced build 2802 or higher)
+    , "dlc_drugwars/base.lua"
     , "dlc_drugwars/garage.lua"
     , "dlc_drugwars/warehouse.lua"
+    , "dlc_drugwars/freakshop.lua"
     , "dlc_drugwars/traincrash.lua"
 
+    -- DLC San Andreas Mercenaries (Requires forced build 2944 or higher)
+    , "dlc_mercenaries/base.lua"
+
     -- DLC The Chop Shop (Requires forced build 3095 or higher)
+    , "dlc_chopshop/base.lua"
     , "dlc_chopshop/cargoship.lua"
+    , "dlc_chopshop/lifeguard.lua"
 }

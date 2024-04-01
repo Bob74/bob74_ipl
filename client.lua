@@ -182,6 +182,7 @@ Citizen.CreateThread(function()
     if GetGameBuildNumber() >= 2802 then
         DrugWarsGarage.LoadDefault() -- -272.9271, 283.2581, 103.9920
         DrugWarsWarehouse.LoadDefault() -- 603.0235, -395.7166, 23.7996
+        DrugWarsFreakshop.LoadDefault() -- 571.6017, -423.0762, -70.6470
     end
 
     -- ====================================================================
@@ -189,5 +190,6 @@ Citizen.CreateThread(function()
     -- ====================================================================
     if GetGameBuildNumber() >= 3095 then
         ChopShopCargoShip.LoadDefault() -- -356.4354, -4072.71, 16.8003
+        ChopShopLifeguard.LoadDefault() -- -1487.699, -1019.91, 5.2976
     end
 end)

@@ -5,10 +5,7 @@ end)
 
 DrugWarsGarage = {
     Ipl = {
-        ipl = {
-            "xm3_garage_fix",
-            "xm3_collision_fixes"
-        },
+        ipl = "xm3_garage_fix",
 
         Load = function()
             EnableIpl(DrugWarsGarage.Ipl.ipl, true)
