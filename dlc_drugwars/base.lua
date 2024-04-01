@@ -1,0 +1,5 @@
+CreateThread(function()
+    RequestIpl("xm3_collision_fixes")
+    RequestIpl("xm3_sum2_fix")
+    RequestIpl("xm3_security_fix")
+end)
