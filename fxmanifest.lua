@@ -138,6 +138,8 @@ client_scripts {
 
     -- DLC San Andreas Mercenaries (Requires forced build 2944 or higher)
     , "dlc_mercenaries/base.lua"
+    , "dlc_mercenaries/lab.lua"
+    , "dlc_mercenaries/warehouse.lua"
 
     -- DLC The Chop Shop (Requires forced build 3095 or higher)
     , "dlc_chopshop/base.lua"
