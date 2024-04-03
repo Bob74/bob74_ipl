@@ -144,5 +144,7 @@ client_scripts {
     -- DLC The Chop Shop (Requires forced build 3095 or higher)
     , "dlc_chopshop/base.lua"
     , "dlc_chopshop/cargoship.lua"
+    , "dlc_chopshop/garage.lua"
     , "dlc_chopshop/lifeguard.lua"
+    , "dlc_chopshop/salvage.lua"
 }

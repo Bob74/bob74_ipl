@@ -7,13 +7,15 @@ DrugWarsGarage = {
     interiorId = 290561,
 
     Ipl = {
-        ipl = "xm3_garage_fix",
+        Exterior = {
+            ipl = "xm3_garage_fix"
+        },
 
         Load = function()
-            EnableIpl(DrugWarsGarage.Ipl.ipl, true)
+            EnableIpl(DrugWarsGarage.Ipl.Exterior.ipl, true)
         end,
         Remove = function()
-            EnableIpl(DrugWarsGarage.Ipl.ipl, false)
+            EnableIpl(DrugWarsGarage.Ipl.Exterior.ipl, false)
         end
     },
 
@@ -94,7 +96,7 @@ DrugWarsGarage = {
         SetColor = function(color, refresh)
             SetIplPropState(DrugWarsGarage.interiorId, "entity_set_tint_01", true, refresh)
             SetInteriorEntitySetColor(DrugWarsGarage.interiorId, "entity_set_tint_01", color)
-        end,
+        end
     },
 
     LoadDefault = function()

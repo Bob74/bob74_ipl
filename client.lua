@@ -190,8 +190,8 @@ Citizen.CreateThread(function()
     -- =------------------- [DLC: San Andreas Mercenaries] ---------------=
     -- ====================================================================
     if GetGameBuildNumber() >= 2944 then
-        MercenariesLab.LoadDefault()
-        MercenariesWarehouse.LoadDefault()
+        MercenariesLab.LoadDefault() -- -1915.75, 3749.85, -100.0
+        MercenariesWarehouse.LoadDefault() -- 1200.0, -3250.0, -50.0
     end
 
     -- ====================================================================
@@ -200,5 +200,7 @@ Citizen.CreateThread(function()
     if GetGameBuildNumber() >= 3095 then
         ChopShopCargoShip.LoadDefault() -- -356.4354, -4072.71, 16.8003
         ChopShopLifeguard.LoadDefault() -- -1487.699, -1019.91, 5.2976
+        ChopShopGarage.LoadDefault() -- 1220.0, -2280.0, -50.0
+        ChopShopSalvage.LoadDefault() -- 1080.0, -2275.0, -50.0
     end
 end)
