@@ -1,4 +1,4 @@
--- Lifeguard: -1487.699, -1019.91, 5.2976
+-- Lifeguard: -1488.153, -1021.166, 5.000
 exports('GetChopShopLifeguardObject', function()
     return ChopShopLifeguard
 end)

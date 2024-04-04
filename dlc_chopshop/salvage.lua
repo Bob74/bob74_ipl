@@ -1,4 +1,4 @@
--- Salvage Yard: 1080.0, -2275.0, -50.0
+-- Salvage Yard: 1077.276, -2274.876, -50.000
 exports('GetChopShopSalvageObject', function()
     return ChopShopSalvage
 end)

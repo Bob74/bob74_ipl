@@ -1,4 +1,4 @@
--- Cargo ship: -356.4354, -4072.71, 16.8003
+-- Cargo ship: -344.4349, -4062.832, 17.000
 exports('GetChopShopCargoShipObject', function()
     return ChopShopCargoShip
 end)

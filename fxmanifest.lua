@@ -134,17 +134,16 @@ client_scripts {
     , "dlc_drugwars/garage.lua"
     , "dlc_drugwars/lab.lua"
     , "dlc_drugwars/traincrash.lua"
-    , "dlc_drugwars/warehouse.lua"
 
     -- DLC San Andreas Mercenaries (Requires forced build 2944 or higher)
     , "dlc_mercenaries/base.lua"
+    , "dlc_mercenaries/club.lua"
     , "dlc_mercenaries/lab.lua"
-    , "dlc_mercenaries/warehouse.lua"
 
     -- DLC The Chop Shop (Requires forced build 3095 or higher)
     , "dlc_chopshop/base.lua"
     , "dlc_chopshop/cargoship.lua"
-    , "dlc_chopshop/garage.lua"
+    , "dlc_chopshop/cartel_garage.lua"
     , "dlc_chopshop/lifeguard.lua"
     , "dlc_chopshop/salvage.lua"
 }

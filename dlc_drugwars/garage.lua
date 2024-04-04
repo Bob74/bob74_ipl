@@ -1,4 +1,4 @@
--- Garage: -272.9271, 283.2581, 103.9920
+-- Eclipse Boulevard Garage: 519.2477, -2618.788, -50.000
 exports('GetDrugWarsGarageObject', function()
     return DrugWarsGarage
 end)

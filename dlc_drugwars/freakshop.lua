@@ -1,10 +1,26 @@
--- Freakshop: 571.6017, -423.0762, -70.6470
+-- Freakshop: 570.9713, -420.0727, -70.000
 exports('GetDrugWarsFreakshopObject', function()
     return DrugWarsFreakshop
 end)
 
 DrugWarsFreakshop = {
     interiorId = 290817,
+
+    Ipl = {
+        Exterior = {
+            ipl = {
+                "xm3_warehouse",
+                "xm3_warehouse_grnd"
+            }
+        },
+
+        Load = function()
+            EnableIpl(DrugWarsFreakshop.Ipl.Exterior.ipl, true)
+        end,
+        Remove = function()
+            EnableIpl(DrugWarsFreakshop.Ipl.Exterior.ipl, false)
+        end
+    },
 
     Door = {
         opened = "entity_set_roller_door_open",
@@ -24,6 +40,10 @@ DrugWarsFreakshop = {
     },
 
     LoadDefault = function()
+        -- Exterior
+        DrugWarsFreakshop.Ipl.Load()
+
+        -- Interior
         DrugWarsFreakshop.Door.Set(DrugWarsFreakshop.Door.closed, false)
 
         RefreshInterior(DrugWarsFreakshop.interiorId)

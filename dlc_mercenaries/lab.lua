@@ -1,4 +1,4 @@
--- Fort Zancudo Lab: -1915.75, 3749.85, -100.0
+-- Fort Zancudo Lab: -1916.119, 3749.719, -100.000
 exports('GetMercenariesLabObject', function()
     return MercenariesLab
 end)

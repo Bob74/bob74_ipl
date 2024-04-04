@@ -180,27 +180,26 @@ Citizen.CreateThread(function()
     -- =------------------- [DLC: Los Santos Drug Wars] ------------------=
     -- ====================================================================
     if GetGameBuildNumber() >= 2802 then
-        DrugWarsFreakshop.LoadDefault() -- 571.6017, -423.0762, -70.0
-        DrugWarsGarage.LoadDefault() -- -272.9271, 283.2581, 103.9920
-        DrugWarsLab.LoadDefault() -- 483.3028, -2625.291, -50.0
-        DrugWarsWarehouse.LoadDefault() -- 603.0235, -395.7166, 23.7996
+        DrugWarsFreakshop.LoadDefault() -- 570.9713, -420.0727, -70.000
+        DrugWarsGarage.LoadDefault() -- 519.2477, -2618.788, -50.000
+        DrugWarsLab.LoadDefault() -- 483.4252, -2625.071, -50.000
     end
 
     -- ====================================================================
     -- =------------------- [DLC: San Andreas Mercenaries] ---------------=
     -- ====================================================================
     if GetGameBuildNumber() >= 2944 then
-        MercenariesLab.LoadDefault() -- -1915.75, 3749.85, -100.0
-        MercenariesWarehouse.LoadDefault() -- 1200.0, -3250.0, -50.0
+        MercenariesClub.LoadDefault() -- 1202.407, -3251.251, -50.000
+        MercenariesLab.LoadDefault() -- -1916.119, 3749.719, -100.000
     end
 
     -- ====================================================================
     -- =------------------- [DLC: The Chop Shop] -------------------------=
     -- ====================================================================
     if GetGameBuildNumber() >= 3095 then
-        ChopShopCargoShip.LoadDefault() -- -356.4354, -4072.71, 16.8003
-        ChopShopLifeguard.LoadDefault() -- -1487.699, -1019.91, 5.2976
-        ChopShopGarage.LoadDefault() -- 1220.0, -2280.0, -50.0
-        ChopShopSalvage.LoadDefault() -- 1080.0, -2275.0, -50.0
+        ChopShopCargoShip.LoadDefault() -- -344.4349, -4062.832, 17.000
+        ChopShopCartelGarage.LoadDefault() -- 1220.133, -2277.844, -50.000
+        ChopShopLifeguard.LoadDefault() -- -1488.153, -1021.166, 5.000
+        ChopShopSalvage.LoadDefault() -- 1077.276, -2274.876, -50.000
     end
 end)

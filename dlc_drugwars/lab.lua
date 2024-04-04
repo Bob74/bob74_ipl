@@ -1,4 +1,4 @@
--- Acid Lab: 483.3028, -2625.291, -50.0
+-- Acid Lab: 483.4252, -2625.071, -50.000
 exports('GetDrugWarsLabObject', function()
     return DrugWarsLab
 end)
