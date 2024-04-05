@@ -175,4 +175,31 @@ Citizen.CreateThread(function()
         CriminalEnterpriseVehicleWarehouse.LoadDefault() -- 800.13696, -3001.4297, -65.14074
         CriminalEnterpriseWarehouse.LoadDefault() -- 849.1047, -3000.209, -45.974354
     end
+
+    -- ====================================================================
+    -- =------------------- [DLC: Los Santos Drug Wars] ------------------=
+    -- ====================================================================
+    if GetGameBuildNumber() >= 2802 then
+        DrugWarsFreakshop.LoadDefault() -- 570.9713, -420.0727, -70.000
+        DrugWarsGarage.LoadDefault() -- 519.2477, -2618.788, -50.000
+        DrugWarsLab.LoadDefault() -- 483.4252, -2625.071, -50.000
+    end
+
+    -- ====================================================================
+    -- =------------------- [DLC: San Andreas Mercenaries] ---------------=
+    -- ====================================================================
+    if GetGameBuildNumber() >= 2944 then
+        MercenariesClub.LoadDefault() -- 1202.407, -3251.251, -50.000
+        MercenariesLab.LoadDefault() -- -1916.119, 3749.719, -100.000
+    end
+
+    -- ====================================================================
+    -- =------------------- [DLC: The Chop Shop] -------------------------=
+    -- ====================================================================
+    if GetGameBuildNumber() >= 3095 then
+        ChopShopCargoShip.LoadDefault() -- -344.4349, -4062.832, 17.000
+        ChopShopCartelGarage.LoadDefault() -- 1220.133, -2277.844, -50.000
+        ChopShopLifeguard.LoadDefault() -- -1488.153, -1021.166, 5.000
+        ChopShopSalvage.LoadDefault() -- 1077.276, -2274.876, -50.000
+    end
 end)
