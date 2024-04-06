@@ -101,4 +101,14 @@ CreateThread(function()
     -- Train track: 2626.374, 2949.869, 39.1409
     RequestIpl("ld_rail_01_track")
     RequestIpl("ld_rail_02_track")
+
+    -- Docks cranes: 887.7344, -2922.285, 34.000
+    RequestIpl("dockcrane1")
+    RequestIpl("pcranecont")
+
+    -- Construction lift: -180.5771, -1016.9276, 28.2893
+    RequestIpl("dt1_21_prop_lift_on")
+
+    -- Davis Quartz train: 2773.6099, 2835.3274, 35.1903
+    RequestIpl("cs5_4_trains")
 end)
