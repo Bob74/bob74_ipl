@@ -1,4 +1,4 @@
-# Fix holes and customize the map (Updated to The Criminal Enterprises DLC)
+# Fix holes and customize the map (Updated to The Chop Shop DLC)
 
 The purpose of this script is to fix the holes in the map by loading zones that aren’t loaded by default. I’ve added quite a lot of places to load, based on [Mikeeh’s script](https://forum.fivem.net/t/release-load-unloaded-ipls/5911). If you just want to fix the holes in the map, then use this resource as provided.
 
@@ -30,6 +30,12 @@ This resource has been completely rewritten from scratch since v2.0. You can cus
 (DD/MM/YYYY)
 
 ---
+06/04/2024 - 2.2.0
+- Added "Los Santos Drug Wars" support
+- Added "San Andreas Mercenaries" support
+- Added "The Chop Shop" support
+- Added missing base IPLs
+
 27/03/2024 - 2.1.4
 - North Yankton improvements (https://github.com/Bob74/bob74_ipl/pull/131 @TheIndra55)
 
