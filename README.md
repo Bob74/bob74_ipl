@@ -30,6 +30,13 @@ This resource has been completely rewritten from scratch since v2.0. You can cus
 (DD/MM/YYYY)
 
 ---
+14/04/2024 - 2.2.1
+- Allow disabling San Andreas Mercenaries fixes
+- Allow setting base game cargo ship as sunk
+- Rename `ChopShopSalvage.Ipl.Load()` to `ChopShopSalvage.Ipl.Exterior.Load()`
+- Rename `DrugWarsFreakshop.Ipl.Load()` to `DrugWarsFreakshop.Ipl.Exterior.Load()`
+- Rename `DrugWarsGarage.Ipl.Load()` to `DrugWarsGarage.Ipl.Exterior.Load()`
+
 06/04/2024 - 2.2.0
 - Added "Los Santos Drug Wars" support
 - Added "San Andreas Mercenaries" support
