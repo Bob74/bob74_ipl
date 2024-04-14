@@ -21,6 +21,7 @@ client_scripts {
     , "gtav/base.lua"   -- Base IPLs to fix holes
     , "gtav/ammunations.lua"
     , "gtav/bahama.lua"
+    , "gtav/cargoship.lua"
     , "gtav/floyd.lua"
     , "gtav/franklin.lua"
     , "gtav/franklin_aunt.lua"

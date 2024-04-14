@@ -34,6 +34,7 @@ Citizen.CreateThread(function()
     Ammunations.LoadDefault()
     LesterFactory.LoadDefault()
     StripClub.LoadDefault()
+    CargoShip.LoadDefault()
 
     Graffitis.Enable(true)
 
