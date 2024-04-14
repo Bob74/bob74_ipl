@@ -11,15 +11,15 @@ DrugWarsFreakshop = {
             ipl = {
                 "xm3_warehouse",
                 "xm3_warehouse_grnd"
-            }
-        },
+            },
 
-        Load = function()
-            EnableIpl(DrugWarsFreakshop.Ipl.Exterior.ipl, true)
-        end,
-        Remove = function()
-            EnableIpl(DrugWarsFreakshop.Ipl.Exterior.ipl, false)
-        end
+            Load = function()
+                EnableIpl(DrugWarsFreakshop.Ipl.Exterior.ipl, true)
+            end,
+            Remove = function()
+                EnableIpl(DrugWarsFreakshop.Ipl.Exterior.ipl, false)
+            end
+        }
     },
 
     Door = {
@@ -41,7 +41,7 @@ DrugWarsFreakshop = {
 
     LoadDefault = function()
         -- Exterior
-        DrugWarsFreakshop.Ipl.Load()
+        DrugWarsFreakshop.Ipl.Exterior.Load()
 
         -- Interior
         DrugWarsFreakshop.Door.Set(DrugWarsFreakshop.Door.closed, false)

@@ -14,15 +14,15 @@ ChopShopSalvage = {
                 "m23_2_id2_04_reds",
                 "m23_2_cs1_05_reds",
                 "m23_2_cs4_11_reds",
-            }
-        },
+            },
 
-        Load = function()
-            EnableIpl(ChopShopSalvage.Ipl.Exterior.ipl, true)
-        end,
-        Remove = function()
-            EnableIpl(ChopShopSalvage.Ipl.Exterior.ipl, false)
-        end
+            Load = function()
+                EnableIpl(ChopShopSalvage.Ipl.Exterior.ipl, true)
+            end,
+            Remove = function()
+                EnableIpl(ChopShopSalvage.Ipl.Exterior.ipl, false)
+            end
+        }
     },
 
     Style = {
@@ -101,7 +101,7 @@ ChopShopSalvage = {
 
     LoadDefault = function()
         -- Exterior
-        ChopShopSalvage.Ipl.Load()
+        ChopShopSalvage.Ipl.Exterior.Load()
 
         -- Interior
         ChopShopSalvage.Tint.SetColor(ChopShopSalvage.Tint.gray, false)

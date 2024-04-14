@@ -8,15 +8,15 @@ DrugWarsGarage = {
 
     Ipl = {
         Exterior = {
-            ipl = "xm3_garage_fix"
-        },
+            ipl = "xm3_garage_fix",
 
-        Load = function()
-            EnableIpl(DrugWarsGarage.Ipl.Exterior.ipl, true)
-        end,
-        Remove = function()
-            EnableIpl(DrugWarsGarage.Ipl.Exterior.ipl, false)
-        end
+            Load = function()
+                EnableIpl(DrugWarsGarage.Ipl.Exterior.ipl, true)
+            end,
+            Remove = function()
+                EnableIpl(DrugWarsGarage.Ipl.Exterior.ipl, false)
+            end
+        }
     },
 
     Banner = {
@@ -101,7 +101,7 @@ DrugWarsGarage = {
 
     LoadDefault = function()
         -- Exterior
-        DrugWarsGarage.Ipl.Load()
+        DrugWarsGarage.Ipl.Exterior.Load()
         DrugWarsGarage.Banner.Hide()
 
         -- Interior
