@@ -136,9 +136,9 @@ client_scripts {
     , "dlc_drugwars/traincrash.lua"
 
     -- DLC San Andreas Mercenaries (Requires forced build 2944 or higher)
-    , "dlc_mercenaries/base.lua"
     , "dlc_mercenaries/club.lua"
     , "dlc_mercenaries/lab.lua"
+    , "dlc_mercenaries/fixes.lua"
 
     -- DLC The Chop Shop (Requires forced build 3095 or higher)
     , "dlc_chopshop/base.lua"
