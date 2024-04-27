@@ -36,7 +36,7 @@ MercenariesClub = {
     },
 
     LoadDefault = function()
-        MercenariesClub.Style.Set(MercenariesClub.Style.warehouse, false)
+        MercenariesClub.Style.Set(MercenariesClub.Style.club, false)
         MercenariesClub.Stairs.Enable(true, false)
 
         RefreshInterior(MercenariesClub.interiorId)
