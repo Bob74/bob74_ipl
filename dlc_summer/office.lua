@@ -4,21 +4,12 @@ exports('GetSummerOfficeObject', function()
 end)
 
 SummerOffice = {
-    interiorId = 0,
+    interiorId = 295425,
 
     Style = {
-        vintage = {
-            "set_style_01",
-            "set_quarters_closed_s1"
-        },
-        patterns = {
-            "set_style_02",
-            "set_quarters_closed_s2"
-        },
-        teak = {
-            "set_style_03",
-            "set_quarters_closed_s3"
-        },
+        vintage = "set_style_01",
+        patterns = "set_style_02",
+        teak = "set_style_03",
 
         Set = function(style, refresh)
             SummerOffice.Style.Clear(false)

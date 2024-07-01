@@ -209,7 +209,7 @@ Citizen.CreateThread(function()
     -- =------------------ [DLC: Bottom Dollar Bounties] -----------------=
     -- ====================================================================
     if GetGameBuildNumber() >= 3258 then
-        SummerCarrier.LoadDefault() -- -3268.62134, 3930.22119, 6.64
+        SummerCarrier.LoadDefault() -- -3208.03, 3954.54, 14.0
         SummerOffice.LoadDefault() -- 565.886, -2688.761, -50.0
     end
 end)

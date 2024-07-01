@@ -1,4 +1,4 @@
--- Aircraft carrier: -3268.62134, 3930.22119, 6.64
+-- Aircraft carrier: -3208.03, 3954.54, 14.0
 exports('GetSummerCarrierObject', function()
     return SummerCarrier
 end)
