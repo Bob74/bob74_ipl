@@ -6,6 +6,25 @@ end)
 SummerOffice = {
     interiorId = 295425,
 
+    Ipl = {
+        Exterior = {
+            ipl = {
+                "m24_1_bailoffice_davis",
+                "m24_1_bailoffice_delperro",
+                "m24_1_bailoffice_missionrow",
+                "m24_1_bailoffice_paletobay",
+                "m24_1_bailoffice_vinewood"
+            },
+
+            Load = function()
+                EnableIpl(SummerOffice.Ipl.Exterior.ipl, true)
+            end,
+            Remove = function()
+                EnableIpl(SummerOffice.Ipl.Exterior.ipl, false)
+            end
+        }
+    },
+
     Style = {
         vintage = "set_style_01",
         patterns = "set_style_02",
@@ -78,6 +97,8 @@ SummerOffice = {
     },
 
     LoadDefault = function()
+        SummerOffice.Ipl.Exterior.Load()
+
         SummerOffice.Style.Set(SummerOffice.Style.teak, false)
         SummerOffice.Desk.Set(SummerOffice.Desk.files, false)
         SummerOffice.Gunsafe.Set(SummerOffice.Gunsafe.cabinet, false)
