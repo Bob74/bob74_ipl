@@ -204,4 +204,12 @@ Citizen.CreateThread(function()
         ChopShopLifeguard.LoadDefault() -- -1488.153, -1021.166, 5.000
         ChopShopSalvage.LoadDefault() -- 1077.276, -2274.876, -50.000
     end
+
+    -- ====================================================================
+    -- =------------------ [DLC: Bottom Dollar Bounties] -----------------=
+    -- ====================================================================
+    if GetGameBuildNumber() >= 3258 then
+        SummerCarrier.LoadDefault() -- -3208.03, 3954.54, 14.0
+        SummerOffice.LoadDefault() -- 565.886, -2688.761, -50.0
+    end
 end)
