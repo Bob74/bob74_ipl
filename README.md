@@ -1,4 +1,4 @@
-# Fix holes and customize the map (Updated to The Chop Shop DLC)
+# Fix holes and customize the map (Updated to Bottom Dollar Bounties DLC)
 
 The purpose of this script is to fix the holes in the map by loading zones that aren’t loaded by default. I’ve added quite a lot of places to load, based on [Mikeeh’s script](https://forum.fivem.net/t/release-load-unloaded-ipls/5911). If you just want to fix the holes in the map, then use this resource as provided.
 
@@ -30,6 +30,9 @@ This resource has been completely rewritten from scratch since v2.0. You can cus
 (DD/MM/YYYY)
 
 ---
+02/07/2024 - 2.3.0
+- Added "Bottom Dollar Bounties" support
+
 14/04/2024 - 2.2.1
 - Allow disabling San Andreas Mercenaries fixes
 - Allow setting base game cargo ship as sunk
