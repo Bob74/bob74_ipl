@@ -36,7 +36,7 @@ TunerMethLab = {
     LoadDefault = function()
         TunerMethLab.Entities.Load()
 
-        SetInteriorEntitySetColor(TunerMethLab.interiorId, TunerMethLab.Entities.tintable_walls, 3)
-        RefreshInterior(TunerMethLab.interiorId)
+        SetInteriorEntitySetColor(TunerMethLab.InteriorId, TunerMethLab.Entities.tintable_walls, 3)
+        RefreshInterior(TunerMethLab.InteriorId)
     end
 }
