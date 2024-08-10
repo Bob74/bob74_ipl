@@ -116,8 +116,8 @@ FinanceOffice2 = {
             elseif doorSide:lower() == "right" then
                 FinanceOffice2.Safe.isRightDoorOpen = true
             else
-                PrintTrace("[bob74_ipl] Warning: " .. doorSide .. " is not a correct value. Valid values are:")
-                PrintTrace("left right")
+                print("[bob74_ipl] Warning: " .. doorSide .. " is not a correct value. Valid values are:")
+                print("left right")
             end
         end,
         Close = function(doorSide)
@@ -126,8 +126,8 @@ FinanceOffice2 = {
             elseif doorSide:lower() == "right" then
                 FinanceOffice2.Safe.isRightDoorOpen = false
             else
-                PrintTrace("[bob74_ipl] Warning: " .. doorSide .. " is not a correct value. Valid values are:")
-                PrintTrace("left right")
+                print("[bob74_ipl] Warning: " .. doorSide .. " is not a correct value. Valid values are:")
+                print("left right")
             end
         end,
 
@@ -152,7 +152,7 @@ FinanceOffice2 = {
             end
 
             if doorHandle == 0 then
-                PrintTrace("[bob74_ipl] Warning: " .. doorSide .. " safe door handle is 0")
+                print("[bob74_ipl] Warning: " .. doorSide .. " safe door handle is 0")
                 return
             end
 
