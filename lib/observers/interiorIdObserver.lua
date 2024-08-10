@@ -2,7 +2,6 @@ local _scanDelay = 500
 
 Citizen.CreateThread(function()
     while true do
-        -- /!\ To do: Find a more reliable way to get the current interior ID
         Global.currentInteriorId = GetInteriorFromEntity(PlayerPedId())
 
         if Global.currentInteriorId == 0 then
