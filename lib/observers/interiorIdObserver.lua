@@ -1,6 +1,6 @@
 local _scanDelay = 500
 
-Citizen.CreateThread(function()
+CreateThread(function()
     while true do
         Global.currentInteriorId = GetInteriorFromEntity(PlayerPedId())
 
@@ -48,6 +48,6 @@ Citizen.CreateThread(function()
             Global.Security.isInsideOffice4 = (Global.currentInteriorId == MpSecurityOffice4.InteriorId)
         end
 
-        Citizen.Wait(_scanDelay)
+        Wait(_scanDelay)
     end
 end)

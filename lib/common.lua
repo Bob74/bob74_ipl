@@ -144,7 +144,7 @@ function DrawEmptyRect(name, model)
     local renderId = CreateNamedRenderTargetForModel(name, model)
 
     while not IsNamedRendertargetRegistered(name) do
-        Citizen.Wait(step)
+        Wait(step)
 
         currentTime = currentTime + step
 
@@ -197,7 +197,7 @@ function LoadStreamedTextureDict(texturesDict)
 
     RequestStreamedTextureDict(texturesDict, false)
     while not HasStreamedTextureDictLoaded(texturesDict) do
-        Citizen.Wait(step)
+        Wait(step)
 
         currentTime = currentTime + step
 
@@ -216,7 +216,7 @@ function LoadScaleform(scaleform)
     local handle = RequestScaleformMovie(scaleform)
 
     while not HasScaleformMovieLoaded(handle) do
-        Citizen.Wait(step)
+        Wait(step)
 
         currentTime = currentTime + step
 
@@ -235,7 +235,7 @@ function GetPedheadshot(ped)
     local pedheadshot = RegisterPedheadshot(ped)
 
     while not IsPedheadshotReady(pedheadshot) do
-        Citizen.Wait(step)
+        Wait(step)
 
         currentTime = currentTime + step
 
@@ -257,10 +257,10 @@ function GetPedheadshotTexture(ped)
         local IsTextureDictLoaded = LoadStreamedTextureDict(textureDict)
 
         if not IsTextureDictLoaded then
-            Citizen.Trace("ERROR: GetPedheadshotTexture - Textures dictionnary \"" .. tostring(textureDict) .. "\" cannot be loaded.")
+            PrintTrace("ERROR: GetPedheadshotTexture - Textures dictionnary \"" .. tostring(textureDict) .. "\" cannot be loaded.")
         end
     else
-        Citizen.Trace("ERROR: GetPedheadshotTexture - PedHeadShot not ready.")
+        PrintTrace("ERROR: GetPedheadshotTexture - PedHeadShot not ready.")
     end
 
     return textureDict

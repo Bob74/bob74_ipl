@@ -116,8 +116,8 @@ FinanceOffice4 = {
             elseif doorSide:lower() == "right" then
                 FinanceOffice4.Safe.isRightDoorOpen = true
             else
-                Citizen.Trace("[bob74_ipl] Warning: " .. doorSide .. " is not a correct value. Valid values are:")
-                Citizen.Trace("left right")
+                PrintTrace("[bob74_ipl] Warning: " .. doorSide .. " is not a correct value. Valid values are:")
+                PrintTrace("left right")
             end
         end,
         Close = function(doorSide)
@@ -126,8 +126,8 @@ FinanceOffice4 = {
             elseif doorSide:lower() == "right" then
                 FinanceOffice4.Safe.isRightDoorOpen = false
             else
-                Citizen.Trace("[bob74_ipl] Warning: " .. doorSide .. " is not a correct value. Valid values are:")
-                Citizen.Trace("left right")
+                PrintTrace("[bob74_ipl] Warning: " .. doorSide .. " is not a correct value. Valid values are:")
+                PrintTrace("left right")
             end
         end,
 
@@ -152,7 +152,7 @@ FinanceOffice4 = {
             end
 
             if doorHandle == 0 then
-                Citizen.Trace("[bob74_ipl] Warning: " .. doorSide .. " safe door handle is 0")
+                PrintTrace("[bob74_ipl] Warning: " .. doorSide .. " safe door handle is 0")
                 return
             end
 
@@ -165,7 +165,7 @@ FinanceOffice4 = {
             local doorHandle = GetClosestObjectOfType(FinanceOffice4.Safe.Position.x, FinanceOffice4.Safe.Position.y, FinanceOffice4.Safe.Position.z, 5.0, doorHash, false, false, false)
 
             while doorHandle == 0 do
-                Citizen.Wait(25)
+                Wait(25)
 
                 doorHandle = GetClosestObjectOfType(FinanceOffice4.Safe.Position.x, FinanceOffice4.Safe.Position.y, FinanceOffice4.Safe.Position.z, 5.0, doorHash, false, false, false)
                 timeout = timeout - 1
