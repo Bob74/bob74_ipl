@@ -116,8 +116,7 @@ FinanceOffice4 = {
             elseif doorSide:lower() == "right" then
                 FinanceOffice4.Safe.isRightDoorOpen = true
             else
-                print("[bob74_ipl] Warning: " .. doorSide .. " is not a correct value. Valid values are:")
-                print("left right")
+                print("[bob74_ipl] Warning: " .. doorSide .. " is not a correct value. Valid values are: left right")
             end
         end,
         Close = function(doorSide)
@@ -126,8 +125,7 @@ FinanceOffice4 = {
             elseif doorSide:lower() == "right" then
                 FinanceOffice4.Safe.isRightDoorOpen = false
             else
-                print("[bob74_ipl] Warning: " .. doorSide .. " is not a correct value. Valid values are:")
-                print("left right")
+                print("[bob74_ipl] Warning: " .. doorSide .. " is not a correct value. Valid values are: left right")
             end
         end,
 
