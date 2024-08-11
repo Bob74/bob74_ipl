@@ -84,7 +84,7 @@ FinanceOrganization = {
     }
 }
 
-Citizen.CreateThread(function()
+CreateThread(function()
     FinanceOrganization.Office.Init()
 
     while true do
@@ -95,19 +95,19 @@ Citizen.CreateThread(function()
 
                 FinanceOrganization.Office.loaded = true
 
-                Citizen.Wait(0) -- We need to call all this every frame
+                Wait(0) -- We need to call all this every frame
             else
-                Citizen.Wait(1000) -- We are not inside an office
+                Wait(1000) -- We are not inside an office
             end
         elseif FinanceOrganization.Office.loaded then
             -- Loaded and need to unload
             FinanceOrganization.Office.Clear()
             FinanceOrganization.Office.loaded = false
 
-            Citizen.Wait(1000) -- We can wait longer when we don't need to display text
+            Wait(1000) -- We can wait longer when we don't need to display text
         else
             -- Not needed to load
-            Citizen.Wait(1000) -- We can wait longer when we don't need to display text
+            Wait(1000) -- We can wait longer when we don't need to display text
         end
     end
 end)

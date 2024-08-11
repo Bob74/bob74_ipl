@@ -199,10 +199,10 @@ BikerGang = {
                     local IsTextureDictLoaded = LoadStreamedTextureDict(member.textureDict)
 
                     if not IsTextureDictLoaded then
-                        Citizen.Trace("ERROR: BikerClubhouseDrawMembers - Textures dictionnary \"" .. tostring(member.textureDict) .. "\" cannot be loaded.")
+                        print("ERROR: BikerClubhouseDrawMembers - Textures dictionnary \"" .. tostring(member.textureDict) .. "\" cannot be loaded.")
                     end
                 else
-                    Citizen.Trace("ERROR: BikerClubhouseDrawMembers - PedHeadShot not ready.")
+                    print("ERROR: BikerClubhouseDrawMembers - PedHeadShot not ready.")
                 end
             end,
             Clear = function(member)
@@ -347,7 +347,7 @@ BikerGang = {
 
             Init = function()
                 if not DrawEmptyRect(BikerGang.Clubhouse.MissionsWall.target, BikerGang.Clubhouse.MissionsWall.prop) then
-                    Citizen.Trace("ERROR: BikerGang.Clubhouse.MissionsWall.Init() - DrawEmptyRect - Timeout")
+                    print("ERROR: BikerGang.Clubhouse.MissionsWall.Init() - DrawEmptyRect - Timeout")
                 end
             end,
             Enable = function(state)
@@ -433,7 +433,7 @@ BikerGang = {
     }
 }
 
-Citizen.CreateThread(function()
+CreateThread(function()
     -- Removing the black texture
     BikerGang.Clubhouse.Members.President.Init()
     BikerGang.Clubhouse.Members.VicePresident.Init()
@@ -492,14 +492,14 @@ Citizen.CreateThread(function()
                     end
                 end
 
-                Citizen.Wait(0) -- We need to call all this every frame
+                Wait(0) -- We need to call all this every frame
             else
                 -- Not in a clubhouse
-                Citizen.Wait(1000)
+                Wait(1000)
             end
         else
             -- No load needed
-            Citizen.Wait(1000)
+            Wait(1000)
         end
     end
 end)
@@ -549,7 +549,7 @@ function DrawEmblem(texturesDict, rotation)
         local IsTextureDictLoaded = LoadStreamedTextureDict(texturesDict)
 
         if not IsTextureDictLoaded then
-            Citizen.Trace("ERROR: DrawEmblem - Textures dictionnary cannot be loaded.")
+            print("ERROR: DrawEmblem - Textures dictionnary cannot be loaded.")
         end
 
         BikerGang.Clubhouse.Emblem.stage = 1

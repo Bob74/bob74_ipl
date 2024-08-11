@@ -182,7 +182,7 @@ DoomsdayFacility = {
 
                         RequestModel(model)
                         while not HasModelLoaded(model) do
-                            Citizen.Wait(0)
+                            Wait(0)
                         end
 
                         local privacyGlass = CreateObject(model, 367.99, 4827.745, -59.0, false, false, false)
@@ -211,7 +211,7 @@ DoomsdayFacility = {
                         if handle == 0 then
                             RequestModel(DoomsdayFacility.PrivacyGlass.controlModelHash)
                             while not HasModelLoaded(DoomsdayFacility.PrivacyGlass.controlModelHash) do
-                                Citizen.Wait(0)
+                                Wait(0)
                             end
 
                             local privacyGlass = CreateObjectNoOffset(DoomsdayFacility.PrivacyGlass.controlModelHash, DoomsdayFacility.PrivacyGlass.Bedroom.Control.position.x, DoomsdayFacility.PrivacyGlass.Bedroom.Control.position.y, DoomsdayFacility.PrivacyGlass.Bedroom.Control.position.z, false, false, false)
@@ -269,7 +269,7 @@ DoomsdayFacility = {
                             if entityToAttach ~= 0 then
                                 RequestModel(glass.modelHash)
                                 while not HasModelLoaded(glass.modelHash) do
-                                    Citizen.Wait(0)
+                                    Wait(0)
                                 end
 
                                 local privacyGlass = CreateObject(glass.modelHash, glass.entityPos.x, glass.entityPos.y, glass.entityPos.z, false, false, false)
@@ -301,7 +301,7 @@ DoomsdayFacility = {
                         if handle == 0 then
                             RequestModel(DoomsdayFacility.PrivacyGlass.controlModelHash)
                             while not HasModelLoaded(DoomsdayFacility.PrivacyGlass.controlModelHash) do
-                                Citizen.Wait(0)
+                                Wait(0)
                             end
 
                             local privacyGlass = CreateObjectNoOffset(DoomsdayFacility.PrivacyGlass.controlModelHash, DoomsdayFacility.PrivacyGlass.Lounge.Control.position.x, DoomsdayFacility.PrivacyGlass.Lounge.Control.position.y, DoomsdayFacility.PrivacyGlass.Lounge.Control.position.z, false, false, false)
