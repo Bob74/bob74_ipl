@@ -106,6 +106,10 @@ client_scripts {
     , "dlc_casino/casino.lua"
     , "dlc_casino/penthouse.lua"
 
+    -- DLC Cayo Perico Heist (Requires forced build 2189 or higher)
+    , "dlc_cayoperico/nightclub.lua"
+    , "dlc_cayoperico/submarine.lua"
+
     -- DLC Tuners (Requires forced build 2372 or higher)
     , "dlc_tuner/garage.lua"
     , "dlc_tuner/meetup.lua"
