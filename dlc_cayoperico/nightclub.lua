@@ -57,15 +57,9 @@ CayoPericoNightclub = {
             SetIplPropState(CayoPericoNightclub.interiorId, style, true, refresh)
         end,
         Clear = function(refresh)
-            SetIplPropState(CayoPericoNightclub.interiorId, {
-                CayoPericoNightclub.Turntables.style01,
-                CayoPericoNightclub.Turntables.style02,
-                CayoPericoNightclub.Turntables.style03,
-                CayoPericoNightclub.Turntables.style04,
-                CayoPericoNightclub.Turntables.style05,
-                CayoPericoNightclub.Turntables.style06,
-                CayoPericoNightclub.Turntables.style07
-            }, false, refresh)
+            for key, value in pairs(CayoPericoNightclub.Turntables) do
+                SetIplPropState(CayoPericoNightclub.interiorId, value, false, refresh)
+            end
         end
     },
 
