@@ -58,7 +58,9 @@ CayoPericoNightclub = {
         end,
         Clear = function(refresh)
             for key, value in pairs(CayoPericoNightclub.Turntables) do
-                SetIplPropState(CayoPericoNightclub.interiorId, value, false, refresh)
+                if type(value) == "string" then
+                    SetIplPropState(CayoPericoNightclub.interiorId, value, false, refresh)
+                end
             end
         end
     },
@@ -105,7 +107,9 @@ CayoPericoNightclub = {
         end,
         Clear = function(refresh)
             for key, value in pairs(CayoPericoNightclub.Lights) do
-                SetIplPropState(CayoPericoNightclub.interiorId, value, false, refresh)
+                if type(value) == "string" then
+                    SetIplPropState(CayoPericoNightclub.interiorId, value, false, refresh)
+                end
             end
         end
     },
