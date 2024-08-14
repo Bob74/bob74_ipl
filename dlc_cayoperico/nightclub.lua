@@ -83,34 +83,95 @@ CayoPericoNightclub = {
     },
 
     Lights = {
-        droplets01 = "dj_01_lights_01",
-        droplets02 = "dj_02_lights_01",
-        droplets03 = "dj_03_lights_01",
-        droplets04 = "dj_04_lights_01",
-        neons01 = "dj_01_lights_02",
-        neons02 = "dj_02_lights_02",
-        neons03 = "dj_03_lights_02",
-        neons04 = "dj_04_lights_02",
-        bands01 = "dj_01_lights_03",
-        bands02 = "dj_02_lights_03",
-        bands03 = "dj_03_lights_03",
-        bands04 = "dj_04_lights_03",
-        lasers01 = "dj_01_lights_04",
-        lasers02 = "dj_02_lights_04",
-        lasers03 = "dj_03_lights_04",
-        lasers04 = "dj_04_lights_04",
+        Droplets = {
+            style01 = "dj_01_lights_01",
+            style02 = "dj_02_lights_01",
+            style03 = "dj_03_lights_01",
+            style04 = "dj_04_lights_01",
 
-        Set = function(style, refresh)
-            CayoPericoNightclub.Lights.Clear(false)
+            Set = function(lights, refresh)
+                CayoPericoNightclub.Lights.Droplets.Clear(false)
 
-            SetIplPropState(CayoPericoNightclub.interiorId, style, true, refresh)
-        end,
-        Clear = function(refresh)
-            for key, value in pairs(CayoPericoNightclub.Lights) do
-                if type(value) == "string" then
-                    SetIplPropState(CayoPericoNightclub.interiorId, value, false, refresh)
-                end
+                SetIplPropState(CayoPericoNightclub.interiorId, lights, true, refresh)
+            end,
+            Clear = function(refresh)
+                SetIplPropState(CayoPericoNightclub.interiorId, {
+                    CayoPericoNightclub.Lights.Droplets.style01,
+                    CayoPericoNightclub.Lights.Droplets.style02,
+                    CayoPericoNightclub.Lights.Droplets.style03,
+                    CayoPericoNightclub.Lights.Droplets.style04
+                }, false, refresh)
             end
+        },
+
+        Neons = {
+            style01 = "dj_01_lights_02",
+            style02 = "dj_02_lights_02",
+            style03 = "dj_03_lights_02",
+            style04 = "dj_04_lights_02",
+
+            Set = function(lights, refresh)
+                CayoPericoNightclub.Lights.Neons.Clear(false)
+
+                SetIplPropState(CayoPericoNightclub.interiorId, lights, true, refresh)
+            end,
+            Clear = function(refresh)
+                SetIplPropState(CayoPericoNightclub.interiorId, {
+                    CayoPericoNightclub.Lights.Neons.style01,
+                    CayoPericoNightclub.Lights.Neons.style02,
+                    CayoPericoNightclub.Lights.Neons.style03,
+                    CayoPericoNightclub.Lights.Neons.style04
+                }, false, refresh)
+            end
+        },
+
+        Bands = {
+            style01 = "dj_01_lights_03",
+            style02 = "dj_02_lights_03",
+            style03 = "dj_03_lights_03",
+            style04 = "dj_04_lights_03",
+
+            Set = function(lights, refresh)
+                CayoPericoNightclub.Lights.Bands.Clear(false)
+
+                SetIplPropState(CayoPericoNightclub.interiorId, lights, true, refresh)
+            end,
+            Clear = function(refresh)
+                SetIplPropState(CayoPericoNightclub.interiorId, {
+                    CayoPericoNightclub.Lights.Bands.style01,
+                    CayoPericoNightclub.Lights.Bands.style02,
+                    CayoPericoNightclub.Lights.Bands.style03,
+                    CayoPericoNightclub.Lights.Bands.style04
+                }, false, refresh)
+            end
+        },
+
+        Lasers = {
+            style01 = "dj_01_lights_04",
+            style02 = "dj_02_lights_04",
+            style03 = "dj_03_lights_04",
+            style04 = "dj_04_lights_04",
+
+            Set = function(lights, refresh)
+                CayoPericoNightclub.Lights.Lasers.Clear(false)
+
+                SetIplPropState(CayoPericoNightclub.interiorId, lights, true, refresh)
+            end,
+            Clear = function(refresh)
+                SetIplPropState(CayoPericoNightclub.interiorId, {
+                    CayoPericoNightclub.Lights.Lasers.style01,
+                    CayoPericoNightclub.Lights.Lasers.style02,
+                    CayoPericoNightclub.Lights.Lasers.style03,
+                    CayoPericoNightclub.Lights.Lasers.style04
+                }, false, refresh)
+            end
+        },
+
+        Clear = function(refresh)
+            CayoPericoNightclub.Lights.Droplets.Clear(refresh)
+            CayoPericoNightclub.Lights.Neons.Clear(refresh)
+            CayoPericoNightclub.Lights.Bands.Clear(refresh)
+            CayoPericoNightclub.Lights.Lasers.Clear(refresh)
         end
     },
 
@@ -121,7 +182,7 @@ CayoPericoNightclub = {
         CayoPericoNightclub.Turntables.Set(CayoPericoNightclub.Turntables.style01, false)
         CayoPericoNightclub.Bar.Enable(true, false)
         CayoPericoNightclub.Screen.Enable(CayoPericoNightclub.Screen.front, true, false)
-        CayoPericoNightclub.Lights.Set(CayoPericoNightclub.Lights.neons01, false)
+        CayoPericoNightclub.Lights.Lasers.Set(CayoPericoNightclub.Lights.Lasers.style04, false)
 
         RefreshInterior(CayoPericoNightclub.interiorId)
     end
