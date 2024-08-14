@@ -99,6 +99,28 @@ ChopShopSalvage = {
         end
     },
 
+    Trophy = {
+        anchor = "SET_TROPHY_ANCHOR",
+        policeBadge = "SET_TROPHY_BADGE",
+        casinoChips = "SET_TROPHY_CHIPS",
+        jersey = "SET_TROPHY_JERSEY",
+        submarine = "SET_TROPHY_SUB",
+
+        Set = function(trophy, refresh)
+            SetIplPropState(ChopShopSalvage.interiorId, trophy, true, refresh)
+        end,
+
+        Clear = function(refresh)
+            SetIplPropState(ChopShopSalvage.interiorId, {
+                ChopShopSalvage.Trophy.anchor,
+                ChopShopSalvage.Trophy.policeBadge,
+                ChopShopSalvage.Trophy.casinoChips,
+                ChopShopSalvage.Trophy.jersey,
+                ChopShopSalvage.Trophy.submarine
+            }, false, refresh)
+        end
+    },
+
     LoadDefault = function()
         -- Exterior
         ChopShopSalvage.Ipl.Exterior.Load()
@@ -109,6 +131,11 @@ ChopShopSalvage = {
 
         ChopShopSalvage.Lift1.Set(ChopShopSalvage.Lift1.up, false)
         ChopShopSalvage.Lift2.Set(ChopShopSalvage.Lift2.up, false)
+        ChopShopSalvage.Trophy.Set(ChopShopSalvage.Trophy.anchor, false)
+        ChopShopSalvage.Trophy.Set(ChopShopSalvage.Trophy.policeBadge, false)
+        ChopShopSalvage.Trophy.Set(ChopShopSalvage.Trophy.casinoChips, false)
+        ChopShopSalvage.Trophy.Set(ChopShopSalvage.Trophy.jersey, false)
+        ChopShopSalvage.Trophy.Set(ChopShopSalvage.Trophy.submarine, false)
 
         RefreshInterior(ChopShopSalvage.interiorId)
     end
