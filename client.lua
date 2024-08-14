@@ -211,6 +211,10 @@ CreateThread(function()
         ChopShopCartelGarage.LoadDefault() -- 1220.133, -2277.844, -50.000
         ChopShopLifeguard.LoadDefault() -- -1488.153, -1021.166, 5.000
         ChopShopSalvage.LoadDefault() -- 1077.276, -2274.876, -50.000
+        ChopShopCounterfit.LoadDefault() -- 930.0, -2270.0, -50.0  
+                                         -- 930.0, -2240.1, -50.0
+                                         -- 930.0, -2183.3, -50.0
+                                         -- 930.0, -2213.2, -50.0
     end
 
     -- ====================================================================
