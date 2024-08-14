@@ -6,6 +6,18 @@ end)
 CayoPericoNightclub = {
     interiorId = 281089,
 
+    Ipl = {
+        Posters = {
+            palmstraxx = "h4_clubposter_palmstraxx",
+            moodymann = "h4_clubposter_moodymann",
+            keinemusik = "h4_clubposter_keinemusik",
+
+            Enable = function(poster, state)
+                EnableIpl(poster, state)
+            end
+        }
+    },
+
     Security = {
         security = "int01_ba_security_upgrade",
 
@@ -176,6 +188,7 @@ CayoPericoNightclub = {
     },
 
     LoadDefault = function()
+        -- Interior
         CayoPericoNightclub.Security.Enable(true, false)
         CayoPericoNightclub.Speakers.Set(CayoPericoNightclub.Speakers.basic, false)
         CayoPericoNightclub.Podium.Enable(true, false)
@@ -183,6 +196,11 @@ CayoPericoNightclub = {
         CayoPericoNightclub.Bar.Enable(true, false)
         CayoPericoNightclub.Screen.Enable(CayoPericoNightclub.Screen.front, true, false)
         CayoPericoNightclub.Lights.Lasers.Set(CayoPericoNightclub.Lights.Lasers.style04, false)
+
+        -- Exterior
+        CayoPericoNightclub.Ipl.Posters.Enable(CayoPericoNightclub.Ipl.Posters.palmstraxx, true)
+        CayoPericoNightclub.Ipl.Posters.Enable(CayoPericoNightclub.Ipl.Posters.moodymann, true)
+        CayoPericoNightclub.Ipl.Posters.Enable(CayoPericoNightclub.Ipl.Posters.keinemusik, true)
 
         RefreshInterior(CayoPericoNightclub.interiorId)
     end
