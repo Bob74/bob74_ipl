@@ -4,6 +4,7 @@ end)
 
 DiamondCasino = {
     Ipl = {
+        interiorId = 275201,
         Building = {
             ipl = {
                 "hei_dlc_windows_casino",
@@ -30,7 +31,16 @@ DiamondCasino = {
             end,
             Remove = function()
                 EnableIpl(DiamondCasino.Ipl.Main.ipl, false)
-            end
+            end,
+
+            Table = {
+                default = "casino_manager_default",
+                workout = "casino_manager_workout",
+
+                Set = function(prop, state, refresh)
+                    SetIplPropState(DiamondCasino.Ipl.interiorId, prop, state, refresh)
+                end,
+            }
         },
         Garage = {
             ipl = "vw_casino_garage",
@@ -64,7 +74,10 @@ DiamondCasino = {
     LoadDefault = function()
         DiamondCasino.Ipl.Building.Load()
         DiamondCasino.Ipl.Main.Load()
+        DiamondCasino.Ipl.Main.Table.Set(DiamondCasino.Ipl.Main.Table.default, true, false)
         DiamondCasino.Ipl.Carpark.Load()
         DiamondCasino.Ipl.Garage.Load()
+
+        RefreshInterior(DiamondCasino.Ipl.interiorId)
     end
 }
