@@ -82,7 +82,16 @@ CayoPericoNightclub = {
         end
     },
 
+    DryIce = {
+        dryIce = "int01_ba_dry_ice",
+
+        Enable = function(state, refresh)
+            SetIplPropState(CayoPericoNightclub.interiorId, CayoPericoNightclub.DryIce.dryIce, state, refresh)
+        end
+    },
+
     Lights = {
+        off = "light_rigs_off",
         droplets01 = "dj_01_lights_01",
         droplets02 = "dj_02_lights_01",
         droplets03 = "dj_03_lights_01",
@@ -121,6 +130,7 @@ CayoPericoNightclub = {
         CayoPericoNightclub.Turntables.Set(CayoPericoNightclub.Turntables.style01, false)
         CayoPericoNightclub.Bar.Enable(true, false)
         CayoPericoNightclub.Screen.Enable(CayoPericoNightclub.Screen.front, true, false)
+        CayoPericoNightclub.DryIce.Enable(true, false)
         CayoPericoNightclub.Lights.Set(CayoPericoNightclub.Lights.neons01, false)
 
         RefreshInterior(CayoPericoNightclub.interiorId)
