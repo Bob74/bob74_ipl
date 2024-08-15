@@ -130,7 +130,7 @@ CayoPericoNightclub = {
         CayoPericoNightclub.Turntables.Set(CayoPericoNightclub.Turntables.style01, false)
         CayoPericoNightclub.Bar.Enable(true, false)
         CayoPericoNightclub.Screen.Enable(CayoPericoNightclub.Screen.front, true, false)
-        CayoPericoNightclub.DryIce.Enable(true, false)
+        
         CayoPericoNightclub.Lights.Set(CayoPericoNightclub.Lights.neons01, false)
 
         RefreshInterior(CayoPericoNightclub.interiorId)
