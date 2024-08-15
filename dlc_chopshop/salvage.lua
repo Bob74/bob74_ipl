@@ -100,11 +100,11 @@ ChopShopSalvage = {
     },
 
     Trophy = {
-        anchor = "SET_TROPHY_ANCHOR",
-        policeBadge = "SET_TROPHY_BADGE",
-        casinoChips = "SET_TROPHY_CHIPS",
-        jersey = "SET_TROPHY_JERSEY",
-        submarine = "SET_TROPHY_SUB",
+        anchor = "set_trophy_anchor",
+        policeBadge = "set_trophy_badge",
+        casinoChips = "set_trophy_chips",
+        jersey = "set_trophy_jersey",
+        submarine = "set_trophy_sub",
 
         Set = function(trophy, refresh)
             SetIplPropState(ChopShopSalvage.interiorId, trophy, true, refresh)
@@ -134,7 +134,7 @@ ChopShopSalvage = {
         --mazeCard = "set_card_maze",
         --casinoCard = "set_card_casino",
         sonar = "set_sonar",
-        uv = "SET_UV_PLAN_RT",
+        uv = "set_uv_plan_rt",
         
         -- bags
         bagPanic = "set_bag_panic",
