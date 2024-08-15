@@ -142,6 +142,7 @@ client_scripts {
     , "dlc_mercenaries/club.lua"
     , "dlc_mercenaries/lab.lua"
     , "dlc_mercenaries/fixes.lua"
+    , "dlc_mercenaries/avenger.lua"
 
     -- DLC The Chop Shop (Requires forced build 3095 or higher)
     , "dlc_chopshop/base.lua"

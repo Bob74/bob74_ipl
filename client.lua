@@ -201,6 +201,7 @@ CreateThread(function()
         MercenariesClub.LoadDefault() -- 1202.407, -3251.251, -50.000
         MercenariesLab.LoadDefault() -- -1916.119, 3749.719, -100.000
         MercenariesFixes.LoadDefault()
+        MercenariesAvenger.LoadDefault()
     end
 
     -- ====================================================================
