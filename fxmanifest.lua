@@ -102,6 +102,10 @@ client_scripts {
     -- DLC After Hours
     , "dlc_afterhours/nightclubs.lua"
 
+    -- Dlc Arena War
+    , "dlc_arenawar/interior.lua"
+    , "dlc_arenawar/workshop.lua"
+
     -- DLC Diamond Casino (Requires forced build 2060 or higher)
     , "dlc_casino/casino.lua"
     , "dlc_casino/penthouse.lua"

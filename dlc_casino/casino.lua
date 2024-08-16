@@ -163,7 +163,6 @@ DiamondCasino = {
         DiamondCasino.Ipl.Vault.OuterLoot.Set(DiamondCasino.Ipl.Vault.OuterLoot.group1, false)
         DiamondCasino.Ipl.Vault.MainLoot.Set(DiamondCasino.Ipl.Vault.MainLoot.Cash.cash1, false)
         DiamondCasino.Ipl.Vault.MainLoot.Set(DiamondCasino.Ipl.Vault.MainLoot.Art.cash2, false)
-        print(GetInteriorAtCoords(2508.700, -238.500, -70.700))
 
         RefreshInterior(DiamondCasino.Ipl.interiorId)
         RefreshInterior(DiamondCasino.Ipl.vaultId)
