@@ -1,3 +1,4 @@
+-- Arena War Warkshop: 170.000, 5190.000, 10.000
 exports('GetArenaWarWorkshopObject', function()
     return ArenaWarWorkshop
 end)
@@ -21,6 +22,23 @@ ArenaWarWorkshop = {
         Enable = function(state, refresh)
             SetIplPropState(ArenaWarWorkshop.interiorId, ArenaWarWorkshop.Base.base, state, refresh)
         end,
+
+        Tint = {
+            gray = 1,
+            pink = 2,
+            black = 3,
+            white = 4,
+            green = 5,
+            purple = 6,
+            cream = 7,
+            darkblue = 8,
+            lightblue = 9,
+
+    
+            SetColor = function(color, refresh)
+                SetInteriorEntitySetColor(ArenaWarWorkshop.interiorId, "set_int_mod2_b_tint", color)
+            end
+        },
     },
     Level = {
         level1 = "set_int_mod2_b1",
@@ -72,7 +90,8 @@ ArenaWarWorkshop = {
         ArenaWarWorkshop.Ipl.Load()
         ArenaWarWorkshop.Base.Enable(true, false)
         ArenaWarWorkshop.Level.Set(ArenaWarWorkshop.Level.level1, false)
-        ArenaWarWorkshop.Style.Set(ArenaWarWorkshop.Style.style5, false)
+        ArenaWarWorkshop.Style.Set(ArenaWarWorkshop.Style.style2, false)
+        ArenaWarWorkshop.Base.Tint.SetColor(ArenaWarWorkshop.Base.Tint.lightblue, false)
 
         RefreshInterior(ArenaWarWorkshop.interiorId)
     end

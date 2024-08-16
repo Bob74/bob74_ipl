@@ -19,7 +19,7 @@ ArenaWarInterior = {
     Shell = {
         shell = "set_int_mod_shell_def",
         arena1 = "set_arena_peds",
-        arena2 = "set_arena_no peds", -- needs testing
+        arena2 = "set_arena_no peds",
 
         Enable = function(shell, state, refresh)
             SetIplPropState(ArenaWarInterior.interiorId, shell, state, refresh)
