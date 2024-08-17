@@ -35,7 +35,7 @@ ArenaWarWorkshop = {
             lightblue = 9,
 
     
-            SetColor = function(color, refresh)
+            SetColor = function(color)
                 SetInteriorEntitySetColor(ArenaWarWorkshop.interiorId, "set_int_mod2_b_tint", color)
             end
         },
@@ -91,7 +91,7 @@ ArenaWarWorkshop = {
         ArenaWarWorkshop.Base.Enable(true, false)
         ArenaWarWorkshop.Level.Set(ArenaWarWorkshop.Level.level1, false)
         ArenaWarWorkshop.Style.Set(ArenaWarWorkshop.Style.style2, false)
-        ArenaWarWorkshop.Base.Tint.SetColor(ArenaWarWorkshop.Base.Tint.lightblue, false)
+        ArenaWarWorkshop.Base.Tint.SetColor(ArenaWarWorkshop.Base.Tint.lightblue)
 
         RefreshInterior(ArenaWarWorkshop.interiorId)
     end
