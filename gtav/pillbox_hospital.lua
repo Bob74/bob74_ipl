@@ -4,31 +4,30 @@ exports('GetPillboxHospitalObject', function()
 end)
 
 PillboxHospital = {
-    iplFixed = 'RC12B_Fixed',
-    iplDefault = 'RC12B_Default',
-    iplDestroyed = 'RC12B_Destroyed',
-    iplHospitalInterior = 'RC12B_HospitalInterior',
+    default = 'rc12b_default',
+    fixed = 'rc12b_fixed',
+    destroyed = 'rc12b_destroyed', -- Destroyed and hospital interior need to be loaded at the same time
+    hospitalinterior = 'rc12b_hospitalinterior',
 
-    LoadDefault = function(state)
-        PillboxHospital.DisableIpl()
-        EnableIpl(PillboxHospital.iplDefault, state)
+    Enable = function(ipl, state)
+        EnableIpl(ipl, state)
     end,
 
-    LoadFixed = function(state)
-        PillboxHospital.DisableIpl()
-        EnableIpl(PillboxHospital.iplFixed, state)
+    Clear = function()
+        EnableIpl(PillboxHospital.default, false)
+        EnableIpl(PillboxHospital.fixed, false)
+        EnableIpl(PillboxHospital.destroyed, false)
+        EnableIpl(PillboxHospital.hospitalinterior, false)
     end,
 
-    LoadDestroyed = function(state)
-        PillboxHospital.DisableIpl()
-        EnableIpl(PillboxHospital.iplDestroyed, state)
-        EnableIpl(PillboxHospital.iplHospitalInterior, state)
+    LoadDefault = function()
+        PillboxHospital.Clear()
+        -- [DEFAULT HOSPITAL]
+        --EnableIpl(PillboxHospital.default, true)
+        -- [FIXED HOSPITAL]
+        --EnableIpl(PillboxHospital.fixed, true)
+        -- [DESTROYED HOSPITAL]
+        EnableIpl(PillboxHospital.destroyed, true)
+        EnableIpl(PillboxHospital.hospitalinterior, true)
     end,
-
-    DisableIpl = function()
-        RemoveIpl("RC12B_Fixed")
-        RemoveIpl("RC12B_Default")
-        RemoveIpl('RC12B_Destroyed')
-        RemoveIpl("RC12B_HospitalInterior")
-    end
 }
