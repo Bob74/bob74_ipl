@@ -102,6 +102,7 @@ client_scripts {
     -- DLC After Hours
     , "dlc_afterhours/nightclubs.lua"
     , "dlc_afterhours/nightclubbasement.lua"
+    , "dlc_afterhours/terbyte.lua"
 
     -- Dlc Arena War
     , "dlc_arenawar/interior.lua"
