@@ -14,20 +14,20 @@ PillboxHospital = {
     end,
 
     Clear = function()
-        EnableIpl(PillboxHospital.default, false)
-        EnableIpl(PillboxHospital.fixed, false)
-        EnableIpl(PillboxHospital.destroyed, false)
-        EnableIpl(PillboxHospital.hospitalinterior, false)
+        PillboxHospital.Enable(PillboxHospital.default, false)
+        PillboxHospital.Enable(PillboxHospital.fixed, false)
+        PillboxHospital.Enable(PillboxHospital.destroyed, false)
+        PillboxHospital.Enable(PillboxHospital.hospitalinterior, false)
     end,
 
     LoadDefault = function()
         PillboxHospital.Clear()
         -- [DEFAULT HOSPITAL]
-        --EnableIpl(PillboxHospital.default, true)
+        -- PillboxHospital.Enable(PillboxHospital.default, true)
         -- [FIXED HOSPITAL]
-        --EnableIpl(PillboxHospital.fixed, true)
+        -- PillboxHospital.Enable(PillboxHospital.fixed, true)
         -- [DESTROYED HOSPITAL]
-        EnableIpl(PillboxHospital.destroyed, true)
-        EnableIpl(PillboxHospital.hospitalinterior, true)
+        PillboxHospital.Enable(PillboxHospital.destroyed, true)
+        PillboxHospital.Enable(PillboxHospital.hospitalinterior, true)
     end,
 }
