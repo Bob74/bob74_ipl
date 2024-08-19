@@ -156,7 +156,10 @@ client_scripts {
     , "dlc_chopshop/cartel_garage.lua"
     , "dlc_chopshop/lifeguard.lua"
     , "dlc_chopshop/salvage.lua"
-    , "dlc_chopshop/counterfit.lua"
+    , "dlc_chopshop/counterfit1.lua"
+    , "dlc_chopshop/counterfit2.lua"
+    , "dlc_chopshop/counterfit3.lua"
+    , "dlc_chopshop/counterfit4.lua"
 
     -- DLC Bottom Dollar Bounties (Requires forced build 3258 or higher)
     , "dlc_summer/base.lua"

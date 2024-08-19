@@ -25,7 +25,7 @@ CreateThread(function()
     BahamaMamas.Enable(true)
 
     -- Pillbox hospital: 307.1680, -590.807, 43.280
-    PillboxHospital.LoadDefault(true)
+    PillboxHospital.LoadDefault()
 
     -- Zancudo Gates (GTAO like): -1600.30100000, 2806.73100000, 18.79683000
     ZancudoGates.LoadDefault()
@@ -222,10 +222,10 @@ CreateThread(function()
         ChopShopCartelGarage.LoadDefault() -- 1220.133, -2277.844, -50.000
         ChopShopLifeguard.LoadDefault() -- -1488.153, -1021.166, 5.000
         ChopShopSalvage.LoadDefault() -- 1077.276, -2274.876, -50.000
-        ChopShopCounterfit.LoadDefault() -- 930.0, -2270.0, -50.0  
-                                         -- 930.0, -2240.1, -50.0
-                                         -- 930.0, -2183.3, -50.0
-                                         -- 930.0, -2213.2, -50.0
+        ChopShopCounterfit1.LoadDefault() -- 930.0, -2270.0, -50.0  
+        ChopShopCounterfit2.LoadDefault()-- 930.0, -2240.1, -50.0
+        ChopShopCounterfit3.LoadDefault()-- 930.0, -2183.3, -50.0
+        ChopShopCounterfit4.LoadDefault()-- 930.0, -2213.2, -50.0
     end
 
     -- ====================================================================

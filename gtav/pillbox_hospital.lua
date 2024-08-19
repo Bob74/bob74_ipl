@@ -23,11 +23,11 @@ PillboxHospital = {
     LoadDefault = function()
         PillboxHospital.Clear()
         -- [DEFAULT HOSPITAL]
-        -- PillboxHospital.Enable(PillboxHospital.default, true)
+        PillboxHospital.Enable(PillboxHospital.default, true)
         -- [FIXED HOSPITAL]
         -- PillboxHospital.Enable(PillboxHospital.fixed, true)
         -- [DESTROYED HOSPITAL]
-        PillboxHospital.Enable(PillboxHospital.destroyed, true)
-        PillboxHospital.Enable(PillboxHospital.hospitalinterior, true)
+        -- PillboxHospital.Enable(PillboxHospital.destroyed, true)
+        -- PillboxHospital.Enable(PillboxHospital.hospitalinterior, true)
     end,
 }
