@@ -1,3 +1,4 @@
+-- Avenger: -880.00, -2770.00, -50.00
 exports('GetMercenariesAvengerObject', function()
     return MercenariesAvenger
 end)

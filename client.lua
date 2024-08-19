@@ -137,7 +137,7 @@ CreateThread(function()
     -- ====================================================================
     AfterHoursNightclubs.LoadDefault() -- -1604.664, -3012.583, -78.000
     AfterHoursNightclubBasement.LoadDefault() -- -1505.783, -3012.587, -80.000
-    AfterHoursTerbyte.LoadDefault() -- -1421.015, -3012.587, -80.000
+    AfterHoursTerrobyte.LoadDefault() -- -1421.015, -3012.587, -80.000
 
     -- ====================================================================
     -- ------------------------- [DLC: Arena War] ------------------------=
@@ -211,7 +211,7 @@ CreateThread(function()
         MercenariesClub.LoadDefault() -- 1202.407, -3251.251, -50.000
         MercenariesLab.LoadDefault() -- -1916.119, 3749.719, -100.000
         MercenariesFixes.LoadDefault()
-        MercenariesAvenger.LoadDefault()
+        MercenariesAvenger.LoadDefault() -- -880.00, -2770.00, -50.00
     end
 
     -- ====================================================================

@@ -1,15 +1,15 @@
--- After Hours Terbyte Interior: -1421.015, -3012.587, -80.000
-exports('GetAfterHoursTerbyteObject', function()
-    return AfterHoursTerbyte
+-- After Hours Terrobyte Interior: -1421.015, -3012.587, -80.000
+exports('GetAfterHoursTerrorbyteObject', function()
+    return AfterHoursTerrorbyte
 end)
 
-AfterHoursTerbyte = {
+AfterHoursTerrorbyte = {
     interiorId = 272129,
     Base = {
         base = "int_03_ba_tint",
 
         Enable = function(state, refresh)
-            SetIplPropState(AfterHoursTerbyte.interiorId, AfterHoursTerbyte.Base.base, state, refresh)
+            SetIplPropState(AfterHoursTerrorbyte.interiorId, AfterHoursTerrorbyte.Base.base, state, refresh)
         end,
 
         Tint = {
@@ -25,7 +25,7 @@ AfterHoursTerbyte = {
             blacktan = 9,
             superpink = 10,
             SetColor = function(color)
-                SetInteriorEntitySetColor(AfterHoursTerbyte.interiorId, "int_03_ba_tint", color)
+                SetInteriorEntitySetColor(AfterHoursTerrorbyte.interiorId, "int_03_ba_tint", color)
             end
         }
     },
@@ -57,12 +57,12 @@ AfterHoursTerbyte = {
         style24 = "int_03_ba_design_24",
 
         Set = function(style, refresh)
-            AfterHoursTerbyte.Style.Clear(false)
-            SetIplPropState(AfterHoursTerbyte.interiorId, style, true, refresh)
+            AfterHoursTerrorbyte.Style.Clear(false)
+            SetIplPropState(AfterHoursTerrorbyte.interiorId, style, true, refresh)
         end,
 
         Clear = function(refresh)
-            SetIplPropState(AfterHoursTerbyte.interiorId, {
+            SetIplPropState(AfterHoursTerrorbyte.interiorId, {
                 "int_03_ba_design_01",
                 "int_03_ba_design_02",
                 "int_03_ba_design_03",
@@ -96,7 +96,7 @@ AfterHoursTerbyte = {
         bike = "int_03_ba_bikemod",
 
         Set = function(mod, state, refresh)
-            SetIplPropState(AfterHoursTerbyte.interiorId, mod, state, refresh)
+            SetIplPropState(AfterHoursTerrorbyte.interiorId, mod, state, refresh)
         end
     },
     Lighting = {
@@ -111,11 +111,11 @@ AfterHoursTerbyte = {
         light9 = "int_03_ba_light_rig9",
 
         Set = function(light, refresh)
-            SetIplPropState(AfterHoursTerbyte.interiorId, light, true, refresh)
+            SetIplPropState(AfterHoursTerrorbyte.interiorId, light, true, refresh)
         end,
 
         Clear = function(refresh)
-            SetIplPropState(AfterHoursTerbyte.interiorId, {
+            SetIplPropState(AfterHoursTerrorbyte.interiorId, {
                 "int_03_ba_light_rig1",
                 "int_03_ba_light_rig2",
                 "int_03_ba_light_rig3",
@@ -129,13 +129,13 @@ AfterHoursTerbyte = {
         end
     },
     LoadDefault = function()
-        AfterHoursTerbyte.Base.Enable(true, false)
-        AfterHoursTerbyte.Base.Tint.SetColor(AfterHoursTerbyte.Base.Tint.orangeblackwhite)
-        AfterHoursTerbyte.Style.Set(AfterHoursTerbyte.Style.style5, false)
-        AfterHoursTerbyte.Mods.Set(AfterHoursTerbyte.Mods.drone, true, false)
-        AfterHoursTerbyte.Mods.Set(AfterHoursTerbyte.Mods.weapon, true, false)
-        AfterHoursTerbyte.Mods.Set(AfterHoursTerbyte.Mods.bike, true, false)
-        AfterHoursTerbyte.Lighting.Set(AfterHoursTerbyte.Lighting.light5, false)
-        RefreshInterior(AfterHoursTerbyte.interiorId)
+        AfterHoursTerrorbyte.Base.Enable(true, false)
+        AfterHoursTerrorbyte.Base.Tint.SetColor(AfterHoursTerrorbyte.Base.Tint.orangeblackwhite)
+        AfterHoursTerrorbyte.Style.Set(AfterHoursTerrorbyte.Style.style5, false)
+        AfterHoursTerrorbyte.Mods.Set(AfterHoursTerrorbyte.Mods.drone, true, false)
+        AfterHoursTerrorbyte.Mods.Set(AfterHoursTerrorbyte.Mods.weapon, true, false)
+        AfterHoursTerrorbyte.Mods.Set(AfterHoursTerrorbyte.Mods.bike, true, false)
+        AfterHoursTerrorbyte.Lighting.Set(AfterHoursTerrorbyte.Lighting.light5, false)
+        RefreshInterior(AfterHoursTerrorbyte.interiorId)
     end
 }
