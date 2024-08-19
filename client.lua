@@ -137,7 +137,7 @@ CreateThread(function()
     -- ====================================================================
     AfterHoursNightclubs.LoadDefault() -- -1604.664, -3012.583, -78.000
     AfterHoursNightclubBasement.LoadDefault() -- -1505.783, -3012.587, -80.000
-    AfterHoursTerrobyte.LoadDefault() -- -1421.015, -3012.587, -80.000
+    AfterHoursTerrorbyte.LoadDefault() -- -1421.015, -3012.587, -80.000
 
     -- ====================================================================
     -- ------------------------- [DLC: Arena War] ------------------------=
