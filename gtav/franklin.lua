@@ -55,8 +55,8 @@ Franklin = {
         tshirt = "progress_tshirt", -- "I <3 LS" tshirt on the bed
         bong = "bong_and_wine", -- Bong on the table
 
-        Enable = function(details, state, refresh)
-            SetIplPropState(Franklin.interiorId, details, state, refresh)
+        Enable = function(details, refresh)
+            SetIplPropState(Franklin.interiorId, details, true, refresh)
         end
     },
 
