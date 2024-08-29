@@ -524,15 +524,12 @@ BikerWeedFarm = {
         BikerWeedFarm.Ipl.Interior.Load()
         BikerWeedFarm.Style.Set(BikerWeedFarm.Style.upgrade)
         BikerWeedFarm.Security.Set(BikerWeedFarm.Security.basic)
-        BikerWeedFarm.Details.Enable(BikerWeedFarm.Details.drying, false)
-        BikerWeedFarm.Details.Enable(BikerWeedFarm.Details.chairs, false)
-        BikerWeedFarm.Details.Enable(BikerWeedFarm.Details.production, false)
 
         BikerWeedFarm.Details.Enable({
             BikerWeedFarm.Details.production,
             BikerWeedFarm.Details.chairs,
             BikerWeedFarm.Details.drying
-        }, true)
+        }, true, false)
 
         BikerWeedFarm.Plant1.Set(BikerWeedFarm.Plant1.Stage.medium, BikerWeedFarm.Plant1.Light.basic)
         BikerWeedFarm.Plant2.Set(BikerWeedFarm.Plant2.Stage.full, BikerWeedFarm.Plant2.Light.basic)

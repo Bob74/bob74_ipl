@@ -88,11 +88,26 @@ BikerCocaine = {
         end
     },
 
-    LoadDefault = function()
+    LoadDefault = function(Tier)
         BikerCocaine.Ipl.Interior.Load()
-        BikerCocaine.Style.Set(BikerCocaine.Style.basic)
-        BikerCocaine.Security.Set(BikerCocaine.Security.none)
+        if Tier == 1 then
+            BikerCocaine.Style.Set(BikerCocaine.Style.basic)
+            BikerCocaine.Security.Set(BikerCocaine.Security.basic)
+            BikerCocaine.Details.Enable(BikerCocaine.Details.cokeBasic1, true, false)
+            BikerCocaine.Details.Enable(BikerCocaine.Details.cokeBasic2, true, false)
+            BikerCocaine.Details.Enable(BikerCocaine.Details.cokeBasic3, true, false)
+            BikerCocaine.Details.Enable(BikerCocaine.Details.cokeUpgrade1, false, false)
+            BikerCocaine.Details.Enable(BikerCocaine.Details.cokeUpgrade2, false, false)
 
+        elseif Tier == 2 then
+            BikerCocaine.Style.Set(BikerCocaine.Style.upgrade)
+            BikerCocaine.Security.Set(BikerCocaine.Security.upgrade)
+            BikerCocaine.Details.Enable(BikerCocaine.Details.cokeBasic1, true, false)
+            BikerCocaine.Details.Enable(BikerCocaine.Details.cokeBasic2, true, false)
+            BikerCocaine.Details.Enable(BikerCocaine.Details.cokeBasic3, true, false)
+            BikerCocaine.Details.Enable(BikerCocaine.Details.cokeUpgrade1, true, false)
+            BikerCocaine.Details.Enable(BikerCocaine.Details.cokeUpgrade2, true, false)
+        end
         RefreshInterior(BikerCocaine.interiorId)
     end
 }

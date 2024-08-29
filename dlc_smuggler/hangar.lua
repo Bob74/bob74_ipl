@@ -326,7 +326,7 @@ SmugglerHangar = {
         SmugglerHangar.Bedroom.Style.Set(SmugglerHangar.Bedroom.Style.modern, SmugglerHangar.Colors.colorSet1)
         SmugglerHangar.Bedroom.Blinds.Set(SmugglerHangar.Bedroom.Blinds.opened)
 
-        SmugglerHangar.Details.Enable(SmugglerHangar.Details.bedroomClutter, false)
+        SmugglerHangar.Details.Enable(SmugglerHangar.Details.bedroomClutter, true, false)
 
         RefreshInterior(SmugglerHangar.interiorId)
     end

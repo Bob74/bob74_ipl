@@ -11,7 +11,7 @@ LesterFactory = {
         fireMan = "V_35_Fireman", -- Firemans helmets in the office
         armour = "V_35_Body_Armour", -- Body armor in storage
         gasMask = "Jewel_Gasmasks", -- Gas mask and suit in storage
-        janitorStuff = "v_53_agency _overalls", -- Janitor stuff in the storage (yes, there is a whitespace)
+        janitorStuff = "v_53_agency_overalls", -- Janitor stuff in the storage (yes, there is a whitespace)
 
         Enable = function(details, state, refresh)
             SetIplPropState(LesterFactory.interiorId, details, state, refresh)
@@ -19,12 +19,12 @@ LesterFactory = {
     },
 
     LoadDefault = function()
-        LesterFactory.Details.Enable(LesterFactory.Details.bluePrint, false)
-        LesterFactory.Details.Enable(LesterFactory.Details.bag, false)
-        LesterFactory.Details.Enable(LesterFactory.Details.fireMan, false)
-        LesterFactory.Details.Enable(LesterFactory.Details.armour, false)
-        LesterFactory.Details.Enable(LesterFactory.Details.gasMask, false)
-        LesterFactory.Details.Enable(LesterFactory.Details.janitorStuff, false)
+        LesterFactory.Details.Enable(LesterFactory.Details.bluePrint, true, false)
+        LesterFactory.Details.Enable(LesterFactory.Details.bag, true, false)
+        LesterFactory.Details.Enable(LesterFactory.Details.fireMan, true, false)
+        LesterFactory.Details.Enable(LesterFactory.Details.armour, true, false)
+        LesterFactory.Details.Enable(LesterFactory.Details.gasMask, true, false)
+        LesterFactory.Details.Enable(LesterFactory.Details.janitorStuff, true, false)
 
         RefreshInterior(LesterFactory.interiorId)
     end

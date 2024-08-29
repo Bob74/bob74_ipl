@@ -197,9 +197,12 @@ BikerCounterfeit = {
         BikerCounterfeit.Dryer2.Set(BikerCounterfeit.Dryer2.on)
         BikerCounterfeit.Dryer3.Set(BikerCounterfeit.Dryer3.on)
         BikerCounterfeit.Dryer4.Set(BikerCounterfeit.Dryer4.on)
-        BikerCounterfeit.Details.Enable(BikerCounterfeit.Details.cutter, true)
-        BikerCounterfeit.Details.Enable(BikerCounterfeit.Details.furnitures, true)
-        BikerCounterfeit.Details.Enable(BikerCounterfeit.Details.Cash100, true)
+        BikerCounterfeit.Details.Enable(BikerCounterfeit.Details.chairs, true, true)
+        BikerCounterfeit.Details.Enable(BikerCounterfeit.Details.cutter, true, true)
+        BikerCounterfeit.Details.Enable(BikerCounterfeit.Details.furnitures, true, true)
+        BikerCounterfeit.Details.Enable(BikerCounterfeit.Details.Cash10, true, true)
+        BikerCounterfeit.Details.Enable(BikerCounterfeit.Details.Cash20, true, true)
+        BikerCounterfeit.Details.Enable(BikerCounterfeit.Details.Cash100, true, true)
 
         RefreshInterior(BikerCounterfeit.interiorId)
     end

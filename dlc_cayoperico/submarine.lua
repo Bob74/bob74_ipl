@@ -65,6 +65,12 @@ CayoPericoSubmarine = {
         CayoPericoSubmarine.Workshop.Set(CayoPericoSubmarine.Workshop.brig, false)
         CayoPericoSubmarine.Chairs.Enable(true, false)
         CayoPericoSubmarine.Lights.Set(CayoPericoSubmarine.Lights.off, false)
+        CayoPericoSubmarine.Details.Enable(CayoPericoSubmarine.Details.bomb, true, false)
+        CayoPericoSubmarine.Details.Enable(CayoPericoSubmarine.Details.torch, true, false)
+        CayoPericoSubmarine.Details.Enable(CayoPericoSubmarine.Details.cutter, true, false)
+        CayoPericoSubmarine.Details.Enable(CayoPericoSubmarine.Details.fingerprint, true, false)
+        CayoPericoSubmarine.Details.Enable(CayoPericoSubmarine.Details.suppressors, true, false)
+        CayoPericoSubmarine.Details.Enable(CayoPericoSubmarine.Details.jammer, true, false)
 
         RefreshInterior(CayoPericoSubmarine.interiorId)
     end

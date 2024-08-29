@@ -402,19 +402,23 @@ DoomsdayFacility = {
         DoomsdayFacility.PrivacyGlass.Bedroom.Control.Enable(true)
         DoomsdayFacility.PrivacyGlass.Lounge.Control.Enable(true)
 
-        DoomsdayFacility.Details.Enable(DoomsdayFacility.Details.crewEmblem, false)
-
-        DoomsdayFacility.Details.Enable(DoomsdayFacility.Details.AvengerParts, true)
-
-        DoomsdayFacility.Details.Enable(DoomsdayFacility.Details.Outfits, true)
-
-        DoomsdayFacility.Details.Enable(DoomsdayFacility.Details.Trophies, true)
+        DoomsdayFacility.Details.Enable(DoomsdayFacility.Details.crewEmblem, true, false)
+        DoomsdayFacility.Details.Enable(DoomsdayFacility.Details.AvengerParts, true, true)
+        DoomsdayFacility.Details.Enable(DoomsdayFacility.Details.Outfits, true, true)
+        DoomsdayFacility.Details.Enable(DoomsdayFacility.Details.Trophies, true, true)
+        DoomsdayFacility.Details.Enable(DoomsdayFacility.Details.ChenoParts, true, true)
+        DoomsdayFacility.Details.Enable(DoomsdayFacility.Details.KhanjaliParts, true, true)
+        DoomsdayFacility.Details.Enable(DoomsdayFacility.Details.RiotParts, true, true)
+        DoomsdayFacility.Details.Enable(DoomsdayFacility.Details.ThrusterParts, true, true)
         DoomsdayFacility.Details.Trophies.SetColor(DoomsdayFacility.Colors.utility)
 
         DoomsdayFacility.Details.Enable({
             DoomsdayFacility.Details.Clutter.A,
-            DoomsdayFacility.Details.Clutter.B
-        }, true)
+            DoomsdayFacility.Details.Clutter.B,
+            DoomsdayFacility.Details.Clutter.C,
+            DoomsdayFacility.Details.Clutter.D,
+            DoomsdayFacility.Details.Clutter.E,
+        }, true, false)
 
         RefreshInterior(DoomsdayFacility.interiorId)
     end

@@ -6,13 +6,13 @@ CreateThread(function()
     -- Michael: -802.311, 175.056, 72.8446
     Michael.LoadDefault()
 
-    -- Simeon: -47.16170 -1115.3327 26.5
+    -- Simeon: -47.16170, -1115.3327, 26.5
     Simeon.LoadDefault()
 
     -- Franklin's aunt: -9.96562, -1438.54, 31.1015
     FranklinAunt.LoadDefault()
 
-    -- Franklin
+    -- Franklin 7.4606, 538.0153 176,.0280
     Franklin.LoadDefault()
 
     -- Floyd: -1150.703, -1520.713, 10.633
@@ -32,9 +32,9 @@ CreateThread(function()
 
     -- Other
     Ammunations.LoadDefault()
-    LesterFactory.LoadDefault()
-    StripClub.LoadDefault()
-    CargoShip.LoadDefault()
+    LesterFactory.LoadDefault() -- 716.3484, -964.9878, 30.3953
+    StripClub.LoadDefault() -- 128.6270, -1291.8615, 29.2695
+    CargoShip.LoadDefault() -- -168.1825, -2364.8259, 20.000
 
     Graffitis.Enable(true)
 
@@ -99,7 +99,7 @@ CreateThread(function()
     -- ====================================================================
     -- =-------------------------- [DLC: Bikers] -------------------------=
     -- ====================================================================
-    BikerCocaine.LoadDefault() -- Cocaine lockup: 1093.6, -3196.6, -38.99841
+    BikerCocaine.LoadDefault(1) -- (1 Basic 2 Upgraded) Cocaine lockup: 1093.6, -3196.6, -38.99841
     BikerCounterfeit.LoadDefault() -- Counterfeit cash factory: 1121.897, -3195.338, -40.4025
     BikerDocumentForgery.LoadDefault() -- Document forgery: 1165, -3196.6, -39.01306
     BikerMethLab.LoadDefault() -- Meth lab: 1009.5, -3196.6, -38.99682

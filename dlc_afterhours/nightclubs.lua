@@ -657,6 +657,21 @@ AfterHoursNightclubs = {
 
         AfterHoursNightclubs.Interior.Trophy.Enable(AfterHoursNightclubs.Interior.Trophy.number1, true, AfterHoursNightclubs.Interior.Trophy.Color.gold)
 
+        AfterHoursNightclubs.Interior.Details.Enable(AfterHoursNightclubs.Interior.Details.clutter, true, true)
+        AfterHoursNightclubs.Interior.Details.Enable(AfterHoursNightclubs.Interior.Details.worklamps, true, true)
+        AfterHoursNightclubs.Interior.Details.Enable(AfterHoursNightclubs.Interior.Details.truck, true, true)
+        AfterHoursNightclubs.Interior.Details.Enable(AfterHoursNightclubs.Interior.Details.dryIce, true, true)
+        AfterHoursNightclubs.Interior.Details.Enable(AfterHoursNightclubs.Interior.Details.lightRigsOff, true, true)
+        AfterHoursNightclubs.Interior.Details.Enable(AfterHoursNightclubs.Interior.Details.roofLightsOff, true, true)
+        AfterHoursNightclubs.Interior.Details.Enable(AfterHoursNightclubs.Interior.Details.floorTradLights, true, true)
+        AfterHoursNightclubs.Interior.Details.Enable(AfterHoursNightclubs.Interior.Details.chest, true, true)
+        AfterHoursNightclubs.Interior.Details.Enable(AfterHoursNightclubs.Interior.Details.vaultAmmunations, true, true)
+        AfterHoursNightclubs.Interior.Details.Enable(AfterHoursNightclubs.Interior.Details.vaultMeth, true, true)
+        AfterHoursNightclubs.Interior.Details.Enable(AfterHoursNightclubs.Interior.Details.vaultFakeID, true, true)
+        AfterHoursNightclubs.Interior.Details.Enable(AfterHoursNightclubs.Interior.Details.vaultWeed, true, true)
+        AfterHoursNightclubs.Interior.Details.Enable(AfterHoursNightclubs.Interior.Details.vaultCoke, true, true)
+        AfterHoursNightclubs.Interior.Details.Enable(AfterHoursNightclubs.Interior.Details.vaultCash, true, true)
+
         RefreshInterior(AfterHoursNightclubs.interiorId)
 
         -- Exterior IPL

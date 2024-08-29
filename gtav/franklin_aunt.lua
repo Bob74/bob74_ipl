@@ -39,8 +39,8 @@ FranklinAunt = {
 
     LoadDefault = function()
         FranklinAunt.Style.Set(FranklinAunt.Style.empty)
-        FranklinAunt.Details.Enable(FranklinAunt.Details.bandana, false)
-        FranklinAunt.Details.Enable(FranklinAunt.Details.bag, false)
+        FranklinAunt.Details.Enable(FranklinAunt.Details.bandana, false, false)
+        FranklinAunt.Details.Enable(FranklinAunt.Details.bag, false, false)
 
         RefreshInterior(FranklinAunt.interiorId)
     end

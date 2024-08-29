@@ -141,13 +141,13 @@ GunrunningBunker = {
         GunrunningBunker.Tier.Set(GunrunningBunker.Tier.default)
         GunrunningBunker.Security.Set(GunrunningBunker.Security.default)
 
-        GunrunningBunker.Details.Enable(GunrunningBunker.Details.office, true)
-        GunrunningBunker.Details.Enable(GunrunningBunker.Details.officeLocked, false)
-        GunrunningBunker.Details.Enable(GunrunningBunker.Details.locker, true)
-        GunrunningBunker.Details.Enable(GunrunningBunker.Details.rangeLights, true)
-        GunrunningBunker.Details.Enable(GunrunningBunker.Details.rangeWall, false)
-        GunrunningBunker.Details.Enable(GunrunningBunker.Details.rangeLocked, false)
-        GunrunningBunker.Details.Enable(GunrunningBunker.Details.schematics, false)
+        GunrunningBunker.Details.Enable(GunrunningBunker.Details.office, true, true)
+        GunrunningBunker.Details.Enable(GunrunningBunker.Details.officeLocked, true, false)
+        GunrunningBunker.Details.Enable(GunrunningBunker.Details.locker, true, true)
+        GunrunningBunker.Details.Enable(GunrunningBunker.Details.rangeLights, true, true)
+        GunrunningBunker.Details.Enable(GunrunningBunker.Details.rangeWall, true, false)
+        GunrunningBunker.Details.Enable(GunrunningBunker.Details.rangeLocked, true, false)
+        GunrunningBunker.Details.Enable(GunrunningBunker.Details.schematics, true, false)
 
         -- Must be called in order to spawn or remove the props
         RefreshInterior(GunrunningBunker.interiorId)

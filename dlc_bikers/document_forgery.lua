@@ -97,11 +97,11 @@ BikerDocumentForgery = {
         BikerDocumentForgery.Style.Set(BikerDocumentForgery.Style.basic)
         BikerDocumentForgery.Security.Set(BikerDocumentForgery.Security.basic)
         BikerDocumentForgery.Equipment.Set(BikerDocumentForgery.Equipment.basic)
-        BikerDocumentForgery.Details.Enable(BikerDocumentForgery.Details.production, false)
-        BikerDocumentForgery.Details.Enable(BikerDocumentForgery.Details.setup, false)
-        BikerDocumentForgery.Details.Enable(BikerDocumentForgery.Details.clutter, false)
-        BikerDocumentForgery.Details.Enable(BikerDocumentForgery.Details.Chairs, true)
-
+        BikerDocumentForgery.Details.Enable(BikerDocumentForgery.Details.production, true, false)
+        BikerDocumentForgery.Details.Enable(BikerDocumentForgery.Details.setup, true, false)
+        BikerDocumentForgery.Details.Enable(BikerDocumentForgery.Details.clutter, true, false)
+        BikerDocumentForgery.Details.Enable(BikerDocumentForgery.Details.Chairs, true, true)
+        BikerDocumentForgery.Details.Enable(BikerDocumentForgery.Details.furnitures, true, true)
         RefreshInterior(BikerDocumentForgery.interiorId)
     end
 }

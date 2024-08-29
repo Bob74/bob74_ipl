@@ -55,18 +55,18 @@ Franklin = {
         tshirt = "progress_tshirt", -- "I <3 LS" tshirt on the bed
         bong = "bong_and_wine", -- Bong on the table
 
-        Enable = function(details, refresh)
-            SetIplPropState(Franklin.interiorId, details, true, refresh)
+        Enable = function(details, state, refresh)
+            SetIplPropState(Franklin.interiorId, details, state, refresh)
         end
     },
 
     LoadDefault = function()
         Franklin.Style.Set(Franklin.Style.empty)
         Franklin.GlassDoor.Set(Franklin.GlassDoor.opened)
-        Franklin.Details.Enable(Franklin.Details.flyer, false)
-        Franklin.Details.Enable(Franklin.Details.tux, false)
-        Franklin.Details.Enable(Franklin.Details.tshirt, false)
-        Franklin.Details.Enable(Franklin.Details.bong, false)
+        Franklin.Details.Enable(Franklin.Details.flyer, true, false)
+        Franklin.Details.Enable(Franklin.Details.tux, true, false)
+        Franklin.Details.Enable(Franklin.Details.tshirt, true, false)
+        Franklin.Details.Enable(Franklin.Details.bong, true, false)
 
         RefreshInterior(Franklin.interiorId)
     end

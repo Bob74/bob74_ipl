@@ -83,13 +83,13 @@ ImportVehicleWarehouse = {
     LoadDefault = function()
         ImportVehicleWarehouse.Upper.Ipl.Interior.Load()
         ImportVehicleWarehouse.Upper.Style.Set(ImportVehicleWarehouse.Upper.Style.branded)
-        ImportVehicleWarehouse.Upper.Details.Enable(ImportVehicleWarehouse.Upper.Details.floorHatch, true)
-        ImportVehicleWarehouse.Upper.Details.Enable(ImportVehicleWarehouse.Upper.Details.doorBlocker, false)
+        ImportVehicleWarehouse.Upper.Details.Enable(ImportVehicleWarehouse.Upper.Details.floorHatch, true, true)
+        ImportVehicleWarehouse.Upper.Details.Enable(ImportVehicleWarehouse.Upper.Details.doorBlocker, true, false)
 
         RefreshInterior(ImportVehicleWarehouse.Upper.interiorId)
 
         ImportVehicleWarehouse.Lower.Ipl.Interior.Load()
-        ImportVehicleWarehouse.Lower.Details.Enable(ImportVehicleWarehouse.Lower.Details.Pumps, true)
+        ImportVehicleWarehouse.Lower.Details.Enable(ImportVehicleWarehouse.Lower.Details.Pumps, true, true)
 
         RefreshInterior(ImportVehicleWarehouse.Lower.interiorId)
     end
