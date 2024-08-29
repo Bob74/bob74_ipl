@@ -133,6 +133,7 @@ client_scripts {
 
     -- DLC Los Santos Drug Wars (Requires forced build 2802 or higher)
     , "dlc_drugwars/base.lua"
+    , "dlc_drugwars/cameras.lua"
     , "dlc_drugwars/freakshop.lua"
     , "dlc_drugwars/garage.lua"
     , "dlc_drugwars/lab.lua"
