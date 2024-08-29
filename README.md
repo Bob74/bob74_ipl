@@ -30,9 +30,6 @@ This resource has been completely rewritten from scratch since v2.0. You can cus
 (DD/MM/YYYY)
 
 ---
-28/08/2024 - 2.3.3
-- Fixed door on cargoship "The door is now openable"
-
 24/08/2024 - 2.3.2
 - Added Kosatka and "The Music Locker" interiors.
 - Removed `Citizen` prefix from code.
