@@ -30,6 +30,14 @@ This resource has been completely rewritten from scratch since v2.0. You can cus
 (DD/MM/YYYY)
 
 ---
+28/08/2024 - 2.3.3
+- Fixed door on cargo ship (@NeenGame)
+- Fixed Franklin interior (@NeenGame)
+
+24/08/2024 - 2.3.2
+- Added Kosatka and "The Music Locker" interiors
+- Removed `Citizen` prefix from code
+
 10/08/2024 - 2.3.1
 - Fix world not rendering when inside security offices
 - Fix typos in "Los Santos Tuners" files
@@ -57,7 +65,7 @@ This resource has been completely rewritten from scratch since v2.0. You can cus
 - Added missing train track near Davis Quartz (https://github.com/Bob74/bob74_ipl/pull/129 @TheIndra55)
 
 10/01/2023 - 2.1.2
-- Fix native and update native names (@NeenGame )
+- Fix native and update native names (@NeenGame)
 
 24/10/2022 - 2.1.1
 - Fix vespucci beach wall hole
