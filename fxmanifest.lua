@@ -154,4 +154,10 @@ client_scripts {
     , "dlc_summer/base.lua"
     , "dlc_summer/carrier.lua"
     , "dlc_summer/office.lua"
+
+    -- DLC Agents of Sabotage (Requires forced build 3407 or higher)
+    , "dlc_agents/base.lua"
+    , "dlc_agents/factory.lua"
+    , "dlc_agents/office.lua"
+    , "dlc_agents/airstrip.lua"
 }

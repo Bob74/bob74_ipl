@@ -220,4 +220,13 @@ CreateThread(function()
         SummerCarrier.LoadDefault() -- -3208.03, 3954.54, 14.0
         SummerOffice.LoadDefault() -- 565.886, -2688.761, -50.0
     end
+
+    -- ====================================================================
+    -- =-------------------- [DLC: Agents of Sabotage] -------------------=
+    -- ====================================================================
+    if GetGameBuildNumber() >= 3407 then
+        AgentsFactory.LoadDefault() -- 752.31, -997.24, -50.0
+        AgentsOffice.LoadDefault() -- 2149.45, 4788.06, -50.0
+        AgentsAirstrip.LoadDefault() -- -2082.29, 1467.68, 280.58
+    end
 end)

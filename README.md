@@ -197,3 +197,9 @@ This resource has been completely rewritten from scratch since v2.0. You can cus
 14/06/2017
 - Original release
 </details>
+
+## Contributors
+
+<a href="https://github.com/Bob74/bob74_ipl/graphs/contributors">
+    <img src="https://contrib.rocks/image?repo=Bob74/bob74_ipl" />
+</a>
