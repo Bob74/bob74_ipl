@@ -225,6 +225,7 @@ CreateThread(function()
     -- =-------------------- [DLC: Agents of Sabotage] -------------------=
     -- ====================================================================
     if GetGameBuildNumber() >= 3407 then
-        
+        AgentsFactory.LoadDefault() -- 752.31, -997.24, -50.0
+        AgentsOffice.LoadDefault() -- 2149.45, 4788.06, -50.0
     end
 end)

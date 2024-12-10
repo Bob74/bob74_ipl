@@ -157,4 +157,6 @@ client_scripts {
 
     -- DLC Agents of Sabotage (Requires forced build 3407 or higher)
     , "dlc_agents/base.lua"
+    , "dlc_agents/factory.lua"
+    , "dlc_agents/office.lua"
 }
