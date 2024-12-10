@@ -220,4 +220,11 @@ CreateThread(function()
         SummerCarrier.LoadDefault() -- -3208.03, 3954.54, 14.0
         SummerOffice.LoadDefault() -- 565.886, -2688.761, -50.0
     end
+
+    -- ====================================================================
+    -- =-------------------- [DLC: Agents of Sabotage] -------------------=
+    -- ====================================================================
+    if GetGameBuildNumber() >= 3407 then
+        
+    end
 end)
