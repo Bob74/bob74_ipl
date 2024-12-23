@@ -68,7 +68,9 @@ GunrunningBunker = {
     },
     Tier = {
         default = "standard_bunker_set",
+        defaultExtra = "standard_bunker_set_more",
         upgrade = "upgrade_bunker_set",
+        upgradeExtra = "upgrade_bunker_set_more",
 
         -- Set the tier (quality) of the bunker.
         --     tier: Upgrade state (values: GunrunningBunker.Tier.default / GunrunningBunker.Tier.upgrade)
@@ -139,6 +141,7 @@ GunrunningBunker = {
 
         GunrunningBunker.Style.Set(GunrunningBunker.Style.default)
         GunrunningBunker.Tier.Set(GunrunningBunker.Tier.default)
+        GunrunningBunker.Tier.Set(GunrunningBunker.Tier.defaultExtra)
         GunrunningBunker.Security.Set(GunrunningBunker.Security.default)
 
         GunrunningBunker.Details.Enable(GunrunningBunker.Details.office, true)
