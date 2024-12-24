@@ -11,8 +11,6 @@ AgentsFactory = {
         idol01 = "set_pent_rob_idol_01",
         idol02 = "set_pent_rob_idol_02",
         scarab = "set_zanc_scarab",
-        armor = "set_zanc_armor",
-        keycard = "set_zanc_keycard",
         drive = "set_whistle_drive",
         plane = "set_cargo",
 
@@ -29,6 +27,8 @@ AgentsFactory = {
         key = "set_smartkey",
         drone = "set_pent_drone",
         case = "set_pent_emp",
+        armor = "set_zanc_armor",
+        keycard = "set_zanc_keycard",
 
         Enable = function(details, state, refresh)
             SetIplPropState(AgentsFactory.interiorId, details, state, refresh)
@@ -36,8 +36,12 @@ AgentsFactory = {
     },
 
     LoadDefault = function()
-        AgentsFactory.Trophy.Enable(AgentsFactory.Trophy.idol01, false, false)
-        AgentsFactory.Trophy.Enable(AgentsFactory.Trophy.idol02, false, false)
+        AgentsFactory.Trophy.Enable(AgentsFactory.Trophy.idol01, true, false)
+        AgentsFactory.Trophy.Enable(AgentsFactory.Trophy.idol02, true, false)
+
+        AgentsFactory.Details.Enable(AgentsFactory.Details.armor, true, false)
+        AgentsFactory.Details.Enable(AgentsFactory.Details.sonar, true, false)
+        AgentsFactory.Details.Enable(AgentsFactory.Details.drive, true, false)
 
         RefreshInterior(AgentsFactory.interiorId)
     end
