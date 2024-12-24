@@ -1,10 +1,10 @@
--- Garment Factory: 752.31, -997.24, -50.0
+-- Garment Factory: 752.31, -997.24, -47.0
 exports("GetAgentsFactory", function()
     return AgentsFactory
 end)
 
 AgentsFactory = {
-    interiorId = 0,
+    interiorId = 297729,
 
     Trophy = {
         egg = "set_pent_rob_egg",
@@ -13,6 +13,8 @@ AgentsFactory = {
         scarab = "set_zanc_scarab",
         armor = "set_zanc_armor",
         keycard = "set_zanc_keycard",
+        drive = "set_whistle_drive",
+        plane = "set_cargo",
 
         Enable = function(trophy, state, refresh)
             SetIplPropState(AgentsFactory.interiorId, trophy, state, refresh)
@@ -29,11 +31,14 @@ AgentsFactory = {
         case = "set_pent_emp",
 
         Enable = function(details, state, refresh)
-            SetIplPropState(AgentsOffice.interiorId, details, state, refresh)
+            SetIplPropState(AgentsFactory.interiorId, details, state, refresh)
         end
     },
 
     LoadDefault = function()
+        AgentsFactory.Trophy.Enable(AgentsFactory.Trophy.idol01, false, false)
+        AgentsFactory.Trophy.Enable(AgentsFactory.Trophy.idol02, false, false)
+
         RefreshInterior(AgentsFactory.interiorId)
     end
 }

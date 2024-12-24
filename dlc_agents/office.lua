@@ -1,10 +1,10 @@
--- McKenzie Field Office: 2149.45, 4788.06, -50.0
+-- McKenzie Field Hangar Office: 2149.71, 4787.76, -47.0
 exports("GetAgentsOffice", function()
     return AgentsOffice
 end)
 
 AgentsOffice = {
-    interiorId = 0,
+    interiorId = 297985,
 
     Style = {
         bed = "set_bed",
@@ -28,6 +28,7 @@ AgentsOffice = {
         ammo = "set_ammo",
         intel = "set_intel",
         weapons = "set_weapons",
+        tools = "collision_9k04j35",
         booze = "set_24_2",
 
         Enable = function(details, state, refresh)
@@ -39,7 +40,6 @@ AgentsOffice = {
         AgentsOffice.Style.Set(AgentsOffice.Style.bed, false)
 
         AgentsOffice.Details.Enable(AgentsOffice.Details.laptop, true, false)
-        AgentsOffice.Details.Enable(AgentsOffice.Details.intel, true, false)
 
         RefreshInterior(AgentsOffice.interiorId)
     end

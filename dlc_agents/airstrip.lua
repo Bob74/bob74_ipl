@@ -1,4 +1,4 @@
--- Airstrip: -2082.29, 1467.68, 280.58
+-- Airstrip: -2106.98, 1468.31, 282.0
 exports("GetAgentsAirstrip", function()
     return AgentsAirstrip
 end)
