@@ -6,6 +6,19 @@ end)
 AgentsFactory = {
     interiorId = 297729,
 
+    Ipl = {
+        Exterior = {
+            ipl = "m24_2_garment_factory",
+
+            Load = function()
+                EnableIpl(AgentsFactory.Ipl.Exterior.ipl, true)
+            end,
+            Remove = function()
+                EnableIpl(AgentsFactory.Ipl.Exterior.ipl, false)
+            end
+        }
+    },
+
     Trophy = {
         egg = "set_pent_rob_egg",
         idol01 = "set_pent_rob_idol_01",
