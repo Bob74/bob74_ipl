@@ -49,6 +49,10 @@ AgentsFactory = {
     },
 
     LoadDefault = function()
+        -- Exterior
+        AgentsFactory.Ipl.Exterior.Load()
+
+        -- Interior
         AgentsFactory.Trophy.Enable(AgentsFactory.Trophy.idol01, true, false)
         AgentsFactory.Trophy.Enable(AgentsFactory.Trophy.idol02, true, false)
 
