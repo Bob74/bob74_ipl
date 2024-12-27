@@ -1,4 +1,4 @@
-# Fix holes and customize the map (Updated to Bottom Dollar Bounties DLC)
+# Fix holes and customize the map (Updated to Agents of Sabotage DLC)
 
 The purpose of this script is to fix the holes in the map by loading zones that aren’t loaded by default. I’ve added quite a lot of places to load, based on [Mikeeh’s script](https://forum.fivem.net/t/release-load-unloaded-ipls/5911). If you just want to fix the holes in the map, then use this resource as provided.
 
@@ -30,6 +30,10 @@ This resource has been completely rewritten from scratch since v2.0. You can cus
 (DD/MM/YYYY)
 
 ---
+27/12/2024 - 2.4.0
+- Added "Agents of Sabotage" support
+- Fixed Eclipse Boulevard Garage tint colors (@DevSekai)
+
 28/08/2024 - 2.3.3
 - Fixed door on cargo ship (@NeenGame)
 - Fixed Franklin interior (@NeenGame)
