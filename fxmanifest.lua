@@ -160,4 +160,5 @@ client_scripts {
     , "dlc_agents/factory.lua"
     , "dlc_agents/office.lua"
     , "dlc_agents/airstrip.lua"
+    , "dlc_agents/hangar_door.lua"
 }

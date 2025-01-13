@@ -228,5 +228,6 @@ CreateThread(function()
         AgentsFactory.LoadDefault() -- 752.31, -997.24, -47.0
         AgentsOffice.LoadDefault() -- 2149.71, 4787.76, -47.0
         AgentsAirstrip.LoadDefault() -- -2106.98, 1468.31, 282.0
+        AgentsHangarDoor.LoadDefault() -- -2632.43, 2963.23, 8.5
     end
 end)
