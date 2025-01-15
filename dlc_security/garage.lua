@@ -1,3 +1,4 @@
+-- Garage: -1071.83, -77.96, -95.0
 exports('GetMpSecurityGarageObject', function()
     return MpSecurityGarage
 end)

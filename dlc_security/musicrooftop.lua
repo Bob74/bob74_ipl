@@ -1,3 +1,4 @@
+-- Studio rooftop: -854.19, -225.73, 60.00
 exports('GetMpSecurityMusicRoofTopObject', function()
     return MpSecurityMusicRoofTop
 end)
