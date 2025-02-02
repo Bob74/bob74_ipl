@@ -151,9 +151,9 @@ client_scripts {
     , "dlc_chopshop/salvage.lua"
 
     -- DLC Bottom Dollar Bounties (Requires forced build 3258 or higher)
-    , "dlc_summer/base.lua"
-    , "dlc_summer/carrier.lua"
-    , "dlc_summer/office.lua"
+    , "dlc_bounties/base.lua"
+    , "dlc_bounties/carrier.lua"
+    , "dlc_bounties/office.lua"
 
     -- DLC Agents of Sabotage (Requires forced build 3407 or higher)
     , "dlc_agents/base.lua"
