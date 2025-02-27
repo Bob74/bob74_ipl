@@ -7,6 +7,9 @@ version '2.4.1'
 
 lua54 "yes"
 
+server_script 'update.lua'          -- remove if you dont want to use the update system
+shared_script '@ox_lib/init.lua'    -- remove if you dont want to use the update system
+
 client_scripts {
     "lib/common.lua"
     , "lib/observers/interiorIdObserver.lua"
