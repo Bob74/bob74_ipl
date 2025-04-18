@@ -30,6 +30,9 @@ This resource has been completely rewritten from scratch since v2.0. You can cus
 (DD/MM/YYYY)
 
 ---
+18/04/2025 - 2.4.2
+- Fix calling interior natives with invalid types
+
 25/02/2025 - 2.4.1
 - Add hangar door
 - Rename "Bottom Dollar Bounties" folder to a more clear name

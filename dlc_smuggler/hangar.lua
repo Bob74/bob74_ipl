@@ -107,7 +107,7 @@ SmugglerHangar = {
             end
         end,
         Clear = function(refresh)
-            SetIplPropState(SmugglerHangar.interiorId, SmugglerHangar.Cranes.default, false, refresh)
+            SetIplPropState(SmugglerHangar.interiorId, SmugglerHangar.Cranes.on, false, refresh)
         end
     },
     ModArea = {
@@ -131,7 +131,7 @@ SmugglerHangar = {
             end
         end,
         Clear = function(refresh)
-            SetIplPropState(SmugglerHangar.interiorId, SmugglerHangar.ModArea.mod, false, refresh)
+            SetIplPropState(SmugglerHangar.interiorId, SmugglerHangar.ModArea.on, false, refresh)
         end
     },
     Office = {

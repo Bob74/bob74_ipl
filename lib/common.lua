@@ -101,7 +101,7 @@ function SetIplPropState(interiorId, props, state, refresh)
             for key, value in pairs(props) do
                 SetIplPropState(interiorId, value, state, refresh)
             end
-        else
+        elseif type(props) == "string" then
             if state then
                 if not IsInteriorEntitySetActive(interiorId, props) then
                     ActivateInteriorEntitySet(interiorId, props)
@@ -187,7 +187,7 @@ function SetupScaleform(movieId, scaleformFunction, parameters)
     end
 
     EndScaleformMovieMethod()
-    N_0x32f34ff7f617643b(movieId, 1)
+    SetScaleformMovieToUseLargeRt(movieId, true)
 end
 
 function LoadStreamedTextureDict(texturesDict)

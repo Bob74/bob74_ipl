@@ -98,7 +98,7 @@ BikerDocumentForgery = {
         BikerDocumentForgery.Security.Set(BikerDocumentForgery.Security.basic)
         BikerDocumentForgery.Equipment.Set(BikerDocumentForgery.Equipment.basic)
         BikerDocumentForgery.Details.Enable(BikerDocumentForgery.Details.production, false)
-        BikerDocumentForgery.Details.Enable(BikerDocumentForgery.Details.setup, false)
+        BikerDocumentForgery.Details.Enable(BikerDocumentForgery.Details.furnitures, false)
         BikerDocumentForgery.Details.Enable(BikerDocumentForgery.Details.clutter, false)
         BikerDocumentForgery.Details.Enable(BikerDocumentForgery.Details.Chairs, true)
 
