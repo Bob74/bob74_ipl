@@ -82,11 +82,15 @@ FinanceOffice1 = {
             for themeKey, themeValue in pairs(FinanceOffice1.Style.Theme) do
                 for swagKey, swagValue in pairs(FinanceOffice1.Swag) do
                     if type(swagValue) == "table" then
-                        SetIplPropState(themeValue.interiorId, {
-                            swagValue.A,
-                            swagValue.B,
-                            swagValue.C
-                        }, false)
+                        if swagKey == "Enable" then
+                            FinanceOffice2.Swag.Enable(swagValue, false, false)
+                        else
+                            SetIplPropState(themeValue.interiorId, {
+                                swagValue.A,
+                                swagValue.B,
+                                swagValue.C
+                            }, false)
+                        end
                     end
                 end
 
