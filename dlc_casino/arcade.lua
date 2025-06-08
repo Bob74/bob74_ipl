@@ -104,11 +104,69 @@ DiamondArcade = {
         end
     },
 
+    Trophy = {
+        claw = "entity_set_arcade_set_trophy_claw",
+        love = "entity_set_arcade_set_trophy_love",
+        teller = "entity_set_arcade_set_trophy_teller",
+        gunner = "entity_set_arcade_set_trophy_gunner",
+        king = "entity_set_arcade_set_trophy_king",
+        racer = "entity_set_arcade_set_trophy_racer",
+        patriot = "entity_set_arcade_set_trophy_patriot",
+        monkey = "entity_set_arcade_set_trophy_monkey",
+        brawler = "entity_set_arcade_set_trophy_brawler",
+        retro = "entity_set_arcade_set_trophy_retro",
+        cabs = "entity_set_arcade_set_trophy_cabs",
+        strife = "entity_set_arcade_set_trophy_strife",
+
+        Enable = function(trophy, state, refresh)
+            SetIplPropState(DiamondArcade.interiorId, trophy, state, refresh)
+        end
+    },
+
+    Plushie = {
+        purple = "entity_set_plushie_01",
+        green = "entity_set_plushie_02",
+        blue = "entity_set_plushie_03",
+        orange = "entity_set_plushie_04",
+        yellow = "entity_set_plushie_05",
+        red = "entity_set_plushie_06",
+        princess = "entity_set_plushie_07",
+        wasabi = "entity_set_plushie_08",
+        master = "entity_set_plushie_09",
+
+        Enable = function(plushie, state, refresh)
+            SetIplPropState(DiamondArcade.interiorId, plushie, state, refresh)
+        end
+    },
+
+    Details = {
+        tv = "entity_set_big_screen",
+        screens = "entity_set_screens",
+
+        Enable = function(details, state, refresh)
+            SetIplPropState(DiamondArcade.interiorId, details, state, refresh)
+        end
+    },
+
     LoadDefault = function()
         DiamondArcade.Style.Set(DiamondArcade.Style.normal, false)
         DiamondArcade.Ceiling.Set(DiamondArcade.Ceiling.flat, false)
         DiamondArcade.Mural.Set(DiamondArcade.Mural.forever, false);
         DiamondArcade.Floor.Set(DiamondArcade.Floor.proper, false)
+
+        DiamondArcade.Trophy.Enable(DiamondArcade.Trophy.claw, true, false)
+        DiamondArcade.Trophy.Enable(DiamondArcade.Trophy.teller, true, false)
+        DiamondArcade.Trophy.Enable(DiamondArcade.Trophy.gunner, true, false)
+        DiamondArcade.Trophy.Enable(DiamondArcade.Trophy.brawler, true, false)
+        DiamondArcade.Trophy.Enable(DiamondArcade.Trophy.cabs, true, false)
+
+        DiamondArcade.Plushie.Enable(DiamondArcade.Plushie.purple, true, false)
+        DiamondArcade.Plushie.Enable(DiamondArcade.Plushie.princess, true, false)
+        DiamondArcade.Plushie.Enable(DiamondArcade.Plushie.wasabi, true, false)
+        DiamondArcade.Plushie.Enable(DiamondArcade.Plushie.master, true, false)
+
+        DiamondArcade.Details.Enable(DiamondArcade.Details.tv, true, false)
+        DiamondArcade.Details.Enable(DiamondArcade.Details.screens, true, false)
 
         RefreshInterior(DiamondArcade.interiorId)
     end
