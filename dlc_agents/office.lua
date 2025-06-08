@@ -40,6 +40,7 @@ AgentsOffice = {
         AgentsOffice.Style.Set(AgentsOffice.Style.bed, false)
 
         AgentsOffice.Details.Enable(AgentsOffice.Details.laptop, true, false)
+        AgentsOffice.Details.Enable(AgentsOffice.Details.booze, true, false)
 
         RefreshInterior(AgentsOffice.interiorId)
     end
