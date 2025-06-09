@@ -144,6 +144,7 @@ CreateThread(function()
         DiamondCasino.LoadDefault() -- 1100.000, 220.000, -50.000
         DiamondPenthouse.LoadDefault() -- 976.636, 70.295, 115.164
         DiamondArcade.LoadDefault() -- 2732.000, -380.000, -50.000
+        DiamondArcadeBasement.LoadDefault() -- 2710.0, -360.780, -56.0
     end
 
     -- ====================================================================

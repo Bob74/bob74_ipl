@@ -106,6 +106,7 @@ client_scripts {
     , "dlc_casino/casino.lua"
     , "dlc_casino/penthouse.lua"
     , "dlc_casino/arcade.lua"
+    , "dlc_casino/arcade_basement.lua"
 
     -- DLC Cayo Perico Heist (Requires forced build 2189 or higher)
     , "dlc_cayoperico/base.lua"
