@@ -167,4 +167,5 @@ client_scripts {
     -- DLC Money Fronts (Requires forced build 3570 or higher)
     , "dlc_money/base.lua"
     , "dlc_money/carwash.lua"
+    , "dlc_money/office.lua"
 }
