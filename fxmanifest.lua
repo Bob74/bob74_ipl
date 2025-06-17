@@ -163,4 +163,8 @@ client_scripts {
     , "dlc_agents/office.lua"
     , "dlc_agents/airstrip.lua"
     , "dlc_agents/hangar_door.lua"
+
+    -- DLC Money Fronts (Requires forced build 3570 or higher)
+    , "dlc_money/base.lua"
+    , "dlc_money/carwash.lua"
 }

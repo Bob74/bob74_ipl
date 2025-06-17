@@ -232,4 +232,11 @@ CreateThread(function()
         AgentsAirstrip.LoadDefault() -- -2106.98, 1468.31, 282.0
         AgentsHangarDoor.LoadDefault() -- -2632.43, 2963.23, 8.5
     end
+
+    -- ====================================================================
+    -- =----------------------- [DLC: Money Fronts] ----------------------=
+    -- ====================================================================
+    if GetGameBuildNumber() >= 3570 then
+        MoneyCarwash.LoadDefault() -- 26.074, -1398.979, -75.0
+    end
 end)
