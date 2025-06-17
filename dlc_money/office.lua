@@ -6,6 +6,22 @@ end)
 MoneyOffice = {
     interiorId = 298753,
 
+    Ipl = {
+        Exterior = {
+            ipl = {
+                "m25_1_helitours",
+                "m25_1_smokeonthewater"
+            },
+
+            Load = function()
+                EnableIpl(MoneyOffice.Ipl.Exterior.ipl, true)
+            end,
+            Remove = function()
+                EnableIpl(MoneyOffice.Ipl.Exterior.ipl, false)
+            end
+        }
+    },
+
     Style = {
         heli = {
             "set_heli",
@@ -30,6 +46,10 @@ MoneyOffice = {
     },
 
     LoadDefault = function()
+        -- Exterior
+        MoneyOffice.Ipl.Exterior.Load()
+
+        -- Interior
         MoneyOffice.Style.Set(MoneyOffice.Style.heli, false)
 
         RefreshInterior(MoneyOffice.interiorId)
