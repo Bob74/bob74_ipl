@@ -168,4 +168,5 @@ client_scripts {
     , "dlc_money/base.lua"
     , "dlc_money/carwash.lua"
     , "dlc_money/office.lua"
+    , "dlc_money/construction.lua"
 }
