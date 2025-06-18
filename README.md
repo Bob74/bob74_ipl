@@ -1,4 +1,4 @@
-# Fix holes and customize the map (Updated to Agents of Sabotage DLC)
+# Fix holes and customize the map (Updated to Money Fronts DLC)
 
 The purpose of this script is to fix the holes in the map by loading zones that aren’t loaded by default. I’ve added quite a lot of places to load, based on [Mikeeh’s script](https://forum.fivem.net/t/release-load-unloaded-ipls/5911). If you just want to fix the holes in the map, then use this resource as provided.
 
@@ -30,6 +30,10 @@ This resource has been completely rewritten from scratch since v2.0. You can cus
 (DD/MM/YYYY)
 
 ---
+18/06/2025 - 2.5.0
+- Added "Money Fronts" support
+- Added arcade interior
+
 18/04/2025 - 2.4.2
 - Fix calling interior natives with invalid types
 
