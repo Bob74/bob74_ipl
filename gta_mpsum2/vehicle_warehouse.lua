@@ -39,6 +39,8 @@ CriminalEnterpriseVehicleWarehouse = {
             for entity, state in pairs(CriminalEnterpriseVehicleWarehouse.Entities) do
                 if type(entity) == 'string' and state then
                     ActivateInteriorEntitySet(CriminalEnterpriseVehicleWarehouse.InteriorId, entity)
+                elseif type(entity) == 'string' and not state then
+                    DeactivateInteriorEntitySet(CriminalEnterpriseVehicleWarehouse.InteriorId, entity)
                 end
             end
         end,

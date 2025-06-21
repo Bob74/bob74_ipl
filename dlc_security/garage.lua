@@ -53,6 +53,8 @@ MpSecurityGarage = {
             for entity, state in pairs(MpSecurityGarage.Entities) do
                 if type(entity) == 'string' and state then
                     ActivateInteriorEntitySet(MpSecurityGarage.InteriorId, entity)
+                elseif type(entity) == 'string' and not state then
+                    DeactivateInteriorEntitySet(MpSecurityGarage.InteriorId, entity)
                 end
             end
         end,
