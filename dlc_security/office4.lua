@@ -85,6 +85,8 @@ MpSecurityOffice4 = {
             for entity, state in pairs(MpSecurityOffice4.Entities) do
                 if type(entity) == 'string' and state then
                     ActivateInteriorEntitySet(MpSecurityOffice4.InteriorId, entity)
+                elseif type(entity) == 'string' and not state then
+                    DeactivateInteriorEntitySet(MpSecurityOffice4.InteriorId, entity)
                 end
             end
         end,

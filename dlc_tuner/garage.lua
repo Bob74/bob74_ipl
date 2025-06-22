@@ -73,6 +73,8 @@ TunerGarage = {
             for entity, state in pairs(TunerGarage.Entities) do
                 if type(entity) == 'string' and state then
                     ActivateInteriorEntitySet(TunerGarage.InteriorId, entity)
+                elseif type(entity) == 'string' and not state then
+                    DeactivateInteriorEntitySet(TunerGarage.InteriorId, entity)
                 end
             end
         end,
