@@ -71,6 +71,6 @@ MpSecurityGarage = {
         MpSecurityGarage.Ipl.Load()
         MpSecurityGarage.Entities.Load()
 
-        RefreshInterior(MpSecurityGarage.interiorId)
+        RefreshInterior(MpSecurityGarage.InteriorId)
     end
 }

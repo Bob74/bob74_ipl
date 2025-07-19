@@ -102,6 +102,6 @@ MpSecurityOffice3 = {
         MpSecurityOffice3.Ipl.Load()
         MpSecurityOffice3.Entities.Load()
 
-        RefreshInterior(MpSecurityOffice3.interiorId)
+        RefreshInterior(MpSecurityOffice3.InteriorId)
     end
 }

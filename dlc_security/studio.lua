@@ -58,6 +58,6 @@ MpSecurityStudio = {
         MpSecurityStudio.Ipl.Load()
         MpSecurityStudio.Entities.Load()
 
-        RefreshInterior(MpSecurityStudio.interiorId)
+        RefreshInterior(MpSecurityStudio.InteriorId)
     end
 }
