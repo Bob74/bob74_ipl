@@ -136,6 +136,16 @@ CreateThread(function()
     -- =----------------------- [DLC: After Hours] -----------------------=
     -- ====================================================================
     AfterHoursNightclubs.LoadDefault() -- -1604.664, -3012.583, -78.000
+    AfterHoursNightclubBasement.LoadDefault() -- -1505.783, -3012.587, -80.000
+    AfterHoursTerrorbyte.LoadDefault() -- -1421.015, -3012.587, -80.000
+
+    -- ====================================================================
+    -- ------------------------- [DLC: Arena War] ------------------------=
+    -- ====================================================================
+    if GetGameBuildNumber() >= 1604 then
+        ArenaWarInterior.LoadDefault() -- 930.0, -1390.0, 30.0
+        ArenaWarWorkshop.LoadDefault() -- 170, 5190, 10
+    end
 
     -- ====================================================================
     -- =------------------- [DLC: Diamond Casino Resort] -----------------=
@@ -203,6 +213,7 @@ CreateThread(function()
         MercenariesClub.LoadDefault() -- 1202.407, -3251.251, -50.000
         MercenariesLab.LoadDefault() -- -1916.119, 3749.719, -100.000
         MercenariesFixes.LoadDefault()
+        MercenariesAvenger.LoadDefault() -- -880.00, -2770.00, -50.00
     end
 
     -- ====================================================================
@@ -213,6 +224,10 @@ CreateThread(function()
         ChopShopCartelGarage.LoadDefault() -- 1220.133, -2277.844, -50.000
         ChopShopLifeguard.LoadDefault() -- -1488.153, -1021.166, 5.000
         ChopShopSalvage.LoadDefault() -- 1077.276, -2274.876, -50.000
+        ChopShopCounterfeit1.LoadDefault() -- 930.0, -2270.0, -50.0  
+        ChopShopCounterfeit2.LoadDefault() -- 930.0, -2240.1, -50.0
+        ChopShopCounterfeit3.LoadDefault() -- 930.0, -2183.3, -50.0
+        ChopShopCounterfeit4.LoadDefault() -- 930.0, -2213.2, -50.0
     end
 
     -- ====================================================================
