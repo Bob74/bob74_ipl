@@ -30,6 +30,9 @@ This resource has been completely rewritten from scratch since v2.0. You can cus
 (DD/MM/YYYY)
 
 ---
+03/06/2026 - 2.6.1
+- Added Cayo Perico island loading
+
 20/12/2025 - 2.6.0
 - Added "A Safehouse in the Hills" support
 - Fix typos in "The Contract" files
