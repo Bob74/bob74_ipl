@@ -143,7 +143,7 @@ CreateThread(function()
     -- ------------------------- [DLC: Arena War] ------------------------=
     -- ====================================================================
     if GetGameBuildNumber() >= 1604 then
-        ArenaWarInterior.LoadDefault() -- 930.0, -1390.0, 30.0
+        ArenaWarInterior.LoadDefault() -- 205, 5180, -90
         ArenaWarWorkshop.LoadDefault() -- 170, 5190, 10
     end
 
