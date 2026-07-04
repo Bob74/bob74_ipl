@@ -20,7 +20,9 @@ Mansion3 = {
                 "m25_2_tongva_mansion_gym",
                 "m25_2_tongva_dog_house",
                 "m25_2_mansion_props",
-                "hei_ch1_roads_mansion"
+                "hei_ch1_roads_mansion",
+                "hei_ch1_09_mansion_shared_distantlights",
+                "hei_ch1_09_mansion_shared_lodlights"
             },
 
             Load = function()

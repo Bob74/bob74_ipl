@@ -21,7 +21,9 @@ Mansion2 = {
                 "m25_2_mansion_gym",
                 "m25_2_dog_house",
                 "m25_2_mansion_props",
-                "hei_ch1_roads_mansion"
+                "hei_ch1_roads_mansion",
+                "hei_ch1_06e_mansion_shared_distantlights",
+                "hei_ch1_06e_mansion_shared_lodlights"
             },
 
             Load = function()
