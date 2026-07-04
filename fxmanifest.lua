@@ -3,7 +3,7 @@ game 'gta5'
 
 author 'Bob_74'
 description 'Load and customize your map'
-version '2.6.0'
+version '2.6.1'
 
 lua54 "yes"
 
@@ -111,6 +111,7 @@ client_scripts {
 
     -- DLC Cayo Perico Heist (Requires forced build 2189 or higher)
     , "dlc_cayoperico/base.lua"
+    , "dlc_cayoperico/island.lua"
     , "dlc_cayoperico/nightclub.lua"
     , "dlc_cayoperico/submarine.lua"
 

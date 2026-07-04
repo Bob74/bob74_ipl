@@ -153,6 +153,7 @@ CreateThread(function()
     if GetGameBuildNumber() >= 2189 then
         CayoPericoNightclub.LoadDefault() -- 1550.0, 250.0, -50.0
         CayoPericoSubmarine.LoadDefault() -- 1560.0, 400.0, -50.0
+        CayoPericoIsland.Enable(true) -- 4840.571, -5174.425, 2.0
     end
 
     -- ====================================================================
