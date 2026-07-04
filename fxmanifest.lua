@@ -12,6 +12,7 @@ client_scripts {
     , "lib/observers/interiorIdObserver.lua"
     , "lib/observers/officeSafeDoorHandler.lua"
     , "lib/observers/officeCullHandler.lua"
+    , "lib/observers/mansionCullHandler.lua"
     , "client.lua"
 
     -- GTA V
