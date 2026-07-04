@@ -30,6 +30,14 @@ This resource has been completely rewritten from scratch since v2.0. You can cus
 (DD/MM/YYYY)
 
 ---
+04/07/2026 - 2.6.1
+- Added missing aircraft carrier distance lights
+- Added missing mansions distance lights
+- Fixed mansions missing LODs
+- Fixed default tree model with weird hole
+- Refined assets with Alchemist
+- Removed broken collision
+
 20/12/2025 - 2.6.0
 - Added "A Safehouse in the Hills" support
 - Fix typos in "The Contract" files

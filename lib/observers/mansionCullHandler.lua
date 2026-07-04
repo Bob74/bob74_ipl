@@ -17,6 +17,10 @@ local _mansions = {
 }
 
 CreateThread(function()
+    if GetGameBuildNumber() < 3717 then
+        return
+    end
+
     while true do
         local coords = GetEntityCoords(PlayerPedId())
 
