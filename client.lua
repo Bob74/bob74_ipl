@@ -252,4 +252,12 @@ CreateThread(function()
         MansionBasement2.LoadDefault()
         MansionBasement3.LoadDefault()
     end
+
+    -- ====================================================================
+    -- =----------------- [DLC: The Kortz Center Heist] ------------------=
+    -- ====================================================================
+    if GetGameBuildNumber() >= 3889 then
+        KortzMuseum.LoadDefault()
+        KortzExhibition.LoadDefault()
+    end
 end)

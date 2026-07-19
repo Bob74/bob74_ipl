@@ -179,4 +179,11 @@ client_scripts {
     , "dlc_mansions/mansion_basement1.lua"
     , "dlc_mansions/mansion_basement2.lua"
     , "dlc_mansions/mansion_basement3.lua"
+
+    -- DLC The Kortz Center Heist (Requires forced build 3889 or higher)
+    , "dlc_kortz/base.lua"
+    , "dlc_kortz/museum.lua"
+    , "dlc_kortz/exhibition.lua"
+    , "dlc_kortz/sewers.lua"
+    , "dlc_kortz/mansion_workshop.lua"
 }
