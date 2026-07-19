@@ -236,7 +236,7 @@ CreateThread(function()
     -- ====================================================================
     -- =----------------------- [DLC: Money Fronts] ----------------------=
     -- ====================================================================
-    if GetGameBuildNumber() >= 3570 then
+    if IsDlcPresent(`mp2025_01`) then
         MoneyCarwash.LoadDefault() -- 26.074, -1398.979, -75.0
         MoneyOffice.LoadDefault() -- -1160.493, -1538.932, -50.0
     end
@@ -244,7 +244,7 @@ CreateThread(function()
     -- ====================================================================
     -- =---------------- [DLC: A Safehouse in the Hills] -----------------=
     -- ====================================================================
-    if GetGameBuildNumber() >= 3717 then
+    if IsDlcPresent(`mp2025_02`) then
         Mansion1.LoadDefault() -- 543.852, 712.754, 201.0
         Mansion2.LoadDefault() -- -1630.434, 470.852, 128.0
         Mansion3.LoadDefault() -- -2601.712, 1874.826, 166.0
@@ -256,11 +256,11 @@ CreateThread(function()
     -- ====================================================================
     -- =----------------- [DLC: The Kortz Center Heist] ------------------=
     -- ====================================================================
-    if GetGameBuildNumber() >= 3889 then
-        KortzMuseum.LoadDefault()
-        KortzExhibition.LoadDefault()
-        KortzBasement.LoadDefault()
-        KortzLoadingBay.LoadDefault();
-        KortzWorkshop.LoadDefault()
+    if IsDlcPresent(`mp2026_01`) then
+        KortzMuseum.LoadDefault() -- -2242.157, 270.780, 173.5
+        KortzExhibition.LoadDefault() -- 2603.167, 5903.761, -50.0
+        KortzBasement.LoadDefault() -- 2631.411, 5893.864, -62.0
+        KortzLoadingBay.LoadDefault() -- 2693.671, 5877.493, -62.0
+        KortzWorkshop.LoadDefault() -- 2583.915, 5961.410, -50.0
     end
 end)

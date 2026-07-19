@@ -1,4 +1,4 @@
--- Museum
+-- Museum: -2242.157, 270.780, 173.5
 exports("GetKortzMuseum", function()
     return KortzMuseum
 end)
