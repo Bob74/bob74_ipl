@@ -184,6 +184,8 @@ client_scripts {
     , "dlc_kortz/base.lua"
     , "dlc_kortz/museum.lua"
     , "dlc_kortz/exhibition.lua"
+    , "dlc_kortz/basement.lua"
+    , "dlc_kortz/loadingbay.lua"
     , "dlc_kortz/sewers.lua"
     , "dlc_kortz/mansion_workshop.lua"
 }

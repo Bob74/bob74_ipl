@@ -259,5 +259,8 @@ CreateThread(function()
     if GetGameBuildNumber() >= 3889 then
         KortzMuseum.LoadDefault()
         KortzExhibition.LoadDefault()
+        KortzBasement.LoadDefault()
+        KortzLoadingBay.LoadDefault();
+        KortzWorkshop.LoadDefault()
     end
 end)
