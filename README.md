@@ -1,4 +1,4 @@
-# Fix holes and customize the map (Updated to A Safehouse in the Hills)
+# Fix holes and customize the map (Updated to The Kortz Center Heist)
 
 The purpose of this script is to fix the holes in the map by loading zones that aren’t loaded by default. I’ve added quite a lot of places to load, based on [Mikeeh’s script](https://forum.fivem.net/t/release-load-unloaded-ipls/5911). If you just want to fix the holes in the map, then use this resource as provided.
 
@@ -30,6 +30,10 @@ This resource has been completely rewritten from scratch since v2.0. You can cus
 (DD/MM/YYYY)
 
 ---
+23/07/2026 - 2.7.0
+- Added "The Kortz Center Heist" support
+- Revert asset refinement
+
 04/07/2026 - 2.6.1
 - Added missing aircraft carrier distance lights
 - Added missing mansions distance lights
