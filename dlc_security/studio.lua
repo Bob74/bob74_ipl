@@ -9,7 +9,7 @@ MpSecurityStudio = {
     Ipl = {
         Interior = {
             ipl = {
-                'sf_int_placement_sec_interior_1_dlc_studio_sec_milo_ '
+                'sf_int_placement_sec_interior_1_dlc_studio_sec_milo_'
             }
         },
 
