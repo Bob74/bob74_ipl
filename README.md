@@ -30,6 +30,10 @@ This resource has been completely rewritten from scratch since v2.0. You can cus
 (DD/MM/YYYY)
 
 ---
+04/10/2026 - 2.7.1
+- Add streaming files for Enhanced
+- Fix two syntax issues/typos
+
 23/07/2026 - 2.7.0
 - Added "The Kortz Center Heist" support
 - Revert asset refinement
