@@ -31,8 +31,8 @@ CayoPericoIsland = {
     -- Stream the island and its minimap out
     Clear = function()
         if CayoPericoIsland.loaded then
-            SetIslandHopperEnabled("HeistIsland", false)
-            SetToggleMinimapHeistIsland(false)
+            SetIslandEnabled("HeistIsland", false)
+            SetUseIslandMap(false)
 
             CayoPericoIsland.loaded = false
         end
@@ -47,8 +47,8 @@ CreateThread(function()
         if CayoPericoIsland.enabled then
             if #(GetEntityCoords(PlayerPedId()).xy - CayoPericoIsland.coords.xy) < _loadRadius then
                 if not CayoPericoIsland.loaded then
-                    SetIslandHopperEnabled("HeistIsland", true)
-                    SetToggleMinimapHeistIsland(true)
+                    SetIslandEnabled("HeistIsland", true)
+                    SetUseIslandMap(true)
 
                     CayoPericoIsland.loaded = true
                 end
