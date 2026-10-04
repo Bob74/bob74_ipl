@@ -102,6 +102,12 @@ client_scripts {
 
     -- DLC After Hours
     , "dlc_afterhours/nightclubs.lua"
+    , "dlc_afterhours/nightclubbasement.lua"
+    , "dlc_afterhours/terrorbyte.lua"
+
+    -- DLC Arena War
+    , "dlc_arenawar/interior.lua"
+    , "dlc_arenawar/workshop.lua"
 
     -- DLC Diamond Casino (Requires forced build 2060 or higher)
     , "dlc_casino/casino.lua"
@@ -145,6 +151,7 @@ client_scripts {
     , "dlc_mercenaries/club.lua"
     , "dlc_mercenaries/lab.lua"
     , "dlc_mercenaries/fixes.lua"
+    , "dlc_mercenaries/avenger.lua"
 
     -- DLC The Chop Shop (Requires forced build 3095 or higher)
     , "dlc_chopshop/base.lua"
@@ -152,6 +159,10 @@ client_scripts {
     , "dlc_chopshop/cartel_garage.lua"
     , "dlc_chopshop/lifeguard.lua"
     , "dlc_chopshop/salvage.lua"
+    , "dlc_chopshop/counterfeit1.lua"
+    , "dlc_chopshop/counterfeit2.lua"
+    , "dlc_chopshop/counterfeit3.lua"
+    , "dlc_chopshop/counterfeit4.lua"
 
     -- DLC Bottom Dollar Bounties (Requires forced build 3258 or higher)
     , "dlc_bounties/base.lua"
